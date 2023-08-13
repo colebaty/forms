@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from collections import OrderedDict
-from PyPDF2 import PdfFileWriter, PdfFileReader
+from pypdf import PdfReader, PdfWriter
+import sys
 
 
 def _getFields(obj, tree=None, retval=None, fileobj=None):
@@ -46,13 +47,13 @@ def _getFields(obj, tree=None, retval=None, fileobj=None):
 
 
 def get_form_fields(infile):
-    infile = PdfFileReader(open(infile, 'rb'))
+    infile = PdfReader(open(infile, 'rb'))
     fields = _getFields(infile)
     return OrderedDict((k, v.get('/V', '')) for k, v in fields.items())
 
 
 def update_form_values(infile, outfile, newvals=None):
-    pdf = PdfFileReader(open(infile, 'rb'))
+    pdf = PdfReader(open(infile, 'rb'))
     writer = PdfFileWriter()
 
     for i in range(pdf.getNumPages()):
@@ -77,7 +78,8 @@ def update_form_values(infile, outfile, newvals=None):
 if __name__ == '__main__':
     from pprint import pprint
 
-    pdf_file_name = '2PagesFormExample.pdf'
+    pdf_file_name = sys.argv[1]
+    print(f'in file: {pdf_file_name}')
 
     pprint(get_form_fields(pdf_file_name))
 
