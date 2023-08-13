@@ -1,0 +1,352 @@
+ssh-agent socket exists             
+socket: /tmp/ssh-XXXXingdrX/agent.198911                                 
+pid: 198912                         
+[~/forms]$ source venv/bin/activate                                                                                                        *[main] 
+(venv) [~/forms]$ bython                                                                                                                   *[main] 
+zsh: command not found: bython      
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> import csv                      
+>>> csv_file = open('test.csv', 'r')                                     
+>>> csv_file                        
+<_io.TextIOWrapper name='test.csv' mode='r' encoding='UTF-8'>            
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> csv_reader                                                           
+<csv.DictReader object at 0x7f7684c2ec50>                                
+>>> csv_reader[0]                   
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    csv_reader[0]                   
+TypeError: 'DictReader' object is not subscriptable                      
+>>> for row in csv_reader:          
+...     print(row.items())                                               
+...                                 
+...                                 
+dict_items([('DESCRIPTION', 'Dell PowerEdge 2950 (Hammer)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '750W 110v/22
+0V'), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', '5M29TB1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA'
+, 'Suite 3310'), ('RM', 'Server Rm. 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI pose
+ssion?', 'Yes'), ('In DD1149 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', 'FTI CHE server room, Rack #1'), ('Comments',
+ ''), ('Model', ''), ('QTY', '1'), ('Location Found', 'Dell rack'), ('Confirmed?', '')])                                                           
+dict_items([('DESCRIPTION', 'Dell PowerEdge 2950 (Nixie)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '750W 110v/220
+V'), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', '90DM9F1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA',
+ 'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI poses
+sion?', 'No'), ('In DD1149 from Mantech?', 'Yes'), ("Recommend return to Gov't", ''), ('New location', ''), ('Comments', ''), ('Model', ''), ('QTY'
+, '1'), ('Location Found', 'Dell rack'), ('Confirmed?', '')])            
+dict_items([('DESCRIPTION', 'Dell PowerEdge 2950 (Snipe)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '750W 110v/220
+V'), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', '80DM9F1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA',
+ 'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI poses
+sion?', 'No'), ('In DD1149 from Mantech?', 'Yes'), ("Recommend return to Gov't", ''), ('New location', ''), ('Comments', ''), ('Model', ''), ('QTY'
+, '1'), ('Location Found', 'Dell rack'), ('Confirmed?', '')])            
+dict_items([('DESCRIPTION', 'HP Proliant DL380 (USSMiner)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '800W 110v'),
+ ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', 'EAH1LDN42G'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 
+'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posess
+ion?', 'Yes'), ('In DD1149 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', 'FTI CHE server room, Rack #1'), ('Comments', '
+'), ('Model', ''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])                                                                       
+dict_items([('DESCRIPTION', 'HP Proliant DL380 (USSMountie)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '800W 110v'
+), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', 'EV00LDND32'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA'
+, 'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI pose
+ssion?', 'Yes'), ('In DD1149 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', 'FTI CHE server room, floor'), ('Comments', '
+'), ('Model', ''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])                                                                       
+dict_items([('DESCRIPTION', 'Dell Optiplex'), ('TYPE', 'Desktop Computer'), ('SOURCE', "Mike Ihrig's garage"), ('Power', ''), ('Rack Mount?', 'N/A'
+), ('Rack Height / Form factor (u)', ''), ('SERIAL NUMBER', '1NS3S91'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 'Suite 3310'), ('RM', 'Sec
+ure Rm,'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posession?', 'Yes'), ('In DD1149 f
+rom Mantech?', ''), ("Recommend return to Gov't", 'Yes, was used in secure room'), ('New location', 'FTI CHE office'), ('Comments', ''), ('Model', 
+''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])           
+dict_items([('DESCRIPTION', 'Dell Optiplex'), ('TYPE', 'Desktop Computer'), ('SOURCE', "Mike Ihrig's garage"), ('Power', ''), ('Rack Mount?', 'N/A'
+), ('Rack Height / Form factor (u)', ''), ('SERIAL NUMBER', 'GMS3S91'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 'Suite 3310'), ('RM', 'Sec
+ure Rm,'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posession?', 'Yes'), ('In DD1149 f
+rom Mantech?', ''), ("Recommend return to Gov't", 'Yes, was used in secure room'), ('New location', 'FTI CHE office'), ('Comments', ''), ('Model', 
+''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])           
+dict_items([('DESCRIPTION', 'Dell Precision 390'), ('TYPE', 'Desktop Computer'), ('SOURCE', "Mike Ihrig's garage"), ('Power', ''), ('Rack Mount?', 
+'N/A'), ('Rack Height / Form factor (u)', ''), ('SERIAL NUMBER', 'G68X3F1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 'Suite 3310'), ('RM',
+ 'Secure Rm,'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posession?', 'No'), ('In DD11
+49 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', ''), ('Comments', ''), ('Model', ''), ('QTY', ''), ('Location Found', '
+'), ('Confirmed?', '')])            
+>>> for row in csv_reader:          
+...     print(row.items())          
+KeyboardInterrupt                   
+>>> csv_reader.fieldnames()         
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    csv_reader.fieldnames()         
+TypeError: 'list' object is not callable                                 
+>>> csv_reader.fieldnames           
+['DESCRIPTION', 'TYPE', 'SOURCE', 'Power', 'Rack Mount?', 'Rack Height / Form factor (u)', 'SERIAL NUMBER', 'PART #', 'GFE ASSET ID #', 'AREA', 'RM
+', 'PROJECT', 'EXCESS', 'HDD Barcode Number', 'CONDITION\nCODES', 'In FTI posession?', 'In DD1149 from Mantech?', "Recommend return to Gov't", 'New
+ location', 'Comments', 'Model', 'QTY', 'Location Found', 'Comments', 'Confirmed?']                                                                
+>>> csv_reader                      
+<csv.DictReader object at 0x7f7684c2ec50>                                
+>>> csv_reader.restkey              
+>>> csv_reader.restkey()                                                 
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    csv_reader.restkey()                                                 
+TypeError: 'NoneType' object is not callable                             
+>>> print(row)                                                           
+{'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height / Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS',
+ 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                                      
+>>> row                                                                  
+{'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height / Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS',
+ 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                                      
+>>> row[0]                                                               
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    row[0]                                                               
+KeyError: 0                                                              
+>>> fdf_data = ""                                                        
+>>> for row in csv_reader:                                               
+...     for key, value in row.items():                                   
+...         fdf_data += f"{key}={value}\n"                               
+...     fdf_data += "\n"                                                 
+...                                                                      
+...                                                                      
+>>> fdf_datq                                                             
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    fdf_datq                                                             
+NameError: name 'fdf_datq' is not defined                                
+>>> fdf_data                                                             
+''                                                                       
+>>> csv_reader = csv.DictReader(csv_file)                                
+KeyboardInterrupt                                                        
+>>> csv_file = open('test.csv', 'r')                                     
+>>> csv_file                                                             
+<_io.TextIOWrapper name='test.csv' mode='r' encoding='UTF-8'>            
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:                                               
+...     print(len(row.items()))                                          
+...                                                                      
+...                                                                      
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+>>> for row in csv_reader:                                               
+...     for key, value in row.items():                                   
+...         print(f"{key}={value}\n")                                    
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+>>> for row in csv_reader:                                               
+...     for key, value in row.items():                                   
+...         print(f"{key}={value}\n")                                    
+...     print("\n")                                                      
+...                                                                      
+...                                                                      
+>>> csv_reader                                                           
+<csv.DictReader object at 0x7f7684afc8b0>                                
+>>> csv_reader.reader                                                    
+<_csv.reader object at 0x7f7684bfa880>                                                                                                             >>> csv_reader.reader()                                                                                                                            Traceback (most recent call last):
+  File "<input>", line 1, in <module>                                                                                                              
+    csv_reader.reader()                                                  
+TypeError: '_csv.reader' object is not callable                          
+>>> csv_reader.fieldnames                                                                                                                          ['DESCRIPTION', 'TYPE', 'SOURCE', 'Power', 'Rack Mount?', 'Rack Height / Form factor (u)', 'SERIAL NUMBER', 'PART #', 'GFE ASSET ID #', 'AREA', 'RM 
+location', 'Comments', 'Model', 'QTY', 'Location Found', 'Comments', 'Confirmed?']                                                                 >>> for row in csv_reader:                                                                                                                          
+...     print(f"Row: {row})                                                                                                                          File "<input>", line 2                                                                                                                            
+    print(f"Row: {row})                                                                                                                                      ^                                                                                                                                         
+SyntaxError: incomplete input                                                                                                                      >>> for row in csv_reader:                                                                                                                          
+...     print(f"Row: {row}")                                             
+...                                                                      
+...                                                                      
+>>> csv_reader = csv.DictReader(csv_file)                                
+KeyboardInterrupt                                                        
+>>> csv_file                                                             
+<_io.TextIOWrapper name='test.csv' mode='r' encoding='UTF-8'>            
+>>> with open('output_populated.pdf', 'wb') as output_pdf:               
+KeyboardInterrupt                                                                                                                                  
+>>> open('list.csv','r') as csv_file                                                                                                               
+KeyboardInterrupt                                                                                                                                  
+>>> csv_file                                                                                                                                       
+KeyboardInterrupt                   
+>>> csv_file = open('test.csv', 'r')
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:          
+...     print("Row:", row)          
+...                                 
+...                                 
+Row: {'DESCRIPTION': 'Dell PowerEdge 2950 (Hammer)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '750W 110v/220V', 'Rack Mo
+unt?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': '5M29TB1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Se
+rver Rm. 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mante
+ch?': '', "Recommend return to Gov't": '', 'New location': 'FTI CHE server room, Rack #1', 'Comments': '', 'Model': '', 'QTY': '1', 'Location Found
+': 'Dell rack', 'Confirmed?': ''}   
+Row: {'DESCRIPTION': 'Dell PowerEdge 2950 (Nixie)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '750W 110v/220V', 'Rack Mou
+nt?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': '90DM9F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Ser
+ver Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech
+?': 'Yes', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '1', 'Location Found': 'Dell rack', 'Confirmed?
+': ''}                              
+Row: {'DESCRIPTION': 'Dell PowerEdge 2950 (Snipe)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '750W 110v/220V', 'Rack Mou
+nt?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': '80DM9F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Ser
+ver Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech
+?': 'Yes', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '1', 'Location Found': 'Dell rack', 'Confirmed?
+': ''}                              
+Row: {'DESCRIPTION': 'HP Proliant DL380 (USSMiner)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '800W 110v', 'Rack Mount?'
+: 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': 'EAH1LDN42G', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Serv
+er Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mantech
+?': '', "Recommend return to Gov't": '', 'New location': 'FTI CHE server room, Rack #1', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': 
+'', 'Confirmed?': ''}               
+Row: {'DESCRIPTION': 'HP Proliant DL380 (USSMountie)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '800W 110v', 'Rack Mount
+?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': 'EV00LDND32', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Se
+rver Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mante
+ch?': '', "Recommend return to Gov't": '', 'New location': 'FTI CHE server room, floor', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': 
+'', 'Confirmed?': ''}               
+Row: {'DESCRIPTION': 'Dell Optiplex', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height 
+/ Form factor (u)': '', 'SERIAL NUMBER': '1NS3S91', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS'
+, 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mantech?': '', "Recommend return to
+ Gov't": 'Yes, was used in secure room', 'New location': 'FTI CHE office', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed
+?': ''}                             
+Row: {'DESCRIPTION': 'Dell Optiplex', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height 
+/ Form factor (u)': '', 'SERIAL NUMBER': 'GMS3S91', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS'
+, 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mantech?': '', "Recommend return to
+ Gov't": 'Yes, was used in secure room', 'New location': 'FTI CHE office', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed
+?': ''}                             
+Row: {'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack He
+ight / Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': '
+MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend retur
+n to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                               
+>>> for row in csv_reader:          
+...     print(row.items())                                               
+...                                 
+...                                 
+>>> for row in csv_reader:          
+...     for key, value in row.items():                                   
+...         print("key:", key)                                           
+...         print("value:", value)  
+...                                 
+...                                 
+...                                 
+>>> row                             
+{'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height 
+/ Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS'
+, 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend return to 
+Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                                    
+>>> csv_file = open('data.csv', 'r')                                     
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:          
+...     print(row)                  
+...                                 
+...                                 
+{'DOLLARS_2': '1', 'CTS_2': '2', 'Form': '3', '26': '4', '25': '5', '24': '6', '27': '7', '1': '8', '2': '9', '3': '10', '4': '11', 'DOLLARS1': '12
+', 'CTS1': '13', '5': '14', '6': '15', '7': '16', '8': '17', '9': '18', '10': '19', '11': '20', '12': '21', '13': '22', '14': '23', '15': '24', '16
+': '25', '17': '26', '18': '27', '19': '28', '20': '29', '21': '30', '22': '31', '23': '32'}                                                       
+>>> row                             
+{'DOLLARS_2': '1', 'CTS_2': '2', 'Form': '3', '26': '4', '25': '5', '24': '6', '27': '7', '1': '8', '2': '9', '3': '10', '4': '11', 'DOLLARS1': '12
+', 'CTS1': '13', '5': '14', '6': '15', '7': '16', '8': '17', '9': '18', '10': '19', '11': '20', '12': '21', '13': '22', '14': '23', '15': '24', '16
+': '25', '17': '26', '18': '27', '19': '28', '20': '29', '21': '30', '22': '31', '23': '32'}                                                       
+>>> for key, value in row.items():  
+...     print(f'{key}={value}')                                          
+...                                 
+...                                 
+DOLLARS_2=1                         
+CTS_2=2                             
+Form=3                              
+26=4                                
+25=5                                
+24=6                                
+27=7                                
+1=8                                 
+2=9                                 
+3=10                                
+4=11                                
+DOLLARS1=12                         
+CTS1=13                             
+5=14                                
+6=15                                
+7=16                                
+8=17                                
+9=18                                
+10=19                               
+11=20                               
+12=21                               
+13=22                               
+14=23                               
+15=24                               
+16=25                               
+17=26                               
+18=27                               
+19=28                               
+20=29                               
+21=30                               
+22=31                               
+23=32                               
+>>> fdf_data                        
+''                                  
+>>> for key, value in row.items():  
+...     fdf_data += f'{key}={value}\n'                                   
+...                                                                      
+...                                 
+>>> fdf_data                        
+'DOLLARS_2=1\nCTS_2=2\nForm=3\n26=4\n25=5\n24=6\n27=7\n1=8\n2=9\n3=10\n4=11\nDOLLARS1=12\nCTS1=13\n5=14\n6=15\n7=16\n8=17\n9=18\n10=19\n11=20\n12=2
+1\n13=22\n14=23\n15=24\n16=25\n17=26\n18=27\n19=28\n20=29\n21=30\n22=31\n23=32\n'                                                                  
+>>> fdf_data += "\n"                
+>>> fdf_file = open('data.fdf', 'w')
+>>> fdf_file.write(fdf_data)        
+195                                 
+>>> fdf_file.write(fdf_file)        
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    fdf_file.write(fdf_file)        
+TypeError: write() argument must be str, not _io.TextIOWrapper           
+>>> fdf_data                        
+'DOLLARS_2=1\nCTS_2=2\nForm=3\n26=4\n25=5\n24=6\n27=7\n1=8\n2=9\n3=10\n4=11\nDOLLARS1=12\nCTS1=13\n5=14\n6=15\n7=16\n8=17\n9=18\n10=19\n11=20\n12=2
+1\n13=22\n14=23\n15=24\n16=25\n17=26\n18=27\n19=28\n20=29\n21=30\n22=31\n23=32\n\n'                                                                
+>>> fdf_file.write(fdf_data)        
+195                                 
+>>> fdf_file                        
+<_io.TextIOWrapper name='data.fdf' mode='w' encoding='UTF-8'>            
+>>> fdf_file.close()                
+>>>                                 
+KeyboardInterrupt                   
+>>>                                 
+(venv) [~/forms]$                                                                                                                          *[main] 
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> import csv                      
+>>> fdf_content = '''%FDF-1.2                                                                                                                      
+... %âãÏÓ                           
+... 1 0 obj                         
+... << /FDF << /Fields 2 0 R >>     
+... >>                              
+... endobj                          
+... 2 0 obj                         
+... [ '''                           
+>>> fdf_content                     
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ '                                                                   
+>>> csv_file = open('data.csv', 'r')                                     
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:          
+...     for key, value in row.items():                                   
+...         fdf_content += f"<< /T ({key}) /V ({value}) >>\n"            
+...                                                                      
+...                                 
+...                                 
+>>> fdf_content                     
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ << /T (DOLLARS_2) /V (1) >>\n<< /T (CTS_2) /V (2) >>\n<< /T (Form) /
+V (3) >>\n<< /T (26) /V (4) >>\n<< /T (25) /V (5) >>\n<< /T (24) /V (6) >>\n<< /T (27) /V (7) >>\n<< /T (1) /V (8) >>\n<< /T (2) /V (9) >>\n<< /T (
+3) /V (10) >>\n<< /T (4) /V (11) >>\n<< /T (DOLLARS1) /V (12) >>\n<< /T (CTS1) /V (13) >>\n<< /T (5) /V (14) >>\n<< /T (6) /V (15) >>\n<< /T (7) /V
+ (16) >>\n<< /T (8) /V (17) >>\n<< /T (9) /V (18) >>\n<< /T (10) /V (19) >>\n<< /T (11) /V (20) >>\n<< /T (12) /V (21) >>\n<< /T (13) /V (22) >>\n<
+< /T (14) /V (23) >>\n<< /T (15) /V (24) >>\n<< /T (16) /V (25) >>\n<< /T (17) /V (26) >>\n<< /T (18) /V (27) >>\n<< /T (19) /V (28) >>\n<< /T (20)
+ /V (29) >>\n<< /T (21) /V (30) >>\n<< /T (22) /V (31) >>\n<< /T (23) /V (32) >>\n'                                                                
+>>> fdf_content +=                  
+KeyboardInterrupt                   
+>>> fdf_content += ']\nendobj\ntrailer\n<< /Root 1 0 R >>\n%%EOF\n'      
+>>> fdf_content                                                          
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ << /T (DOLLARS_2) /V (1) >>\n<< /T (CTS_2) /V (2) >>\n<< /T (Form) /
+V (3) >>\n<< /T (26) /V (4) >>\n<< /T (25) /V (5) >>\n<< /T (24) /V (6) >>\n<< /T (27) /V (7) >>\n<< /T (1) /V (8) >>\n<< /T (2) /V (9) >>\n<< /T (
+3) /V (10) >>\n<< /T (4) /V (11) >>\n<< /T (DOLLARS1) /V (12) >>\n<< /T (CTS1) /V (13) >>\n<< /T (5) /V (14) >>\n<< /T (6) /V (15) >>\n<< /T (7) /V
+ (16) >>\n<< /T (8) /V (17) >>\n<< /T (9) /V (18) >>\n<< /T (10) /V (19) >>\n<< /T (11) /V (20) >>\n<< /T (12) /V (21) >>\n<< /T (13) /V (22) >>\n<
+< /T (14) /V (23) >>\n<< /T (15) /V (24) >>\n<< /T (16) /V (25) >>\n<< /T (17) /V (26) >>\n<< /T (18) /V (27) >>\n<< /T (19) /V (28) >>\n<< /T (20)
+ /V (29) >>\n<< /T (21) /V (30) >>\n<< /T (22) /V (31) >>\n<< /T (23) /V (32) >>\n]\nendobj\ntrailer\n<< /Root 1 0 R >>\n%%EOF\n'                  
+>>> fdf_file = open('data.fdf', 'w')
+>>> fdf_file.write(fdf_content)     
+818                                 
+>>> fdf_file.close()                
+>>> fdf_file = open('data.fdf', 'w')
+>>> fdf_file.write(fdf_content)     
+818                                 
+>>> fdf_file.close()                
+>>>                                 
