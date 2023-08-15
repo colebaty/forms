@@ -1,0 +1,1567 @@
+ssh-agent socket exists             
+socket: /tmp/ssh-XXXXingdrX/agent.198911                                 
+pid: 198912                         
+[~/forms]$ source venv/bin/activate                                                                                                        *[main] 
+(venv) [~/forms]$ bython                                                                                                                   *[main] 
+zsh: command not found: bython      
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> import csv                      
+>>> csv_file = open('test.csv', 'r')                                     
+>>> csv_file                        
+<_io.TextIOWrapper name='test.csv' mode='r' encoding='UTF-8'>            
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> csv_reader                                                           
+<csv.DictReader object at 0x7f7684c2ec50>                                
+>>> csv_reader[0]                   
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    csv_reader[0]                   
+TypeError: 'DictReader' object is not subscriptable                      
+>>> for row in csv_reader:          
+...     print(row.items())                                               
+...                                 
+...                                 
+dict_items([('DESCRIPTION', 'Dell PowerEdge 2950 (Hammer)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '750W 110v/22
+0V'), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', '5M29TB1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA'
+, 'Suite 3310'), ('RM', 'Server Rm. 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI pose
+ssion?', 'Yes'), ('In DD1149 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', 'FTI CHE server room, Rack #1'), ('Comments',
+ ''), ('Model', ''), ('QTY', '1'), ('Location Found', 'Dell rack'), ('Confirmed?', '')])                                                           
+dict_items([('DESCRIPTION', 'Dell PowerEdge 2950 (Nixie)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '750W 110v/220
+V'), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', '90DM9F1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA',
+ 'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI poses
+sion?', 'No'), ('In DD1149 from Mantech?', 'Yes'), ("Recommend return to Gov't", ''), ('New location', ''), ('Comments', ''), ('Model', ''), ('QTY'
+, '1'), ('Location Found', 'Dell rack'), ('Confirmed?', '')])            
+dict_items([('DESCRIPTION', 'Dell PowerEdge 2950 (Snipe)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '750W 110v/220
+V'), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', '80DM9F1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA',
+ 'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI poses
+sion?', 'No'), ('In DD1149 from Mantech?', 'Yes'), ("Recommend return to Gov't", ''), ('New location', ''), ('Comments', ''), ('Model', ''), ('QTY'
+, '1'), ('Location Found', 'Dell rack'), ('Confirmed?', '')])            
+dict_items([('DESCRIPTION', 'HP Proliant DL380 (USSMiner)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '800W 110v'),
+ ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', 'EAH1LDN42G'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 
+'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posess
+ion?', 'Yes'), ('In DD1149 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', 'FTI CHE server room, Rack #1'), ('Comments', '
+'), ('Model', ''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])                                                                       
+dict_items([('DESCRIPTION', 'HP Proliant DL380 (USSMountie)'), ('TYPE', 'Server - Blade'), ('SOURCE', "Mike Ihrig's garage"), ('Power', '800W 110v'
+), ('Rack Mount?', 'Yes'), ('Rack Height / Form factor (u)', '2'), ('SERIAL NUMBER', 'EV00LDND32'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA'
+, 'Suite 3310'), ('RM', 'Server Rm, 1'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI pose
+ssion?', 'Yes'), ('In DD1149 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', 'FTI CHE server room, floor'), ('Comments', '
+'), ('Model', ''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])                                                                       
+dict_items([('DESCRIPTION', 'Dell Optiplex'), ('TYPE', 'Desktop Computer'), ('SOURCE', "Mike Ihrig's garage"), ('Power', ''), ('Rack Mount?', 'N/A'
+), ('Rack Height / Form factor (u)', ''), ('SERIAL NUMBER', '1NS3S91'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 'Suite 3310'), ('RM', 'Sec
+ure Rm,'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posession?', 'Yes'), ('In DD1149 f
+rom Mantech?', ''), ("Recommend return to Gov't", 'Yes, was used in secure room'), ('New location', 'FTI CHE office'), ('Comments', ''), ('Model', 
+''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])           
+dict_items([('DESCRIPTION', 'Dell Optiplex'), ('TYPE', 'Desktop Computer'), ('SOURCE', "Mike Ihrig's garage"), ('Power', ''), ('Rack Mount?', 'N/A'
+), ('Rack Height / Form factor (u)', ''), ('SERIAL NUMBER', 'GMS3S91'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 'Suite 3310'), ('RM', 'Sec
+ure Rm,'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posession?', 'Yes'), ('In DD1149 f
+rom Mantech?', ''), ("Recommend return to Gov't", 'Yes, was used in secure room'), ('New location', 'FTI CHE office'), ('Comments', ''), ('Model', 
+''), ('QTY', ''), ('Location Found', ''), ('Confirmed?', '')])           
+dict_items([('DESCRIPTION', 'Dell Precision 390'), ('TYPE', 'Desktop Computer'), ('SOURCE', "Mike Ihrig's garage"), ('Power', ''), ('Rack Mount?', 
+'N/A'), ('Rack Height / Form factor (u)', ''), ('SERIAL NUMBER', 'G68X3F1'), ('PART #', ''), ('GFE ASSET ID #', ''), ('AREA', 'Suite 3310'), ('RM',
+ 'Secure Rm,'), ('PROJECT', 'MRAS'), ('EXCESS', 'A'), ('HDD Barcode Number', ''), ('CONDITION\nCODES', '4'), ('In FTI posession?', 'No'), ('In DD11
+49 from Mantech?', ''), ("Recommend return to Gov't", ''), ('New location', ''), ('Comments', ''), ('Model', ''), ('QTY', ''), ('Location Found', '
+'), ('Confirmed?', '')])            
+>>> for row in csv_reader:          
+...     print(row.items())          
+KeyboardInterrupt                   
+>>> csv_reader.fieldnames()         
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    csv_reader.fieldnames()         
+TypeError: 'list' object is not callable                                 
+>>> csv_reader.fieldnames           
+['DESCRIPTION', 'TYPE', 'SOURCE', 'Power', 'Rack Mount?', 'Rack Height / Form factor (u)', 'SERIAL NUMBER', 'PART #', 'GFE ASSET ID #', 'AREA', 'RM
+', 'PROJECT', 'EXCESS', 'HDD Barcode Number', 'CONDITION\nCODES', 'In FTI posession?', 'In DD1149 from Mantech?', "Recommend return to Gov't", 'New
+ location', 'Comments', 'Model', 'QTY', 'Location Found', 'Comments', 'Confirmed?']                                                                
+>>> csv_reader                      
+<csv.DictReader object at 0x7f7684c2ec50>                                
+>>> csv_reader.restkey              
+>>> csv_reader.restkey()                                                 
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    csv_reader.restkey()                                                 
+TypeError: 'NoneType' object is not callable                             
+>>> print(row)                                                           
+{'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height / Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS',                                   
+ 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                                     
+>>> row                                                                  
+{'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height / Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS',                                   
+ 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                                     
+>>> row[0]                                                               
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    row[0]                                                               
+KeyError: 0                                                              
+>>> fdf_data = ""                                                        
+>>> for row in csv_reader:                                               
+...     for key, value in row.items():                                   
+...         fdf_data += f"{key}={value}\n"                               
+...     fdf_data += "\n"                                                 
+...                                                                      
+...                                                                      
+>>> fdf_datq                                                             
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    fdf_datq                                                             
+NameError: name 'fdf_datq' is not defined                                
+>>> fdf_data                                                             
+''                                                                       
+>>> csv_reader = csv.DictReader(csv_file)                                
+KeyboardInterrupt                                                        
+>>> csv_file = open('test.csv', 'r')                                     
+>>> csv_file                                                             
+<_io.TextIOWrapper name='test.csv' mode='r' encoding='UTF-8'>            
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:                                               
+...     print(len(row.items()))                                          
+...                                                                      
+...                                                                      
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+>>> for row in csv_reader:                                               
+...     for key, value in row.items():                                   
+...         print(f"{key}={value}\n")                                    
+24                                                                       
+24                                                                       
+24                                                                       
+24                                                                       
+>>> for row in csv_reader:                                               
+...     for key, value in row.items():                                   
+...         print(f"{key}={value}\n")                                    
+...     print("\n")                                                      
+...                                                                      
+...                                                                      
+>>> csv_reader                                                           
+<csv.DictReader object at 0x7f7684afc8b0>                                
+>>> csv_reader.reader                                                    
+<_csv.reader object at 0x7f7684bfa880>                                                                                                             >>> csv_reader.reader()                                                                                                                            Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                                                                                              
+    csv_reader.reader()                                                  
+TypeError: '_csv.reader' object is not callable                          
+>>> csv_reader.fieldnames                                                                                                                          ['DESCRIPTION', 'TYPE', 'SOURCE', 'Power', 'Rack Mount?', 'Rack Height / Form factor (u)', 'SERIAL NUMBER', 'PART #', 'GFE ASSET ID #', 'AREA', 'RM
+location', 'Comments', 'Model', 'QTY', 'Location Found', 'Comments', 'Confirmed?']                                                                 >>> for row in csv_reader:                                                                                                                         
+...     print(f"Row: {row})                                                                                                                          File "<input>", line 2                                                                                                                           
+    print(f"Row: {row})                                                                                                                                      ^                                                                                                                                        
+SyntaxError: incomplete input                                                                                                                      >>> for row in csv_reader:                                                                                                                         
+...     print(f"Row: {row}")                                             
+...                                                                      
+...                                                                      
+>>> csv_reader = csv.DictReader(csv_file)                                
+KeyboardInterrupt                                                        
+>>> csv_file                                                             
+<_io.TextIOWrapper name='test.csv' mode='r' encoding='UTF-8'>            
+>>> with open('output_populated.pdf', 'wb') as output_pdf:               
+KeyboardInterrupt                                                                                                                                  
+>>> open('list.csv','r') as csv_file                                                                                                               
+KeyboardInterrupt                                                                                                                                  
+>>> csv_file                                                                                                                                       
+KeyboardInterrupt                   
+>>> csv_file = open('test.csv', 'r')
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:          
+...     print("Row:", row)          
+...                                 
+...                                 
+Row: {'DESCRIPTION': 'Dell PowerEdge 2950 (Hammer)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '750W 110v/220V', 'Rack Mo
+unt?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': '5M29TB1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Se
+rver Rm. 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mante
+ch?': '', "Recommend return to Gov't": '', 'New location': 'FTI CHE server room, Rack #1', 'Comments': '', 'Model': '', 'QTY': '1', 'Location Found
+': 'Dell rack', 'Confirmed?': ''}   
+Row: {'DESCRIPTION': 'Dell PowerEdge 2950 (Nixie)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '750W 110v/220V', 'Rack Mou
+nt?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': '90DM9F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Ser
+ver Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech
+?': 'Yes', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '1', 'Location Found': 'Dell rack', 'Confirmed?
+': ''}                              
+Row: {'DESCRIPTION': 'Dell PowerEdge 2950 (Snipe)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '750W 110v/220V', 'Rack Mou
+nt?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': '80DM9F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Ser
+ver Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech
+?': 'Yes', "Recommend return to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '1', 'Location Found': 'Dell rack', 'Confirmed?
+': ''}                              
+Row: {'DESCRIPTION': 'HP Proliant DL380 (USSMiner)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '800W 110v', 'Rack Mount?'
+: 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': 'EAH1LDN42G', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Serv
+er Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mantech
+?': '', "Recommend return to Gov't": '', 'New location': 'FTI CHE server room, Rack #1', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': 
+'', 'Confirmed?': ''}               
+Row: {'DESCRIPTION': 'HP Proliant DL380 (USSMountie)', 'TYPE': 'Server - Blade', 'SOURCE': "Mike Ihrig's garage", 'Power': '800W 110v', 'Rack Mount
+?': 'Yes', 'Rack Height / Form factor (u)': '2', 'SERIAL NUMBER': 'EV00LDND32', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Se
+rver Rm, 1', 'PROJECT': 'MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mante
+ch?': '', "Recommend return to Gov't": '', 'New location': 'FTI CHE server room, floor', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': 
+'', 'Confirmed?': ''}               
+Row: {'DESCRIPTION': 'Dell Optiplex', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height 
+/ Form factor (u)': '', 'SERIAL NUMBER': '1NS3S91', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS'
+, 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mantech?': '', "Recommend return to
+ Gov't": 'Yes, was used in secure room', 'New location': 'FTI CHE office', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed
+?': ''}                             
+Row: {'DESCRIPTION': 'Dell Optiplex', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height 
+/ Form factor (u)': '', 'SERIAL NUMBER': 'GMS3S91', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS'
+, 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'Yes', 'In DD1149 from Mantech?': '', "Recommend return to
+ Gov't": 'Yes, was used in secure room', 'New location': 'FTI CHE office', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed
+?': ''}                             
+Row: {'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack He
+ight / Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': '
+MRAS', 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend retur
+n to Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                               
+>>> for row in csv_reader:          
+...     print(row.items())                                               
+...                                 
+...                                 
+>>> for row in csv_reader:          
+...     for key, value in row.items():                                   
+...         print("key:", key)                                           
+...         print("value:", value)  
+...                                 
+...                                 
+...                                 
+>>> row                             
+{'DESCRIPTION': 'Dell Precision 390', 'TYPE': 'Desktop Computer', 'SOURCE': "Mike Ihrig's garage", 'Power': '', 'Rack Mount?': 'N/A', 'Rack Height 
+/ Form factor (u)': '', 'SERIAL NUMBER': 'G68X3F1', 'PART #': '', 'GFE ASSET ID #': '', 'AREA': 'Suite 3310', 'RM': 'Secure Rm,', 'PROJECT': 'MRAS'
+, 'EXCESS': 'A', 'HDD Barcode Number': '', 'CONDITION\nCODES': '4', 'In FTI posession?': 'No', 'In DD1149 from Mantech?': '', "Recommend return to 
+Gov't": '', 'New location': '', 'Comments': '', 'Model': '', 'QTY': '', 'Location Found': '', 'Confirmed?': ''}                                    
+>>> csv_file = open('data.csv', 'r')                                     
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:          
+...     print(row)                  
+...                                 
+...                                 
+{'DOLLARS_2': '1', 'CTS_2': '2', 'Form': '3', '26': '4', '25': '5', '24': '6', '27': '7', '1': '8', '2': '9', '3': '10', '4': '11', 'DOLLARS1': '12
+', 'CTS1': '13', '5': '14', '6': '15', '7': '16', '8': '17', '9': '18', '10': '19', '11': '20', '12': '21', '13': '22', '14': '23', '15': '24', '16
+': '25', '17': '26', '18': '27', '19': '28', '20': '29', '21': '30', '22': '31', '23': '32'}                                                       
+>>> row                             
+{'DOLLARS_2': '1', 'CTS_2': '2', 'Form': '3', '26': '4', '25': '5', '24': '6', '27': '7', '1': '8', '2': '9', '3': '10', '4': '11', 'DOLLARS1': '12
+', 'CTS1': '13', '5': '14', '6': '15', '7': '16', '8': '17', '9': '18', '10': '19', '11': '20', '12': '21', '13': '22', '14': '23', '15': '24', '16
+': '25', '17': '26', '18': '27', '19': '28', '20': '29', '21': '30', '22': '31', '23': '32'}                                                       
+>>> for key, value in row.items():  
+...     print(f'{key}={value}')                                          
+...                                 
+...                                 
+DOLLARS_2=1                         
+CTS_2=2                             
+Form=3                              
+26=4                                
+25=5                                
+24=6                                
+27=7                                
+1=8                                 
+2=9                                 
+3=10                                
+4=11                                
+DOLLARS1=12                         
+CTS1=13                             
+5=14                                
+6=15                                
+7=16                                
+8=17                                
+9=18                                
+10=19                               
+11=20                               
+12=21                               
+13=22                               
+14=23                               
+15=24                               
+16=25                               
+17=26                               
+18=27                               
+19=28                               
+20=29                               
+21=30                               
+22=31                               
+23=32                               
+>>> fdf_data                        
+''                                  
+>>> for key, value in row.items():  
+...     fdf_data += f'{key}={value}\n'                                   
+...                                                                      
+...                                 
+>>> fdf_data                        
+'DOLLARS_2=1\nCTS_2=2\nForm=3\n26=4\n25=5\n24=6\n27=7\n1=8\n2=9\n3=10\n4=11\nDOLLARS1=12\nCTS1=13\n5=14\n6=15\n7=16\n8=17\n9=18\n10=19\n11=20\n12=2
+1\n13=22\n14=23\n15=24\n16=25\n17=26\n18=27\n19=28\n20=29\n21=30\n22=31\n23=32\n'                                                                  
+>>> fdf_data += "\n"                
+>>> fdf_file = open('data.fdf', 'w')
+>>> fdf_file.write(fdf_data)        
+195                                 
+>>> fdf_file.write(fdf_file)        
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    fdf_file.write(fdf_file)        
+TypeError: write() argument must be str, not _io.TextIOWrapper           
+>>> fdf_data                        
+'DOLLARS_2=1\nCTS_2=2\nForm=3\n26=4\n25=5\n24=6\n27=7\n1=8\n2=9\n3=10\n4=11\nDOLLARS1=12\nCTS1=13\n5=14\n6=15\n7=16\n8=17\n9=18\n10=19\n11=20\n12=2
+1\n13=22\n14=23\n15=24\n16=25\n17=26\n18=27\n19=28\n20=29\n21=30\n22=31\n23=32\n\n'                                                                
+>>> fdf_file.write(fdf_data)        
+195                                 
+>>> fdf_file                        
+<_io.TextIOWrapper name='data.fdf' mode='w' encoding='UTF-8'>            
+>>> fdf_file.close()                
+>>>                                 
+KeyboardInterrupt                   
+>>>                                 
+(venv) [~/forms]$                                                                                                                          *[main] 
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> import csv                      
+>>> fdf_content = '''%FDF-1.2                                                                                                                      
+... %âãÏÓ                           
+... 1 0 obj                         
+... << /FDF << /Fields 2 0 R >>     
+... >>                              
+... endobj                          
+... 2 0 obj                         
+... [ '''                           
+>>> fdf_content                     
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ '                                                                   
+>>> csv_file = open('data.csv', 'r')                                     
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:          
+...     for key, value in row.items():                                   
+...         fdf_content += f"<< /T ({key}) /V ({value}) >>\n"            
+...                                                                      
+...                                 
+...                                 
+>>> fdf_content                     
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ << /T (DOLLARS_2) /V (1) >>\n<< /T (CTS_2) /V (2) >>\n<< /T (Form) /
+V (3) >>\n<< /T (26) /V (4) >>\n<< /T (25) /V (5) >>\n<< /T (24) /V (6) >>\n<< /T (27) /V (7) >>\n<< /T (1) /V (8) >>\n<< /T (2) /V (9) >>\n<< /T (
+3) /V (10) >>\n<< /T (4) /V (11) >>\n<< /T (DOLLARS1) /V (12) >>\n<< /T (CTS1) /V (13) >>\n<< /T (5) /V (14) >>\n<< /T (6) /V (15) >>\n<< /T (7) /V
+ (16) >>\n<< /T (8) /V (17) >>\n<< /T (9) /V (18) >>\n<< /T (10) /V (19) >>\n<< /T (11) /V (20) >>\n<< /T (12) /V (21) >>\n<< /T (13) /V (22) >>\n<
+< /T (14) /V (23) >>\n<< /T (15) /V (24) >>\n<< /T (16) /V (25) >>\n<< /T (17) /V (26) >>\n<< /T (18) /V (27) >>\n<< /T (19) /V (28) >>\n<< /T (20)
+ /V (29) >>\n<< /T (21) /V (30) >>\n<< /T (22) /V (31) >>\n<< /T (23) /V (32) >>\n'                                                                
+>>> fdf_content +=                  
+KeyboardInterrupt                   
+>>> fdf_content += ']\nendobj\ntrailer\n<< /Root 1 0 R >>\n%%EOF\n'      
+>>> fdf_content                                                          
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ << /T (DOLLARS_2) /V (1) >>\n<< /T (CTS_2) /V (2) >>\n<< /T (Form) /
+V (3) >>\n<< /T (26) /V (4) >>\n<< /T (25) /V (5) >>\n<< /T (24) /V (6) >>\n<< /T (27) /V (7) >>\n<< /T (1) /V (8) >>\n<< /T (2) /V (9) >>\n<< /T (
+3) /V (10) >>\n<< /T (4) /V (11) >>\n<< /T (DOLLARS1) /V (12) >>\n<< /T (CTS1) /V (13) >>\n<< /T (5) /V (14) >>\n<< /T (6) /V (15) >>\n<< /T (7) /V
+ (16) >>\n<< /T (8) /V (17) >>\n<< /T (9) /V (18) >>\n<< /T (10) /V (19) >>\n<< /T (11) /V (20) >>\n<< /T (12) /V (21) >>\n<< /T (13) /V (22) >>\n<
+< /T (14) /V (23) >>\n<< /T (15) /V (24) >>\n<< /T (16) /V (25) >>\n<< /T (17) /V (26) >>\n<< /T (18) /V (27) >>\n<< /T (19) /V (28) >>\n<< /T (20)
+ /V (29) >>\n<< /T (21) /V (30) >>\n<< /T (22) /V (31) >>\n<< /T (23) /V (32) >>\n]\nendobj\ntrailer\n<< /Root 1 0 R >>\n%%EOF\n'                  
+>>> fdf_file = open('data.fdf', 'w')
+>>> fdf_file.write(fdf_content)     
+818                                 
+>>> fdf_file.close()                
+>>> fdf_file = open('data.fdf', 'w')
+>>> fdf_file.write(fdf_content)     
+818                                 
+>>> fdf_file.close()                
+>>>                                 
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> import tempfile                 
+>>> temp_file = tempfile.NamedTemporaryFile(suffix='.e10c', dir='/tmp')  
+>>> temp_file = tempfile.NamedTemporaryFile(suffix='.e10c', dir='/tmp', del=True)                                                                  
+  File "<input>", line 1            
+    temp_file = tempfile.NamedTemporaryFile(suffix='.e10c', dir='/tmp', del=True)                                                                  
+                                                                        ^^^                                                                        
+SyntaxError: invalid syntax         
+>>> temp_file = tempfile.NamedTemporaryFile(suffix='.e10c', dir='/tmp')                                                                            
+>>> temp_file.close()                                                    
+>>> import csv                      
+>>> csv_file = open('list.csv', 'r')                                     
+>>> csv_file                        
+<_io.TextIOWrapper name='list.csv' mode='r' encoding='UTF-8'>            
+>>> csv_reader = csv.DictReader(csv_file)                                
+>>> for row in csv_reader:          
+KeyboardInterrupt                   
+>>> fdf_content = '''%FDF-1.2                                            
+KeyboardInterrupt                   
+>>> fdf_content = '''%FDF-1.2       
+... %âãÏÓ                           
+... 1 0 obj                         
+... << /FDF << /Fields 2 0 R >>     
+... >>                              
+... endobj                          
+... 2 0 obj                         
+... [ '''                           
+>>> fdf_footer = fdf_content        
+>>> fdf_footer                      
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ '                                                                   
+>>> fdf_header = fdf_footer         
+>>> fdf_footer = ']\nendobj\ntrailer\n<< /Root 1 0 R >>\n%%EOF\n'        
+>>> fdf_content = ''                                                     
+>>> for row in csv_reader:          
+...     fdf_content += f"<< /T ({key}) /V ({value}) >> \n"               
+...                                                                      
+...                                 
+KeyboardInterrupt                   
+>>> for row in csv_reader:          
+...     for key, value in row.items():                                   
+...         fdf_content += f"<< /T ({key}) /V ({value}) >>\n"            
+...                                                                      
+...                                 
+...                                 
+>>> fdf_content = ''                
+>>> for row in csv_reader:                                               
+...     for key, value in row.items():                                   
+...         fdf_content += f"<< /T ({key}) /V ({value}) >>\n"            
+...     with tempfile.NamedTemporaryFile(suffix='.fdf', dir='/tmp') as fdf_file:                                                                   
+...         fdf_file.write(fdf_header + fdf_content + fdf_footer)        
+...                                                                      
+...                                 
+...                                 
+>>> for row in csv_reader:                                                                                                                         
+...     for key, value in row.items():                                                                                                             
+...         fdf_content += f"<< /T ({key}) /V ({value}) >>\n"            
+...     with tempfile.NamedTemporaryFile(suffix='.fdf', dir='/tmp', delete=False) as fdf_file:                                                     
+...         fdf_file.write(fdf_header + fdf_content + fdf_footer)        
+...                                                                      
+...                                 
+...                                 
+>>> for row in csv_reader:                                                                                                                         
+...     for key, value in row.items():                                                                                                             
+...         fdf_content += f"<< /T ({key}) /V ({value}) >>\n"            
+...     with tempfile.NamedTemporaryFile(suffix='.fdf', dir='/tmp', delete=False) as fdf_file:                                                     
+...         fdf_file.write(fdf_header + fdf_content + fdf_footer)        
+...         fdf_file.close()                                             
+...                                 
+...                                 
+...                                 
+>>> temp_file = tempfile.NamedTemporaryFile(suffix='.fdf', dir='/tmp')   
+>>> with open(temp_file, 'wb') as fdf_file:                              
+...     fdf_file.write(fdf_header + fdf_content + fdf_header)            
+...                                                                      
+...                                 
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    with open(temp_file, 'wb') as fdf_file:                              
+TypeError: expected str, bytes or os.PathLike object, not _TemporaryFileWrapper                                                                    
+>>> temp_file.write(                                                     
+KeyboardInterrupt                   
+>>> temp_file.write(fdf_header + fdf_content + fdf_footer)               
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    temp_file.write(fdf_header + fdf_content + fdf_footer)               
+  File "/usr/lib/python3.10/tempfile.py", line 622, in func_wrapper      
+    return func(*args, **kwargs)    
+TypeError: a bytes-like object is required, not 'str'                    
+>>> temp_file.write(bytes(fdf_content, 'ascii'))                         
+0                                   
+>>> temp_file.close()                                                    
+>>> tmep_file =                     
+KeyboardInterrupt                   
+>>> temp_file = tempfile.NamedTemporaryFile(suffix='.fdf', dir='/tmp', delete=False)                                                               
+>>> temp_file.write(bytes(fdf_content, 'ascii'))                                                                                                   
+0                                   
+>>> temp_file.seek(0)                                                    
+0                                   
+>>> fdf_content                     
+''                                  
+>>> fdf_header                      
+'%FDF-1.2\n%âãÏÓ\n1 0 obj\n<< /FDF << /Fields 2 0 R >>\n>>\nendobj\n2 0 obj\n[ '                                                                   
+>>> temp_file.write(bytes(fdf_header, 'ascii'))                          
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    temp_file.write(bytes(fdf_header, 'ascii'))                          
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 10-13: ordinal not in range(128)                                             
+>>> temp_file.write(bytes(fdf_header, 'ascii'))                          
+KeyboardInterrupt                   
+>>> type(fdf_header)                                                     
+<class 'str'>                       
+>>> temp_file.write(bytes(fdf_header, 'utf-8'))                          
+75                                  
+>>> temp_file.seek(0)                                                    
+0                                   
+>>> from barcode import Code39                                           
+>>> from barcode.writer import ImageWriter                               
+>>> data = "V2156000390001"         
+>>> code = Code39(data, writer=ImageWriter(), add_checksum=False)        
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    code = Code39(data, writer=ImageWriter(), add_checksum=False)        
+TypeError: 'NoneType' object is not callable                             
+>>> code = Code39(data, writer=ImageWriter(), add_checksum=False)        
+KeyboardInterrupt                   
+>>> from io import BytesIO                                               
+>>> from barcode import EAN13                                            
+>>> from barcode.writer import SVGWriter                                 
+>>> rv = BytesIO()                  
+>>> with open("somefile.svg", 'wb') as f:                                
+...     EAN13("V2156000390001", writer=SVGWriter()).write(f)             
+...                                                                      
+...                                 
+Traceback (most recent call last):  
+  File "<input>", line 2, in <module>                                    
+    EAN13("V2156000390001", writer=SVGWriter()).write(f)                 
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/barcode/ean.py", line 47, in __init__                                                   
+    raise IllegalCharacterError("EAN code can only contain numbers.")    
+barcode.errors.IllegalCharacterError: EAN code can only contain numbers. 
+>>> with open("somefile.svg", 'wb') as f:                                
+...                                 
+KeyboardInterrupt                   
+>>> with open("somefile.svg", 'wb') as f:                                
+...     Code39("V2156000390001", writer=SVGWriter(), add_checksum=False).write(f)                                                                  
+...                                                                                                                                                
+...                                 
+>>> with open("somefile.png", 'wb') as f:                                
+...     Code39("V2156000390001", writer=ImageWriter(), add_checksum=False).write(f)                                                                
+...                                                                                                                                                
+...                                                                      
+Traceback (most recent call last):                                       
+  File "<input>", line 2, in <module>                                    
+    Code39("V2156000390001", writer=ImageWriter(), add_checksum=False).write(f)                                                                    
+TypeError: 'NoneType' object is not callable                             
+>>> with open("somefile.png", 'wb') as f:                                                                                                          
+...     Code39("V2156000390001", writer=ImageWriter, add_checksum=False).write(f)                                                                  
+...                                                                                                                                                
+...                                                                      
+>>> from barcode import Code39                                           
+>>> c39 = barcode.get_barcode_class('code39')                            
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    c39 = barcode.get_barcode_class('code39')                            
+NameError: name 'barcode' is not defined                                 
+>>> import barcode                  
+>>> c39 = barcode.get_barcode_class('code39')                            
+>>> cd9                                                                  
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    cd9                             
+NameError: name 'cd9' is not defined
+>>> c39                                                                  
+<class 'barcode.codex.Code39'>                                                                                                                     
+>>> my_barcode = c39('V2156000390001', writer=ImageWriter())             
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    my_barcode = c39('V2156000390001', writer=ImageWriter())             
+TypeError: 'NoneType' object is not callable                             
+>>> my_barcode                                                           
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    my_barcode                      
+NameError: name 'my_barcode' is not defined                              
+>>> my_barcode = Code39('V2156000390001', writer=ImageWriter())          
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    my_barcode = Code39('V2156000390001', writer=ImageWriter())          
+TypeError: 'NoneType' object is not callable                             
+>>> my_barcode = Code39('V2156000390001', writer=ImageWriter)            
+>>> my_barcoded                                                          
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    my_barcoded                     
+NameError: name 'my_barcoded' is not defined                             
+>>> my_barcode                      
+<Code39('V2156000390001F')>         
+>>> with open("somefile.png", 'wb') as f:                                
+...     my_barcode.write(f)         
+...                                 
+...                                 
+>>> my_barcode                      
+<Code39('V2156000390001F')>         
+>>> outfile = my_barcode.save('nsn_barcode')                             
+>>> my_barcode = Code39('V2156000390001', writer=ImageWriter(), add_checksum=False)                                                                
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    my_barcode = Code39('V2156000390001', writer=ImageWriter(), add_checksum=False)                                                                
+TypeError: 'NoneType' object is not callable                             
+>>> from barcode.writer import ImageWriter                               
+>>> data = 'V2156000390001'         
+>>> code = Code39(data, writer=ImageWriter(), add_checksum=False)        
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    code = Code39(data, writer=ImageWriter(), add_checksum=False)        
+TypeError: 'NoneType' object is not callable                             
+>>> from barcode.draw import ImageDrawer                                 
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    from barcode.draw import ImageDrawer                                 
+ModuleNotFoundError: No module named 'barcode.draw'                      
+>>> from barcode import generate                                         
+>>> code = Code39(data, add_checksum=False)                              
+>>> generate('Code39', data, writer=ImageWriter(), output=f'nsn_barcode.png')                                                                      
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    generate('Code39', data, writer=ImageWriter(), output=f'nsn_barcode.png')                                                                      
+TypeError: 'NoneType' object is not callable                             
+>>> generate('Code39', data, writer=ImageWriter, output=f'nsn_barcode.png')                                                                        
+'nsn_barcode.png.svg'               
+>>> from io import BytesIO          
+>>> from barcode import Code39      
+>>> from barcode.writer import ImageWriter                               
+>>> rv = BytesIO()                  
+>>> with open("somefile.png", 'wb') as f:                                
+...     Code39(data, writer=ImageWriter()).write(f)                                                                                                
+...                                                                      
+...                                 
+Traceback (most recent call last):  
+  File "<input>", line 2, in <module>                                    
+    Code39(data, writer=ImageWriter()).write(f)                          
+TypeError: 'NoneType' object is not callable                             
+>>> with open("somefile.png", 'wb') as f:                                
+...     Code39(data, writer=ImageWriter.write(f)                         
+...                                                                      
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+KeyboardInterrupt                   
+>>>     Code39(data, writer=ImageWriter).write(f)                        
+  File "<bpython-input-150>", line 1
+    Code39(data, writer=ImageWriter).write(f)                            
+IndentationError: unexpected indent 
+>>> with open("somefile.png", 'wb') as f:                                
+...     Code39(data, writer=ImageWriter).write(f)                        
+...                                                                      
+...                                 
+>>> image_writer = ImageWriter()    
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    image_writer = ImageWriter()    
+TypeError: 'NoneType' object is not callable                             
+>>> from barcode.writer import ImageWriter                               
+>>> image_writer = ImageWriter()                                                                                                                   
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    image_writer = ImageWriter()    
+TypeError: 'NoneType' object is not callable                             
+>>>                                 
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> from barcode.writer import ImageWriter                               
+>>> image_writer = ImageWriter()                                                                                                                   
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    image_writer = ImageWriter()    
+TypeError: 'NoneType' object is not callable                             
+>>>                                 
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> from barcode.writer import ImageWriter                               
+>>> image_writer = ImageWriter()                                                                                                                   
+>>> data = 'V2156000390001'         
+>>> code = Code39(data, witer=image_writer, add_checksum=False)          
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    code = Code39(data, witer=image_writer, add_checksum=False)          
+NameError: name 'Code39' is not defined                                  
+>>> from barcode import Code39                                           
+>>> code = Code39(data, witer=image_writer, add_checksum=False)          
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    code = Code39(data, witer=image_writer, add_checksum=False)          
+TypeError: Code39.__init__() got an unexpected keyword argument 'witer'  
+>>> code = Code39(data, writer=image_writer, add_checksum=False)D        
+  File "<input>", line 1            
+    code = Code39(data, writer=image_writer, add_checksum=False)D        
+                                                                ^        
+SyntaxError: incomplete input       
+>>> code = Code39(data, writer=image_writer, add_checksum=False)         
+>>> code                                                                 
+<Code39('V2156000390001')>          
+>>> with open("somefile.png", 'wb') as f:                                
+...     code.write(f)                                                    
+...                                 
+...                                 
+>>> with open('somefile.png', 'rb') as image_file:                       
+...                                 
+KeyboardInterrupt                   
+>>> import base64                   
+>>> with open('somefile.png', 'rb') as image_file:                       
+...     barcode_base64 = base64.b64encode(image_file.read().decode('utf-8'))                                                                       
+...                                                                                                                                                
+...                                 
+Traceback (most recent call last):  
+  File "<input>", line 2, in <module>                                    
+    barcode_base64 = base64.b64encode(image_file.read().decode('utf-8')) 
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte                                                         
+>>> with open('somefile.png', 'rb') as image_file:                                                                                                 
+...     barcode_base64 = base64.b64encode(image_file.read().decode('utf-16')                                                                       
+...                                                                                                                                                
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+...                                 
+KeyboardInterrupt                   
+>>> with open('somefile.png', 'rb') as image_file:                                                                                                 
+...     barcode_base64 = base64.b64encode(image_file.read().decode('utf-16'))                                                                      
+...                                                                                                                                                
+...                                 
+Traceback (most recent call last):  
+  File "<input>", line 2, in <module>                                    
+    barcode_base64 = base64.b64encode(image_file.read().decode('utf-16'))                                                                          
+UnicodeDecodeError: 'utf-16-le' codec can't decode bytes in position 234-235: illegal UTF-16 surrogate                                             
+>>> barcode_base64                  
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    barcode_base64                  
+NameError: name 'barcode_base64' is not defined                          
+>>> image_file                      
+<_io.BufferedReader name='somefile.png'>                                 
+>>> barcode_base64                  
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    barcode_base64                  
+NameError: name 'barcode_base64' is not defined                          
+>>> image_file                      
+<_io.BufferedReader name='somefile.png'>                                 
+    barcode_base64                  
+NameError: name 'barcode_base64' is not defined                          
+>>> image_file                                                           
+<_io.BufferedReader name='somefile.png'>                                 
+>>> barcode_base64                                                       
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    barcode_base64                                                                                                                                 NameError: name 'barcode_base64' is not defined                                                                                                    >>> image_file                      
+<_io.BufferedReader name='somefile.png'>                                                                                                           >>> image_file.close()                                                                                                                             >>> image_file = open('somefile.png', 'rb')                              
+>>> image_file                                                                                                                                     <_io.BufferedReader name='somefile.png'>                                                                                                           >>> barcode_base64 = base64.b64decode(image_file.read())                 
+>>>                                                                                                                                                >>> barcode_base64                                                                                                                                 b"<\xd1\x88\x1c4b\x84\x80\xc0O\x14\xd4\xba\xb7t\xe3\x12\xe2JOd\x8fyb\xad\xf5Z\x001\xab\xf3\x9b,\xcb\xdaZ\x0f\xc0\xc7\x0f\xc0\xc7\x0f\xc6\x8b\x87\xa
+e9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\4QE\x00\x00\x0e\xf9$\x99=\x8b\xa9TU\\\xe7yEU\xc7\x06#S$SZ4\xa2ow\xd0\xbb\xffH\x99\xc3\xb1m\xbf\xbf\xd5\x10\xe8\x9b\x05TP\xd2\xaeV\xe62\xed\n]D\xc3\x12\x0e(\xa2\x91\x05!c\x1c\xbb\xa2\x15\x8a\x1cs\xfet\xe3T\x81\x01\xa4\xbd\x95\x97\x8f\xfb\xe0Rm\xb7\xdd\xec0\xb92\x89\x15}>F\x1e\xe0\xa2\x84*v\x83\
+b\x10\xe9\xf0\x9a\xbdu\xaa\xdc+\xef,\xb2\x7f\xaeK\xf3\xce\xbd\xe9z'\xfd(\xa7\xd5\xc8\xde\x95\xc2\x87\xfc\xa2\xb7\x80\x88!\x9ak\\@\xee\x92S\x9ey\x8d\xcf\xd0\x18\xcc\xcc\xd5\xb9\xbf\xfa\xe7v`d\x10o8\xc8!\x8b\xd3f\xf7Sp\xa2\x8f\xbe\xc1\xaaqi0\xbf\x1b,\xb2I$VA\x04\x11UU$\x9b(\xfd\x17N4\xdaV\xb8]k\
+>>> barcode_base64 = base64.b64decode(image_file.read().decode())        
+>>> barcode_base64 = base64.b64decode(image_file.read().decode())        
+KeyboardInterrupt                                                        
+>>> barcode_base64                                                       
+b''                                                                      
+>>> barcode_base64 = base64.b64decode(image_file.read().decode('utf-8')) 
+>>> barcode_base64                                                       
+b''                                                                      
+>>> image_file                                                           
+<_io.BufferedReader name='somefile.png'>                                 
+>>> image_file.read()                                                    
+b''                                                                      
+>>> image_file.close                                                     
+<built-in method close of _io.BufferedReader object at 0x7f3f267078a0>                                                                             
+>>> image_file.close()              
+>>> image_file = open('somefile.png', 'rb')                              
+>>> image_file                                                           
+<_io.BufferedReader name='somefile.png'>                                 
+>>> barcode_base64 = base64.b64decode(image_file.read())                 
+>>> barcode_base64                                                       
+b"<\xd1\x88\x1c4b\x84\x80\xc0O\x14\xd4\xba\xb7t\xe3\x12\xe2JOd\x8fyb\xad\xf5Z\x001\xab\xf3\x9b,\xcb\xdaZ\x0f\xc0\xc7\x0f\xc0\xc7\x0f\xc6\x8b\x87\xa
+5\xa0F\n/o\xbe\xb2aE\x90*\xd7\xbe:\x0f\x96\xea\x8f\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\
+xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9\x0e\x90\xe9
+\x0e\x90\xe9\x0e\x90\xdc\xfe\x90\xe9\x0e\x90\xe9\x0c\xe1\x91I%\x92KI\xf7\x7f\x0c5\x99ol\xa1\x86%\x19\x95\x19\xae\xba\xca$\x98ze\x92\xf6\x83:%\x88A\
+x04QE\x00\x00\x0e\xf9$\x99=\x8b\xa9TU\\\xe7yEU\xc7\x06#S$SZ4\xa2ow\xd0\xbb\xffH\x99\xc3\xb1m\xbf\xbf\xd5\x10\xe8\x9b\x05TP\xd2\xaeV\xe62\xed\n]D\xc
+3\x0c\xc3\xeb\x91E\x17\xdeM\xd5\xca\xfd\xcc\xe3\xce\x11\x04n\xa5;\xef\xb4\xe8\xaa\xe3h\xde!T\xb3\xf5\t\x13\x1cq\xfavW]u\x96\xbdg\xd6(\xa2\xa0\xa4\x
+a5\x12\x0e(\xa2\x91\x05!c\x1c\xbb\xa2\x15\x8a\x1cs\xfet\xe3T\x81\x01\xa4\xbd\x95\x97\x8f\xfb\xe0Rm\xb7\xdd\xec0\xb92\x89\x15}>F\x1e\xe0\xa2\x84*v\x
+83\tQl\x80\x8d\xe7%Y\x9b\xdc\xc4\x1e}\xba[\xd3\xa3\x0c{t\t\xc2\x9b\x8f\xd3e\x96p\xb2\x85d\xbf\x919\xb0\xbf\x96\xba\xd1E\xf9kN2\xea\x0e[\xdf}\xf8\xd
+9\x9b\x10\xe9\xf0\x9a\xbdu\xaa\xdc+\xef,\xb2\x7f\xaeK\xf3\xce\xbd\xe9z'\xfd(\xa7\xd5\xc8\xde\x95\xc2\x87\xfc\xa2\xb7\x80\x88!\x9ak\\@\xee\x92S\x9ey
+\x8d\x99\xbb\xb5%\xd7\\\xe2br#\xbc*\xe3\x8f\x8d\x94\xa3\xfd\xdd\x99\xd7kup4\x92\xb7<\xf3\x9e8\xe7\x89u\xee\xa2<\xef\xb3\x93\xcf\xef\x0b\xd3\xb7\xc4
+l\xb2\xcf\xd0\x18\xcc\xcc\xd5\xb9\xbf\xfa\xe7v`d\x10o8\xc8!\x8b\xd3f\xf7Sp\xa2\x8f\xbe\xc1\xaaqi0\xbf\x1b,\xb2I$VA\x04\x11UU$\x9b(\xfd\x17N4\xdaV\x
+b8]k\xee\xa9nl\xaa\x8a\xb6\xeb\x90\x86/\x81\x04\x1b\xd8\xf6\xce\xfe\xdfm\x8b\x82h\xe3\xa2\xf2"                                                     
+>>> bytes = image_file.read()       
+>>> bytes                           
+b''                                                                                                                                                
+>>> image_file.seek(0)              
+0                                   
+>>> bytes = image_file.read()       
+>>> byrtes                          
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    byrtes                          
+NameError: name 'byrtes' is not defined                                  
+>>> bytes                           
+b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02\x96\x00\x00\x01\x18\x08\x02\x00\x00\x00i\xc2!h\x00\x00\x19\x9bIDATx\x9c\xed\xdd{TUu\xfe\xff\xf1\x
+a3\x80r\x91@,\xb9d\x920\x06\x81\xe54\x84x\x89\x12\xb3\xd0\xacL\xa9\xc9i\x8dSk\xa59kj\xd9\xa0\x953\x93\xd3\\\xd4\xa6\x9al.\xacirf\xba\xab\xd3\x8c\x9
+a\xa3V\xa8\xa3\x85a\xa6\xa2\xa0\x08(\x17A\x85D.\x01G\xe5r8\\~\x7f\x9c5\x9f\xdf\xfe\x9es\xd8\x1c`sy\xc3\xf3\xf1\xd7\x86\xfd9\xef\xbd\xf7\xe7p\xce\x8
+b}\xfb\xeca\xed\xed\xed&\x00\x00 \xcd\xf0\xfe^\x01\x00\x00\xd0\x1dD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11
+\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\xb9\xf7^\xe9a\xc3\x86\x99L&\xa7\x03\xb8\xda\xcd\xb2\xfdh\xc76Wg\x96]\x1d\xd5Rg\x89\x
+fa\x8b\xd0\xfe\xe8\xfa\xba\xb9\xd2\xd2\xe9\xca\xe8o\x85\xfe\xaav\xba\x15=\\b76\xdf\xe9\x12]y\xa1\xce\x9b\xd8\xd5.\xd5\xdf\n\xd7\x97\xe8\xfa"\\YUW\x
+fe\xc0\xba\xbdQ:Kte\xf3]_\xa2+\x9b\xdf\xf3O\xb4\xd3\x95\xe9\x83?\x9b\x1e~\xdb\xf0g\xd3\xa5\r\xd4_\xa2+-\x9d\xae@W\xff\x18\xba\xf1\x9d\xe9\xfa6\xba\
+xd2o\x86`/\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\
+x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88
+p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2
+\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x8
+9\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$
+"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x
+91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00
+D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\
+x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07
+\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00
+\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x
+00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x0
+1\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x
+08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x
+1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\
+x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\
+xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10
+\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x0
+0@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x0
+0\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x86\xb5\x
+b7\xb7\xf7\xf7:\x00\x00\x80.c/\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89
+\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"
+\x1c\x00\x00\x91\xdc\xfb{\x05 O[[\xdb\x91#GRSS\x8f\x1d;\x96\x97\x97WSS\xd3\xd4\xd4\x14\x10\x100n\xdc\xb8\x193f<\xf8\xe0\x83w\xdf}w\x7f\xaf\xa31\xce
+\x9d;\xb7m\xdb\xb6\xd4\xd4\xd4\x0b\x17.\x94\x97\x97[,\x16??\xbf\xd0\xd0\xd0\x98\x98\x98\x84\x84\x84\x84\x84\x84\xc0\xc0@W\xea\x9c9s\xe6\xbd\xf7\xde
+\xdb\xb7o_YY\x99\xd9l\x0e\n\n\n\x0f\x0f\x7f\xe4\x91G\x16-Z\xe4\xe7\xe7\xe7\xfa\xfa\x18U\xa7\x87\xa5Z[[\x0b\n\n\xb2\xb2\xb2rrr\xf2\xf3\xf3KJJ.^\xbch
+6\x9b[ZZ\xfc\xfd\xfd\x83\x83\x83\xa7L\x992g\xce\x9c\x87\x1ez\xc8\xdd\xdd\xd5o\x98\x0b\x17.l\xda\xb4i\xef\xde\xbdEEEUUU^^^AAA7\xdf|\xf3\xc3\x0f?\xfc
+\xe0\x83\x0f\x8e\x1a5\xaa\xcf\xb6\xae\x97J\x19\xb8J\xc0\xff\xd7\x8e\xc1k\xce\x9c9\xea\x8d~\xed\xb5\xd7\\|\xd5\xb4i\xd3\xd4\xab6l\xd8\xa0\x9dUVV\xb6
+z\xf5\xea\xa0\xa0 \xfd?\xaa\xdbn\xbb-##\xc3\x95eUVV\x1e<x\xf0\x9dw\xdeY\xb5j\xd5\x82\x05\x0b\xa2\xa3\xa3===U\x9dy\xf3\xe6\xb9R$<<\xdc\xf5?\xf8\xd4\
+xd4TWj\xd6\xd6\xd6>\xf5\xd4S\xc3\x86\r\xd3)\x15\x11\x11\xd1i\x1d\x8b\xc5\xb2b\xc5\x8a\x8e\xea\x8c\x193f\xe7\xce\x9d\xae\xac\x8fQu\x0c)\xf5\xe1\x87\
+x1f\xba\xd2\xd5\xd7_\x7f\xfd\xd6\xad[;]\x1f\xab\xd5\xfa\xc2\x0b/\x8c\x1c9\xb2\xa3:\xc1\xc1\xc1\x9f|\xf2I\x9fm\x9d\xe1\xa5\x8c\xaac\xc8\x87\x05\x83\
+x0c\x11>\x98\xa5\xa4\xa4\xa8Oxbb\xa2+/1\x9b\xcd\xda=\xa7\xd2\xd2R\xed\xdc\xc4\xc4D\xfdom\xc5\xc3\xc3\xe3\xddw\xdf\xd5_VUU\x95~\x91\xfe\x8a\xf0\xfc\
+xfc\xfc\x90\x90\x90NKu\x1a\xe1V\xabu\xd6\xacY\x9d\xd6y\xf3\xcd7\xfb\xa6\x8eQ\xa5\\\x8cp\x9b\xe4\xe4d\x9dRMMM\xf7\xddw\x9f+uRRR\xfaf\xeb\x8c-eT\x1d\
+xa3>,\x18d\x88\xf0\xc1\xac\xb8\xb8X}\xc2\xbd\xbd\xbd-\x16K\xa7/\xd9\xb1c\x87z\xc9\xe4\xc9\x93\xed\xe6j#<..\xee\xe5\x97_>z\xf4hEE\x85\xc5b)--\xdd\xb
+8q\xe3\xe4\xc9\x93U\x03777\xfd\x9d\xa7\x81\x19\xe1\x17.\\\xb8\xe1\x86\x1bT\xfb\x1bo\xbcq\xdd\xbau\'N\x9c\xf8\xf6\xdbo\x9b\x9a\x9a\xce\x9f?\xff\xcf\
+x7f\xfe3))i\xf8\xf0\xe1\x9dF\xf8\xf2\xe5\xcbU\x1d??\xbf\xd7^{\xed\xdc\xb9s\xf5\xf5\xf5\x99\x99\x99?\xfa\xd1\x8f\xd4,\x0f\x0f\x8f/\xbf\xfc\xb2\x0f\x
+ea\x18UJExxx\xf8\xca\x95+\xb7n\xddZXXXWW\xd7\xdc\xdc|\xe9\xd2\xa5]\xbbv\xdd\x7f\xff\xfd\xda>\x7f\xf5\xd5W;*\xf5\xec\xb3\xcf\xaaf\xee\xee\xee\xc9\xc
+9\xc9\x99\x99\x99W\xaf^\xad\xab\xabKKK[\xb0`\x81\x9a\xeb\xe6\xe6\xb6g\xcf\x9e\xbe\xe9p\x03K\x19U\x87\x08\x87SD\xf8 \x17\x19\x19\xa9>\xe4iii\x9d\xb6
+\xd7~\xe3\xfc\xfc\xe7?\xb7\x9bk\x8b\xf0\x05\x0b\x16\x1c>|\xd8\xe9\xcb\x9b\x9b\x9b\x1f}\xf4QU\xe1\xfa\xeb\xaf\xaf\xaf\xaf\xefhY\xd5\xd5\xd5\xd7^{\xe
+d\xf4\xe9\xd3\x9fx\xe2\x89\x97_~y\xeb\xd6\xad\xd9\xd9\xd9\x9b7o\xee\xea\xb7\x92\x8a\xf0\xe8\xe8hW\xda\xebKHHP+\xb0d\xc9\x92\x8e\xd6\xff\xf4\xe9\xd3
+O>\xf9\xa4N\x9d\xac\xac,Ug\xd4\xa8QG\x8f\x1e\xb5k\xb0v\xedZ\xd5 **\xaa\xad\xad\xadW\xeb\x18Xj\xcb\x96-\x8b\x17/v|\xb9\xd6\x9f\xff\xfcgU\xca\xcb\xcb
+\xeb\xfc\xf9\xf3\x8em233\xd5\xe1eww\xf7\xcf>\xfb\xcc\xb1\xcd\xbau\xebT\x9d\xd0\xd0\xd0\xa6\xa6\xa6\xde\xde:\x03K\x19\xb8JF}X0\xc8\x10\xe1\x83\xdc\x
+ca\x95+\xd5\x87|\xf5\xea\xd5\x9d\xb6\x8f\x8a\x8aR\xed\x0f\x1e<h7\xf7\xd9g\x9f\xdd\xb7o\x9f~\x85\x86\x86\x86\x1bo\xbcQ\x15q\xe5\xa0\xa5\xd6\xf6\xed\
+xdb\xbb\xfa\xadd`\x84o\xdb\xb6M-\xfd\xb1\xc7\x1e\xd3\xf9J\xed\xd4\xc2\x85\x0bU\xa9W^y\xc5\xb1A[[[\\\\\x9cj\xb3e\xcb\x96^\xadcl)W\xcc\x9f?_\x95Z\xbb
+v\xadc\x83\'\x9exB5\xd09\xde\xae=\xf6\xf3\xde{\xefu\xd4l\x00vTowx7>,\x18d\x88\xf0An\xff\xfe\xfd\xeaC>m\xda4\xfd\xc6\x17/^T\x8d\x03\x02\x02ZZZ\xba\x
+b7\xd0\xdf\xfd\xeew\xaa\xce\xdc\xb9s\xbb\xf4\xda\xfe\x8d\xf0[o\xbd\xd5V\xea\xdak\xaf\xad\xab\xab\xebv\x9d\x8a\x8a\n\xb5\x7f\xe9\xeb\xeb\xdb\xd0\xd0
+\xe0\xb4\xd9\xae]\xbb\xd4\xc6\xce\x9a5\xab\xf7\xea\x18[\xcaE\x1f\x7f\xfc\xb1*5s\xe6L\xbb\xb9\xad\xad\xad\xda+\xb1\x9d\xee\xa6\xdb|\xf5\xd5W}\xb9u\x
+03\xf0\xbd\xeb\x08\x11\x0e\xee\x0b\x1f\xe4\xe2\xe3\xe3\xaf\xb9\xe6\x1a\xdbtFF\xc6\x95+Wt\x1a\xef\xdb\xb7OM\'&&\xba\xb9\xb9uo\xa1\xd3\xa7OW\xd3999\x
+dd+\xd2\xf7N\x9f>\x9d\x9d\x9dm\x9b^\xb1bEOn\xf5\xd9\xbd{w{{\xbbm\xfa\xa1\x87\x1e\xf2\xf2\xf2r\xda,11q\xf4\xe8\xd1\xb6\xe9\xf4\xf4t\xc7w\xc7\xa8:\xc
+6\x96r\xd1\xcd7\xdf\xac\xa6\xbf\xf9\xe6\x1b\xbb\xb9yyyf\xb3\xd96\x1d\x15\x155~\xfc\xf8\x8e\xeaL\x9f>=88\xd86}\xe0\xc0\x81\xde\xde\xba\x01\xf8\xde\x
+01\x1d!\xc2\x079\x0f\x0f\x8f{\xee\xb9\xc76\xdd\xd2\xd2\x92\x96\x96\xa6\xd3X\xbb\xcb>o\xde\xbcn/\xf4\xba\xeb\xaeS\xd3\x95\x95\x95\xdd\xae\xd3\xc7\xf
+e\xfd\xef\x7f\xabi\xed\x19\xfdn\xd8\xbd{\xb7\x9a\xd6\x9e\\\xb7\xe3\xe1\xe11c\xc6\x0c\xdb\xb4\xd5j\xd5\xfe\x0bel\x1dcK\xb9H\xfb/`KK\x8b\xdd\xdc3g\xc
+e\xa8\xe9I\x93&\xe9\x97\xfa\xde\xf7\xbeg\x9bhmm=t\xe8\x90c\x83\x01\xd8Q}\xdf\xe1\x18\x82\x88\xf0\xc1O{\xd3\x8e6\xa4\x1d\xa9\xb9\xc3\x87\x0f\xd7\xde
+S\xdeU555jZ\x1d\x03\x18\xf8\xd2\xd3\xd3m\x137\xddtSXXXOJi\xafc\x8a\x89\x89\xd1i\x19\x1b\x1b\xab\xa6O\x9c8\xd1Ku\x8c-\xe5\xa2\xd3\xa7O\xab\xe9\xd0\x
+d0P\xbb\xb9\xb5\xb5\xb5jZ\xfb?\x9fSj/\xdcd2\xa9#%Z\x03\xb0\xa3\xfa\xbe\xc31\x04\x11\xe1\x83\xdf}\xf7\xdd\xa7\xce\xc9\xe9\xfc\x8f\x7f\xe6\xcc\x99\xb
+2\xb22\xdbt\\\\\xdc\x981c\xba\xbdD\xed\x0e\x96\xce\x01\xd2\x81\xe6\xd4\xa9S\xb6\t\xb5S\x98\x95\x95\xb5t\xe9\xd2\x89\x13\'zzz\xfa\xfa\xfa\x86\x85\x8
+5-\\\xb8\xf0\xed\xb7\xdfnjj\xd2\xa9\xd3\xd6\xd6\xa6\xbd\x9d\xef\xa6\x9bn\xd2i\xac\x9d[XX\xd8\x1bu\x8c-\xe5\xba\xbf\xfd\xedojz\xee\xdc\xb9vs\xeb\xeb
+\xeb\xd5\xb4\xb7\xb7\xb7~)\x1f\x1f\x1f5]PP`7w\x00vT\xbft8\x86 "|\xf0\x0b\n\nR\xc7!sss/]\xba\xe4\xb4\x99QG\xd1M&\x93\xf6*\x9b{\xef\xbd\xb7\'\xa5\xba
+\xa4\xba\xbaz\xc9\x92%\x93&M\n\x08\x08\x181b\x84m\xc3\x97/_\xae=+\xd9\x91\xaa\xaa*u\xcc?""\xc2d2\xadY\xb3&&&\xe6\x1f\xff\xf8GQQ\x91\xc5b\xb9z\xf5jI
+I\xc9\xf6\xed\xdb\x97,Y\x12\x11\x11\xf1\xe9\xa7\x9fvT\xea\xfc\xf9\xf3\xcd\xcd\xcd\xb6\xe9\x80\x80\x00\xed\x10Z\x8e\xb4\xfb\x97v\xe1dT\x1dcK\xb9\xa2
+\xbd\xbd\xfd\xb7\xbf\xfd\xad\xea\xa2\xa0\xa0\xa0\xa5K\x97\xda\xb5\xd1\x8e\x99\xda\xd8\xd8\xa8_P\x9b\xf7\xa5\xa5\xa5vs\x07`G\xf5q\x87c\xc8"\xc2\x87\
+x04W\x8e\xa5kw\xd0{\x12\xe1\x85\x85\x85\xda\xb3\x80\x8b\x16-\xeav\xa9\xae\xaa\xa8\xa8x\xfb\xed\xb7ssskkk\xadVkEEEVVVJJ\xca\xdc\xb9so\xbb\xed\xb6/\x
+bf\xfcR\xe7\xb5\xea\x08\x84\xc9d\xf2\xf7\xf7ONN~\xe9\xa5\x97:\n\xfe\x0b\x17.\xcc\x9f?\xff\x83\x0f>p:W{\xfa_\xfb\xed\xec\x94\xb6\x81\xddu\x03F\xd51\
+xb6\x94\x0e\x8b\xc5r\xee\xdc\xb9\x8d\x1b7\xdeq\xc7\x1d\xbf\xfa\xd5\xafl\xbf\xf4\xf5\xf5\xdd\xbau\xab\xbabK\xd1\xfe\xa6\xd3qK\xca\xcb\xcb\xd5tuu\xb5
+\xdd\xdc\x01\xd8Q}\xd3\xe1\x00\x11>$h#\xd9i\x84\xb7\xb6\xb6\xaa+\xddBBB\xbe\xfb\xdd\xefv{Y\xc9\xc9\xc9\xad\xad\xad\xb6\xe99s\xe6\xa8\xdb\xb4\xfa\xd
+7\xc9\x93\'\xef\xbe\xfb\xee7\xdf|\xb3\xa3\x06\xda+\x81322\xfe\xf4\xa7?\x99L&\x7f\x7f\xff\xdf\xff\xfe\xf7g\xcf\x9emjj\xaa\xa8\xa8\xf8\xf8\xe3\x8fo\x
+bf\xfdv[\x9b\xd6\xd6\xd6\xa5K\x97:=/\xdb\xa5C\xc4\xda\x06\xda\x17\x1aX\xc7\xd8Rv.]\xba4\xec\x7f<==\'L\x98\xb0x\xf1bu\xc5\xd9\xbd\xf7\xde{\xfc\xf8qu
+\xb9\x96\x96\xf6z\xf5\xbc\xbc<\xfd\xa5h\xcf+\xab\xeb\xd8\x9d\xae\xe4\x00\xe9\xa8\xde\xebp@\x8b\x08\x1f\x12bcc\xd5\x15CN#\xfc\xd8\xb1cuuu\xb6i\x17\x
+c7\xacv\xea\x83\x0f>P\x87OG\x8c\x18\xf1\xc6\x1bot\xbb\x94\xeb\x82\x83\x83\x17-Z\xb4a\xc3\x86\xc3\x87\x0f\x17\x16\x16\xd6\xd6\xd6Z,\x96\xf2\xf2\xf2\
+xd4\xd4\xd4\xa7\x9ezJ=?\xa3\xa5\xa5\xe5\x99g\x9e\xd1\x0e\xde\xa2\xa5\x8dp\xdb\xc39BBB233\x9f{\xee\xb9\xb0\xb0\xb0\x91#G\x8e\x1d;\xd66,\x9d\x1a\xf5\
+xb3\xb9\xb9\xf9\'?\xf9\x89c)\xed\xb7\xb0\xf6\xe9\x1d\xef\xbc\xf3Nxx\xb8\x8f\x8fOBB\x82:\xef\xae=\xc4\xaa\x13\x03=\xa9cl)\x17\x05\x04\x04l\xde\xbcy\
+xcf\x9e=\x13\'Nt\xda 22R]\xea\x98\x93\x93\xe3x\xd7\x99\xf2\xf5\xd7_kG,\xb0X,v\r\x06`G\xf5}\x87c\x88\xea\xaf\x1b\xd2\xd1\xc7\x16/^\xac\xde\xf4\x82\x
+82\x02\xbb\xb9\xdaa,\xb7o\xdf\xde\xbdE\x14\x14\x14\xf8\xfa\xfa\xaa::#c\xeb0|\xb4\x8a\x82\x82\x82\xe8\xe8hU\xd3\xd7\xd7\xb7\xaa\xaa\xca\xb1\x99\xf6\
+x8e2\x9b\xff\xfe\xf7\xbfN\x0b\xd6\xd6\xd6j\xaf\xf5\xcb\xcc\xcc\xd4)\xa5\x06\xeb\xb0\xbb\xd28,,\xcc\xf6{\xbb}J\xedxpF\xd51\xb6\x94\x1d\xed!nG3g\xce<
+q\xe2DG\xaf}\xfc\xf1\xc7UK\xc7\xd1|\x15\xbbK\xe1BBBz\xa9\xc3\r,\xd5{\x1d\xae\xc5\xd0.`/|\xa8\xd0?\x96\xaeN\x84\x8f\x181b\xf6\xec\xd9\xdd\xa8\x7f\xf
+5\xea\xd5\xa4\xa4$\xb5/;o\xde\xbc\xe7\x9f\x7f\xbe[kj\xb0\x89\x13\'\xee\xdd\xbbW= \xf5\xca\x95+\xaf\xbf\xfe\xbac3\xbbgAN\x9f>\xbd\xa3~\xf0\xf7\xf7\x
+d7f\x8fv\x0c2\x1b\xedN\x95\xba\xa6\xc9\xee\xc6\xe8\xf6\xff\x9deW\rL&\xd3\xc8\x91#\xb5\xabaT\x1dcK\xd9\t\n\nR\xdf&\xf5\xf5\xf5g\xcf\x9e\xfd\xf0\xc3\
+x0f\xef\xbc\xf3N\xdb\xdc\xb4\xb4\xb4\xa9S\xa7vt\xe4\xe3\xe9\xa7\x9fV\xd3o\xbc\xf1\xc6\x17_|\xe1\xd8\xe6\xd5W_MMM\xd5\xfeF{u\xba\xe1[7\x00\xdf;@\x07
+\x11>T$&&\xaa\xa7\x88\xda\xddZ\xd6\xd8\xd8\xa8N^\xdey\xe7\x9d\xdaK\x85]\xd4\xd6\xd6\xf6\xd8c\x8f\xa9\x03\x83\x91\x91\x91\x9b6m\x1a8\xdfD!!!\xbf\xf9
+\xcdo\xd4\x8f\xda\x87C(v\xcf\xabNJJ\xd2)\xa8\xdd/<r\xe4\x88\xdd\\\xed\xa9Mu\xd47&&&%%e\xfc\xf8\xf1^^^\xf1\xf1\xf1j\xffI{\x7f\x9a]8\x19U\xc7\xd8R:\x
+bc\xbd\xbd\xc3\xc2\xc2~\xf8\xc3\x1f\x1e8p\xe0\xef\x7f\xff\xbbmh\x97\xa6\xa6\xa6\x1f\xfc\xe0\x07\xc7\x8e\x1dsl\x1f\x1b\x1b\xbbl\xd92\xb5Vs\xe6\xccy\
+xe1\x85\x17\xb2\xb3\xb3\x1b\x1a\x1a._\xbe\x9c\x9e\x9e\xfe\xf0\xc3\x0f\xff\xecg?3\x99LS\xa6LQ\x8f\x8f\xd3\x1e\xe91|\xeb\x06\xe0{\x07\xe8\xe9\x97}\x7
+f\xf4\x8b\xf8\xf8x\xdb\x9b\x1e\x10\x10\xd0\xda\xda\xaa~\xbfg\xcf\x1e\xf5\xf7\xf0\x87?\xfc\xa1\x1b\x95\xb5\xcf7\xbb\xee\xba\xeb\xce\x9e=\xdb\xed\x95
+\xec\xa5c\x83\r\r\r#F\x8cP\x95\x1dO%\xd8\x8d[\xa7\xffT7\xed\x89\xdbq\xe3\xc6\xd9\xcd\xfd\xfa\xeb\xaf\xd5\xdcN\x87m\xcf\xcf\xcfW\x8do\xb8\xe1\x86\xd
+e\xa8cl)\xd7\xfd\xf1\x8f\x7fTu\xe2\xe2\xe2\x9c\xb6\xb9z\xf5\xea]w\xdd\xa5\xff\x1d\xe5\xeb\xeb\x9b\x93\x93\xa3N^\xdcu\xd7]\xbd\xb7u\x03\xf0\xbd\xd3\
+xc1\x81t\xb0\x17>\x84\xa8c\xe9555\xdaK|\xb5\xc7\xd5\xbbq-[JJ\x8az\xb2\xa4\xb7\xb7\xf7\'\x9f|\xd2\xc3\xa1\xcdz\x83\x97\x97\x97\xf62\xfb\xa2\xa2"\xbb
+\x06v\x03\x84\x85\x84\x84\xe8T\x1b;v\xac\x9aV\x97\x01:\x9d\xab\x7f\xaa\xd8d2io\xd3\xd7\xbe\xd0\xc0:\xc6\x96r\xdd3\xcf<\xa3\xfe\x12\x8e\x1c9r\xf2\xe
+4I\xc76>>>\xbbw\xef^\xb6lYG\x03\xf2\x87\x86\x86~\xf5\xd5WQQQ\xea\x1c\xcd\xb8q\xe3\xec\xda\x0c\xc0\x8e\xea\x97\x0e\xc7\x10D\x84\x0f!\x1d\x9d\x0eW\xc
+7\xd5\xbf\xf3\x9d\xef\xe8\x0f#\xe5h\xc7\x8e\x1d?\xfd\xe9Om\xd3nnn\x1f}\xf4\xd1\x94)Sz\xba\xa2\xbd#00PM;\xde[\xac\x8e\xd3\xda\xe8\xdf\x08\xe4\xee\xe
+e\xae\xceJ8^B\x1c\x1a\x1a\xaa\xf6\xf8kjj\x1c\xaf\xa0\xd6\xd2^kmw\xf1\xb6Qu\x8c-\xe5:777\xed\x9f\\G\xf7\xe5{zz\xbe\xf5\xd6[\xd9\xd9\xd9\xbf\xf8\xc5/
+bcc\x03\x03\x03\xdd\xdd\xdd\xaf\xb9\xe6\x9a\x193f\xac_\xbf>\'\'\xe7\x96[n)))Q\'\x8co\xb9\xe5\x16\xbb\n\x03\xb0\xa3\xfa\xa5\xc31\x04\x11\xe1C\xc8\xa
+4I\x93\xd4p\xa7*\xc2kjj\xd4\x85\xb2]\x1d\xd1\xe5\xc8\x91#\xb6\x87j\xdb~|\xeb\xad\xb7\x1ex\xe0\x01c\xd6\xb5\xcf\xf9\xfa\xfaj3\xbe\xa1\xa1A\xa7qKK\x8
+b\xba4\xc9\xf1\xd2\x01777\xedq\x08\xedaRG\xda\xd1\xb8\xec\xfe\x7f2\xaa\x8e\xb1\xa5\xbad\xc2\x84\tj\xfa\xc2\x85\x0b:-\xa3\xa2\xa2\xd6\xad[w\xf4\xe8\
+xd1K\x97.Y\xadV\xb3\xd9|\xf0\xe0\xc1\x15+V\xd8\xba777W\xb5t\x8c\xf0\x01\xd8Q\xfd\xd5\xe1\x18j\x88\xf0\xa1E\x1d\'OOO\xb7\xed\x19|\xfe\xf9\xe7*\x83\x
+bbt\x14\xbd\xa8\xa8\xe8\x81\x07\x1ePQ\xb7f\xcd\x9a%K\x96\x18\xba\xb2\x06\xd3\x0e\x01\xe6\xf4\xb9\x1a\xda#\xed\xda\x1d#G\xda!\xb4\x1c\xc7\x1d\xb3+u\
+xfc\xf8q\x9dR\x19\x19\x19N_el\x1dcK\xb9N\r\xf2c2\x99\xacVk\xb7\xeb\xa8\xf1\xfe\xdc\xdd\xdd\xe3\xe2\xe2\x1c\x1b\x0c\xc0\x8e\xea\x97\x0e\xc7PC\x84\x0
+f-j?\xbb\xb1\xb1\xd1v\xc5\x8d:\x8a\xee\xe3\xe3\xd3\xe9\x85EJUU\xd5\xdc\xb9sU(>\xfd\xf4\xd3\xabW\xaf6ze\x8d\xd4\xdc\xdc\xac\xbd+\xd7\xe9\xe1\xca;\xe
+e\xb8CM\xeb\x7f\xe7jw\n\xa3\xa2\xa2\x1c\x1bh\x9f\xf3\xe6\xf4^)\x1b\xab\xd5\xaa\xee\x05\xf0\xf0\xf0p\xbc\x8d\xcd\xa8:\xc6\x96r]II\x89\x9a\xd6\x1e\xe
+4\xe8\x12\xab\xd5\xaa\xae\xdb\x9a={\xb6\xd3\x07\xf0\x0c\xc0\x8e\xea\x97\x0e\xc7\x90\xd3\xdf\xd7\xd3\xa1O\xd5\xd7\xd7\xab;V_|\xf1\xc5\xf6\xf6\xf6\xf
+0\xf0p\xdb\x8f\xf3\xe7\xcfw\xbd\x88vO\xe8\xfb\xdf\xff\xbe\xf6\xfa\xf6\x1e\xea\xa5\x8bl7n\xdc\xa8\xcaN\x980\xc1i\x9b\xcc\xccL\xd5f\xc6\x8c\x19:\xd5\
+x92\x93\x93U\xcb_\xff\xfa\xd7\x8e\rl\xc3\x8e\xda\x1a\xf8\xfa\xfa6448\xad\xb3k\xd7.UG\r\x00\xd2\x1bu\x8c-\xe5\xa2\xd6\xd6V\xed\xc1\xe4\xff\xfc\xe7?\
+xdd\xab\xa3.\x964\x99L\xef\xbf\xff\xbe\xd36\x03\xb0\xa3\xfa\xa0\xc3\xb9"\x1dD\xf8\x90\xa3v\x0e\xa6N\x9dz\xee\xdc9\xf5\x15\xb0a\xc3\x06W^\xde\xd2\xd
+2\xa2=e>{\xf6l\x8b\xc5b\xe0\xea\xf5\xc6\xb7Rmm\xad\xf6\xa4\xac\xed\xf9%Ni\xcf\xb3\xee\xdf\xbf\xbf\xa3j\xda\x1d\xc1\xdc\xdc\\\xa7\xcd\x16.\\\xa8\xda
+\xbc\xf2\xca+\x8e\r\xda\xda\xda\xa6N\x9d\xaa\xdal\xd9\xb2\xa5W\xeb\x18[\xca\x15\x7f\xfd\xeb_U)//\xaf\xfa\xfa\xfan\x149s\xe6\x8c:U\x11\x11\x11\xd1\x
+dc\xdc\xdcQ\xcb\x01\xd8Q\xbd\xdd\xe1D8\x88\xf0!\'%%\xc5\xf6\x99wss[\xbf~\xbd\xfa\n(--u\xe5\xe5O>\xf9\xa4zIll\xec\x95+W\x8c]\xbd.}+\x9d={v\xfe\xfc\x
+f9\x87\x0f\x1f\xd6iS^^>m\xda4Us\xcc\x981uuu\x1d5\xde\xb4i\x93j9n\xdc\xb8\x92\x92\x12\xbb\x06---\xda\xef\xe5\xc4\xc4\xc4\x8eJi\xf7\xe9G\x8d\x1a\x95\
+x91\x91a\xd7`\xed\xda\xb5\xaaATTTGG2\x8c\xaacT\xa9\xf4\xf4\xf4\xa4\xa4\xa4\xf4\xf4\xf4\x8e\x96b\xb3i\xd3&\x0f\x0f\x0fUm\xd5\xaaUN\x9b}\xfe\xf9\xe7k
+\xd6\xac\xe9\xe8\xbf\xc0\x8c\x8c\x0c\xed\xf3\xe6?\xfd\xf4S\x9d%\x0e\xb4\x8e2v\x95\x9c"\xc2A\x84\x0f9\xc5\xc5\xc5\xeac\xafnB\x9d<y\xb2+\xaf\xfd\xe5/
+\x7f\xa9^\x1b\x11\x11\xe1t\xb0\xf1\x1e\xea\xd2\xb7Raa\xa1\xadedd\xe4\x8b/\xbe\xb8s\xe7\xce\xe2\xe2b\xb3\xd9l\xb5Z\xab\xaa\xaa\xd2\xd2\xd2\x9e\x7f\x
+fey\xf5,\r\x93\xc9\xe4\xee\xee\xbew\xef^\x9d\x82mmm\xdak\xfaF\x8f\x1e\xbd~\xfd\xfa\xe2\xe2b\x8b\xc5RUU\xb5}\xfb\xf6\xd8\xd8X\xed\x97rQQ\x91N5\xed\x
+887~~~\xaf\xbf\xfe\xfa\xf9\xf3\xe7\xeb\xeb\xeb\xb3\xb2\xb2\xb4C\xb4\xba\xbb\xbb\x1f8p\xa0\x0f\xea\x18RJ\x9d\xd6\x1d?~\xfc\xf2\xe5\xcb7o\xde\x9c\x93
+\x93S]]m\xb5Z\xaf\\\xb9\x92\x9f\x9f\xff\xfe\xfb\xef\xcf\x9c9\xd3\xa4\x11\x1d\x1d}\xf9\xf2e\xa7\xd5l\x83\xa7\x06\x07\x07\xbf\xf4\xd2K\x87\x0e\x1d\xf
+a\xf6\xdbo-\x16KYY\xd9g\x9f}\xf6\xf8\xe3\x8fko\x16\x7f\xee\xb9\xe7\xf47m\xa0u\x94\xe1\xab\xe4\x88\x08\x07\x11>\x14EFF\x9a\xfe/\x9d\x87Lhuo\xf4G\xc7
+\x9d\x0fE\x8d\xaf\xe9\xa2\xc0\xc0@\xed\xcbU\x84\xbb\xc2\xc7\xc7\xe7_\xff\xfaW\xa7\xdbh6\x9b\x1do[r\xe4\xe9\xe9\xb9s\xe7N\xfdRV\xab5!!\xa1\xd3R\x7f\
+xf9\xcb_\xfa\xa6\x8e!\xa5t\xae\xccr*::\xfa\xe2\xc5\x8b\x1dU\xb3\x1b\xff\xbc#\xcb\x96-\xebt\xd3\x06ZG\x19\xbeJ=\xfc\xb0`P"\xc2\x87\xa2\x95+W\xda}\xd
+a\x0f\x1e<\xe8\xca\x0b\xe5F\xf8=\xf7\xdc\x93\x97\x97\xe7b\xff\\\xbe|y\xe9\xd2\xa5:\xd5\xa2\xa3\xa3\x0f\x1d:\xe4J)\x8b\xc5\xa2\x86\xbeq\x14\x10\x10\
+xb0c\xc7\x8e\xbe\xac\xd3\xf3R\xaeG\xb8\x8f\x8f\xcf\xaaU\xab\x1a\x1b\x1bu\xaau\x1a\xe1!!!\xdb\xb6msq\xd3\x06TG\x19^\x87\x08\x87\xa3a\xed\xff{Z\x0e\x
+86\x8e/\xbe\xf8b\xd6\xacY\xea\xc7\x80\x80\x80\xca\xca\xca\x8eF\xb8\xd4\x1a5jT7\x9eg\x9c\x91\x91q\xfb\xed\xb7;\x9d\xf5\xe3\x1f\xffx\xc3\x86\r\xae\x9
+7\n\x0c\x0c\xd4\x8eFi2\x99rss\xd3\xd2\xd2N\x9e<\x99\x9f\x9f_^^^]]\xdd\xd8\xd8\xd8\xdc\xdc\xec\xed\xed\x1d\x10\x100q\xe2\xc4\xf8\xf8\xf8\x05\x0b\x16
+\xdcz\xeb\xad]]\xed\xbc\xbc\xbc\x8f>\xfah\xef\xde\xbd\xdf|\xf3Mee\xa5\xb7\xb7\xf7\xd8\xb1c\xa7N\x9dz\xff\xfd\xf7\'%%\r\x1f\xde\x85\x1b2O\x9f>\xfd\x
+ee\xbb\xef\xee\xdf\xbf\xbf\xac\xac\xccl6\x07\x05\x05\x85\x87\x87?\xf2\xc8#\x8b\x16-\xf2\xf7\xf7\xef\xfb:=)\xd5\xde\xde^\\\\|\xea\xd4\xa9\xec\xec\xe
+cS\xa7N\x95\x96\x96\xd6\xd5\xd5\x99\xcdf\xb3\xd9\xdc\xd2\xd2\xe2\xe7\xe77v\xec\xd8\x98\x98\x98\xf8\xf8\xf8G\x1f}T{\x16\xc3\xa9\xb6\xb6\xb6\xe3\xc7\
+x8f\xef\xdf\xbf\xff\xc0\x81\x03\xa5\xa5\xa5\x95\x95\x95uuu\xa3G\x8f\x0e\n\n\x9a<yrRRRbb\xa2\xf6\xa9_\xbd\xbdu\xbdW\xaa\xe7uz\xfea\xc1\xe0C\x84\x03\
+x00 \x12C\xbb\x00\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x
+03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11
+\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8
+\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\x
+e1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \xd2\xff\x035\xee;\x1eF\xda\x1e\x1d\x00\x00\x00\x00IE
+ND\xaeB`\x82'                       
+>>> bytes                           
+b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02\x96\x00\x00\x01\x18\x08\x02\x00\x00\x00i\xc2!h\x00\x00\x19\x9bIDATx\x9c\xed\xdd{TUu\xfe\xff\xf1\x
+a3\x80r\x91@,\xb9d\x920\x06\x81\xe54\x84x\x89\x12\xb3\xd0\xacL\xa9\xc9i\x8dSk\xa59kj\xd9\xa0\x953\x93\xd3\\\xd4\xa6\x9al.\xacirf\xba\xab\xd3\x8c\x9
+a\xa3V\xa8\xa3\x85a\xa6\xa2\xa0\x08(\x17A\x85D.\x01G\xe5r8\\~\x7f\x9c5\x9f\xdf\xfe\x9es\xd8\x1c`sy\xc3\xf3\xf1\xd7\x86\xfd9\xef\xbd\xf7\xe7p\xce\x8
+b}\xfb\xeca\xed\xed\xed&\x00\x00 \xcd\xf0\xfe^\x01\x00\x00\xd0\x1dD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11
+\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\xb9\xf7^\xe9a\xc3\x86\x99L&\xa7\x03\xb8\xda\xcd\xb2\xfdh\xc76Wg\x96]\x1d\xd5Rg\x89\x
+fa\x8b\xd0\xfe\xe8\xfa\xba\xb9\xd2\xd2\xe9\xca\xe8o\x85\xfe\xaav\xba\x15=\\b76\xdf\xe9\x12]y\xa1\xce\x9b\xd8\xd5.\xd5\xdf\n\xd7\x97\xe8\xfa"\\YUW\x
+fe\xc0\xba\xbdQ:Kte\xf3]_\xa2+\x9b\xdf\xf3O\xb4\xd3\x95\xe9\x83?\x9b\x1e~\xdb\xf0g\xd3\xa5\r\xd4_\xa2+-\x9d\xae@W\xff\x18\xba\xf1\x9d\xe9\xfa6\xba\
+xd2o\x86`/\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\
+x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88
+p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2
+\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x8
+9\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$
+"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x
+91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00
+D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\
+x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07
+\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00
+\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x
+00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x0
+1\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x
+08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x
+1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\
+x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\
+xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10
+\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x0
+0@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x0
+0\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x86\xb5\x
+b7\xb7\xf7\xf7:\x00\x00\x80.c/\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89
+\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"
+\x1c\x00\x00\x91\xdc\xfb{\x05 O[[\xdb\x91#GRSS\x8f\x1d;\x96\x97\x97WSS\xd3\xd4\xd4\x14\x10\x100n\xdc\xb8\x193f<\xf8\xe0\x83w\xdf}w\x7f\xaf\xa31\xce
+\x9d;\xb7m\xdb\xb6\xd4\xd4\xd4\x0b\x17.\x94\x97\x97[,\x16??\xbf\xd0\xd0\xd0\x98\x98\x98\x84\x84\x84\x84\x84\x84\xc0\xc0@W\xea\x9c9s\xe6\xbd\xf7\xde
+\xdb\xb7o_YY\x99\xd9l\x0e\n\n\n\x0f\x0f\x7f\xe4\x91G\x16-Z\xe4\xe7\xe7\xe7\xfa\xfa\x18U\xa7\x87\xa5Z[[\x0b\n\n\xb2\xb2\xb2rrr\xf2\xf3\xf3KJJ.^\xbch
+6\x9b[ZZ\xfc\xfd\xfd\x83\x83\x83\xa7L\x992g\xce\x9c\x87\x1ez\xc8\xdd\xdd\xd5o\x98\x0b\x17.l\xda\xb4i\xef\xde\xbdEEEUUU^^^AAA7\xdf|\xf3\xc3\x0f?\xfc
+\xe0\x83\x0f\x8e\x1a5\xaa\xcf\xb6\xae\x97J\x19\xb8J\xc0\xff\xd7\x8e\xc1k\xce\x9c9\xea\x8d~\xed\xb5\xd7\\|\xd5\xb4i\xd3\xd4\xab6l\xd8\xa0\x9dUVV\xb6
+z\xf5\xea\xa0\xa0 \xfd?\xaa\xdbn\xbb-##\xc3\x95eUVV\x1e<x\xf0\x9dw\xdeY\xb5j\xd5\x82\x05\x0b\xa2\xa3\xa3===U\x9dy\xf3\xe6\xb9R$<<\xdc\xf5?\xf8\xd4\
+xd4TWj\xd6\xd6\xd6>\xf5\xd4S\xc3\x86\r\xd3)\x15\x11\x11\xd1i\x1d\x8b\xc5\xb2b\xc5\x8a\x8e\xea\x8c\x193f\xe7\xce\x9d\xae\xac\x8fQu\x0c)\xf5\xe1\x87\
+x1f\xba\xd2\xd5\xd7_\x7f\xfd\xd6\xad[;]\x1f\xab\xd5\xfa\xc2\x0b/\x8c\x1c9\xb2\xa3:\xc1\xc1\xc1\x9f|\xf2I\x9fm\x9d\xe1\xa5\x8c\xaac\xc8\x87\x05\x83\
+x0c\x11>\x98\xa5\xa4\xa4\xa8Oxbb\xa2+/1\x9b\xcd\xda=\xa7\xd2\xd2R\xed\xdc\xc4\xc4D\xfdom\xc5\xc3\xc3\xe3\xddw\xdf\xd5_VUU\x95~\x91\xfe\x8a\xf0\xfc\
+xfc\xfc\x90\x90\x90NKu\x1a\xe1V\xabu\xd6\xacY\x9d\xd6y\xf3\xcd7\xfb\xa6\x8eQ\xa5\\\x8cp\x9b\xe4\xe4d\x9dRMMM\xf7\xddw\x9f+uRRR\xfaf\xeb\x8c-eT\x1d\
+xa3>,\x18d\x88\xf0\xc1\xac\xb8\xb8X}\xc2\xbd\xbd\xbd-\x16K\xa7/\xd9\xb1c\x87z\xc9\xe4\xc9\x93\xed\xe6j#<..\xee\xe5\x97_>z\xf4hEE\x85\xc5b)--\xdd\xb
+8q\xe3\xe4\xc9\x93U\x03777\xfd\x9d\xa7\x81\x19\xe1\x17.\\\xb8\xe1\x86\x1bT\xfb\x1bo\xbcq\xdd\xbau\'N\x9c\xf8\xf6\xdbo\x9b\x9a\x9a\xce\x9f?\xff\xcf\
+x7f\xfe3))i\xf8\xf0\xe1\x9dF\xf8\xf2\xe5\xcbU\x1d??\xbf\xd7^{\xed\xdc\xb9s\xf5\xf5\xf5\x99\x99\x99?\xfa\xd1\x8f\xd4,\x0f\x0f\x8f/\xbf\xfc\xb2\x0f\x
+ea\x18UJExxx\xf8\xca\x95+\xb7n\xddZXXXWW\xd7\xdc\xdc|\xe9\xd2\xa5]\xbbv\xdd\x7f\xff\xfd\xda>\x7f\xf5\xd5W;*\xf5\xec\xb3\xcf\xaaf\xee\xee\xee\xc9\xc
+9\xc9\x99\x99\x99W\xaf^\xad\xab\xabKKK[\xb0`\x81\x9a\xeb\xe6\xe6\xb6g\xcf\x9e\xbe\xe9p\x03K\x19U\x87\x08\x87SD\xf8 \x17\x19\x19\xa9>\xe4iii\x9d\xb6
+\xd7~\xe3\xfc\xfc\xe7?\xb7\x9bk\x8b\xf0\x05\x0b\x16\x1c>|\xd8\xe9\xcb\x9b\x9b\x9b\x1f}\xf4QU\xe1\xfa\xeb\xaf\xaf\xaf\xaf\xefhY\xd5\xd5\xd5\xd7^{\xe
+d\xf4\xe9\xd3\x9fx\xe2\x89\x97_~y\xeb\xd6\xad\xd9\xd9\xd9\x9b7o\xee\xea\xb7\x92\x8a\xf0\xe8\xe8hW\xda\xebKHHP+\xb0d\xc9\x92\x8e\xd6\xff\xf4\xe9\xd3
+O>\xf9\xa4N\x9d\xac\xac,Ug\xd4\xa8QG\x8f\x1e\xb5k\xb0v\xedZ\xd5 **\xaa\xad\xad\xadW\xeb\x18Xj\xcb\x96-\x8b\x17/v|\xb9\xd6\x9f\xff\xfcgU\xca\xcb\xcb
+\xeb\xfc\xf9\xf3\x8em233\xd5\xe1eww\xf7\xcf>\xfb\xcc\xb1\xcd\xbau\xebT\x9d\xd0\xd0\xd0\xa6\xa6\xa6\xde\xde:\x03K\x19\xb8JF}X0\xc8\x10\xe1\x83\xdc\x
+ca\x95+\xd5\x87|\xf5\xea\xd5\x9d\xb6\x8f\x8a\x8aR\xed\x0f\x1e<h7\xf7\xd9g\x9f\xdd\xb7o\x9f~\x85\x86\x86\x86\x1bo\xbcQ\x15q\xe5\xa0\xa5\xd6\xf6\xed\
+xdb\xbb\xfa\xadd`\x84o\xdb\xb6M-\xfd\xb1\xc7\x1e\xd3\xf9J\xed\xd4\xc2\x85\x0bU\xa9W^y\xc5\xb1A[[[\\\\\x9cj\xb3e\xcb\x96^\xadcl)W\xcc\x9f?_\x95Z\xbb
+v\xadc\x83\'\x9exB5\xd09\xde\xae=\xf6\xf3\xde{\xefu\xd4l\x00vTowx7>,\x18d\x88\xf0An\xff\xfe\xfd\xeaC>m\xda4\xfd\xc6\x17/^T\x8d\x03\x02\x02ZZZ\xba\x
+b7\xd0\xdf\xfd\xeew\xaa\xce\xdc\xb9s\xbb\xf4\xda\xfe\x8d\xf0[o\xbd\xd5V\xea\xdak\xaf\xad\xab\xab\xebv\x9d\x8a\x8a\n\xb5\x7f\xe9\xeb\xeb\xdb\xd0\xd0
+\xe0\xb4\xd9\xae]\xbb\xd4\xc6\xce\x9a5\xab\xf7\xea\x18[\xcaE\x1f\x7f\xfc\xb1*5s\xe6L\xbb\xb9\xad\xad\xad\xda+\xb1\x9d\xee\xa6\xdb|\xf5\xd5W}\xb9u\x
+03\xf0\xbd\xeb\x08\x11\x0e\xee\x0b\x1f\xe4\xe2\xe3\xe3\xaf\xb9\xe6\x1a\xdbtFF\xc6\x95+Wt\x1a\xef\xdb\xb7OM\'&&\xba\xb9\xb9uo\xa1\xd3\xa7OW\xd3999\x
+dd+\xd2\xf7N\x9f>\x9d\x9d\x9dm\x9b^\xb1bEOn\xf5\xd9\xbd{w{{\xbbm\xfa\xa1\x87\x1e\xf2\xf2\xf2r\xda,11q\xf4\xe8\xd1\xb6\xe9\xf4\xf4t\xc7w\xc7\xa8:\xc
+6\x96r\xd1\xcd7\xdf\xac\xa6\xbf\xf9\xe6\x1b\xbb\xb9yyyf\xb3\xd96\x1d\x15\x155~\xfc\xf8\x8e\xeaL\x9f>=88\xd86}\xe0\xc0\x81\xde\xde\xba\x01\xf8\xde\x
+01\x1d!\xc2\x079\x0f\x0f\x8f{\xee\xb9\xc76\xdd\xd2\xd2\x92\x96\x96\xa6\xd3X\xbb\xcb>o\xde\xbcn/\xf4\xba\xeb\xaeS\xd3\x95\x95\x95\xdd\xae\xd3\xc7\xf
+e\xfd\xef\x7f\xabi\xed\x19\xfdn\xd8\xbd{\xb7\x9a\xd6\x9e\\\xb7\xe3\xe1\xe11c\xc6\x0c\xdb\xb4\xd5j\xd5\xfe\x0bel\x1dcK\xb9H\xfb/`KK\x8b\xdd\xdc3g\xc
+e\xa8\xe9I\x93&\xe9\x97\xfa\xde\xf7\xbeg\x9bhmm=t\xe8\x90c\x83\x01\xd8Q}\xdf\xe1\x18\x82\x88\xf0\xc1O{\xd3\x8e6\xa4\x1d\xa9\xb9\xc3\x87\x0f\xd7\xde
+S\xdeU555jZ\x1d\x03\x18\xf8\xd2\xd3\xd3m\x137\xddtSXXXOJi\xafc\x8a\x89\x89\xd1i\x19\x1b\x1b\xab\xa6O\x9c8\xd1Ku\x8c-\xe5\xa2\xd3\xa7O\xab\xe9\xd0\x
+d0P\xbb\xb9\xb5\xb5\xb5jZ\xfb?\x9fSj/\xdcd2\xa9#%Z\x03\xb0\xa3\xfa\xbe\xc31\x04\x11\xe1\x83\xdf}\xf7\xdd\xa7\xce\xc9\xe9\xfc\x8f\x7f\xe6\xcc\x99\xb
+2\xb22\xdbt\\\\\xdc\x981c\xba\xbdD\xed\x0e\x96\xce\x01\xd2\x81\xe6\xd4\xa9S\xb6\t\xb5S\x98\x95\x95\xb5t\xe9\xd2\x89\x13\'zzz\xfa\xfa\xfa\x86\x85\x8
+5-\\\xb8\xf0\xed\xb7\xdfnjj\xd2\xa9\xd3\xd6\xd6\xa6\xbd\x9d\xef\xa6\x9bn\xd2i\xac\x9d[XX\xd8\x1bu\x8c-\xe5\xba\xbf\xfd\xedojz\xee\xdc\xb9vs\xeb\xeb
+\xeb\xd5\xb4\xb7\xb7\xb7~)\x1f\x1f\x1f5]PP`7w\x00vT\xbft8\x86 "|\xf0\x0b\n\nR\xc7!sss/]\xba\xe4\xb4\x99QG\xd1M&\x93\xf6*\x9b{\xef\xbd\xb7\'\xa5\xba
+\xa4\xba\xbaz\xc9\x92%\x93&M\n\x08\x08\x181b\x84m\xc3\x97/_\xae=+\xd9\x91\xaa\xaa*u\xcc?""\xc2d2\xadY\xb3&&&\xe6\x1f\xff\xf8GQQ\x91\xc5b\xb9z\xf5jI
+I\xc9\xf6\xed\xdb\x97,Y\x12\x11\x11\xf1\xe9\xa7\x9fvT\xea\xfc\xf9\xf3\xcd\xcd\xcd\xb6\xe9\x80\x80\x00\xed\x10Z\x8e\xb4\xfb\x97v\xe1dT\x1dcK\xb9\xa2
+\xbd\xbd\xfd\xb7\xbf\xfd\xad\xea\xa2\xa0\xa0\xa0\xa5K\x97\xda\xb5\xd1\x8e\x99\xda\xd8\xd8\xa8_P\x9b\xf7\xa5\xa5\xa5vs\x07`G\xf5q\x87c\xc8"\xc2\x87\
+x04W\x8e\xa5kw\xd0{\x12\xe1\x85\x85\x85\xda\xb3\x80\x8b\x16-\xeav\xa9\xae\xaa\xa8\xa8x\xfb\xed\xb7ssskkk\xadVkEEEVVVJJ\xca\xdc\xb9so\xbb\xed\xb6/\x
+bf\xfcR\xe7\xb5\xea\x08\x84\xc9d\xf2\xf7\xf7ONN~\xe9\xa5\x97:\n\xfe\x0b\x17.\xcc\x9f?\xff\x83\x0f>p:W{\xfa_\xfb\xed\xec\x94\xb6\x81\xddu\x03F\xd51\
+xb6\x94\x0e\x8b\xc5r\xee\xdc\xb9\x8d\x1b7\xdeq\xc7\x1d\xbf\xfa\xd5\xafl\xbf\xf4\xf5\xf5\xdd\xbau\xab\xbabK\xd1\xfe\xa6\xd3qK\xca\xcb\xcb\xd5tuu\xb5
+\xdd\xdc\x01\xd8Q}\xd3\xe1\x00\x11>$h#\xd9i\x84\xb7\xb6\xb6\xaa+\xddBBB\xbe\xfb\xdd\xefv{Y\xc9\xc9\xc9\xad\xad\xad\xb6\xe99s\xe6\xa8\xdb\xb4\xfa\xd
+7\xc9\x93\'\xef\xbe\xfb\xee7\xdf|\xb3\xa3\x06\xda+\x81322\xfe\xf4\xa7?\x99L&\x7f\x7f\xff\xdf\xff\xfe\xf7g\xcf\x9emjj\xaa\xa8\xa8\xf8\xf8\xe3\x8fo\x
+bf\xfdv[\x9b\xd6\xd6\xd6\xa5K\x97:=/\xdb\xa5C\xc4\xda\x06\xda\x17\x1aX\xc7\xd8Rv.]\xba4\xec\x7f<==\'L\x98\xb0x\xf1bu\xc5\xd9\xbd\xf7\xde{\xfc\xf8qu
+\xb9\x96\x96\xf6z\xf5\xbc\xbc<\xfd\xa5h\xcf+\xab\xeb\xd8\x9d\xae\xe4\x00\xe9\xa8\xde\xebp@\x8b\x08\x1f\x12bcc\xd5\x15CN#\xfc\xd8\xb1cuuu\xb6i\x17\x
+c7\xacv\xea\x83\x0f>P\x87OG\x8c\x18\xf1\xc6\x1bot\xbb\x94\xeb\x82\x83\x83\x17-Z\xb4a\xc3\x86\xc3\x87\x0f\x17\x16\x16\xd6\xd6\xd6Z,\x96\xf2\xf2\xf2\
+xd4\xd4\xd4\xa7\x9ezJ=?\xa3\xa5\xa5\xe5\x99g\x9e\xd1\x0e\xde\xa2\xa5\x8dp\xdb\xc39BBB233\x9f{\xee\xb9\xb0\xb0\xb0\x91#G\x8e\x1d;\xd66,\x9d\x1a\xf5\
+xb3\xb9\xb9\xf9\'?\xf9\x89c)\xed\xb7\xb0\xf6\xe9\x1d\xef\xbc\xf3Nxx\xb8\x8f\x8fOBB\x82:\xef\xae=\xc4\xaa\x13\x03=\xa9cl)\x17\x05\x04\x04l\xde\xbcy\
+xcf\x9e=\x13\'Nt\xda 22R]\xea\x98\x93\x93\xe3x\xd7\x99\xf2\xf5\xd7_kG,\xb0X,v\r\x06`G\xf5}\x87c\x88\xea\xaf\x1b\xd2\xd1\xc7\x16/^\xac\xde\xf4\x82\x
+82\x02\xbb\xb9\xdaa,\xb7o\xdf\xde\xbdE\x14\x14\x14\xf8\xfa\xfa\xaa::#c\xeb0|\xb4\x8a\x82\x82\x82\xe8\xe8hU\xd3\xd7\xd7\xb7\xaa\xaa\xca\xb1\x99\xf6\
+x8e2\x9b\xff\xfe\xf7\xbfN\x0b\xd6\xd6\xd6j\xaf\xf5\xcb\xcc\xcc\xd4)\xa5\x06\xeb\xb0\xbb\xd28,,\xcc\xf6{\xbb}J\xedxpF\xd51\xb6\x94\x1d\xed!nG3g\xce<
+q\xe2DG\xaf}\xfc\xf1\xc7UK\xc7\xd1|\x15\xbbK\xe1BBBz\xa9\xc3\r,\xd5{\x1d\xae\xc5\xd0.`/|\xa8\xd0?\x96\xaeN\x84\x8f\x181b\xf6\xec\xd9\xdd\xa8\x7f\xf
+5\xea\xd5\xa4\xa4$\xb5/;o\xde\xbc\xe7\x9f\x7f\xbe[kj\xb0\x89\x13\'\xee\xdd\xbbW= \xf5\xca\x95+\xaf\xbf\xfe\xbac3\xbbgAN\x9f>\xbd\xa3~\xf0\xf7\xf7\x
+d7f\x8fv\x0c2\x1b\xedN\x95\xba\xa6\xc9\xee\xc6\xe8\xf6\xff\x9deW\rL&\xd3\xc8\x91#\xb5\xabaT\x1dcK\xd9\t\n\nR\xdf&\xf5\xf5\xf5g\xcf\x9e\xfd\xf0\xc3\
+x0f\xef\xbc\xf3N\xdb\xdc\xb4\xb4\xb4\xa9S\xa7vt\xe4\xe3\xe9\xa7\x9fV\xd3o\xbc\xf1\xc6\x17_|\xe1\xd8\xe6\xd5W_MMM\xd5\xfeF{u\xba\xe1[7\x00\xdf;@\x07
+\x11>T$&&\xaa\xa7\x88\xda\xddZ\xd6\xd8\xd8\xa8N^\xdey\xe7\x9d\xdaK\x85]\xd4\xd6\xd6\xf6\xd8c\x8f\xa9\x03\x83\x91\x91\x91\x9b6m\x1a8\xdfD!!!\xbf\xf9
+\xcdo\xd4\x8f\xda\x87C(v\xcf\xabNJJ\xd2)\xa8\xdd/<r\xe4\x88\xdd\\\xed\xa9Mu\xd47&&&%%e\xfc\xf8\xf1^^^\xf1\xf1\xf1j\xffI{\x7f\x9a]8\x19U\xc7\xd8R:\x
+bc\xbd\xbd\xc3\xc2\xc2~\xf8\xc3\x1f\x1e8p\xe0\xef\x7f\xff\xbbmh\x97\xa6\xa6\xa6\x1f\xfc\xe0\x07\xc7\x8e\x1dsl\x1f\x1b\x1b\xbbl\xd92\xb5Vs\xe6\xccy\
+xe1\x85\x17\xb2\xb3\xb3\x1b\x1a\x1a._\xbe\x9c\x9e\x9e\xfe\xf0\xc3\x0f\xff\xecg?3\x99LS\xa6LQ\x8f\x8f\xd3\x1e\xe91|\xeb\x06\xe0{\x07\xe8\xe9\x97}\x7
+f\xf4\x8b\xf8\xf8x\xdb\x9b\x1e\x10\x10\xd0\xda\xda\xaa~\xbfg\xcf\x1e\xf5\xf7\xf0\x87?\xfc\xa1\x1b\x95\xb5\xcf7\xbb\xee\xba\xeb\xce\x9e=\xdb\xed\x95
+\xec\xa5c\x83\r\r\r#F\x8cP\x95\x1dO%\xd8\x8d[\xa7\xffT7\xed\x89\xdbq\xe3\xc6\xd9\xcd\xfd\xfa\xeb\xaf\xd5\xdcN\x87m\xcf\xcf\xcfW\x8do\xb8\xe1\x86\xd
+e\xa8cl)\xd7\xfd\xf1\x8f\x7fTu\xe2\xe2\xe2\x9c\xb6\xb9z\xf5\xea]w\xdd\xa5\xff\x1d\xe5\xeb\xeb\x9b\x93\x93\xa3N^\xdcu\xd7]\xbd\xb7u\x03\xf0\xbd\xd3\
+xc1\x81t\xb0\x17>\x84\xa8c\xe9555\xdaK|\xb5\xc7\xd5\xbbq-[JJ\x8az\xb2\xa4\xb7\xb7\xf7\'\x9f|\xd2\xc3\xa1\xcdz\x83\x97\x97\x97\xf62\xfb\xa2\xa2"\xbb
+\x06v\x03\x84\x85\x84\x84\xe8T\x1b;v\xac\x9aV\x97\x01:\x9d\xab\x7f\xaa\xd8d2io\xd3\xd7\xbe\xd0\xc0:\xc6\x96r\xdd3\xcf<\xa3\xfe\x12\x8e\x1c9r\xf2\xe
+4I\xc76>>>\xbbw\xef^\xb6lYG\x03\xf2\x87\x86\x86~\xf5\xd5WQQQ\xea\x1c\xcd\xb8q\xe3\xec\xda\x0c\xc0\x8e\xea\x97\x0e\xc7\x10D\x84\x0f!\x1d\x9d\x0eW\xc
+7\xd5\xbf\xf3\x9d\xef\xe8\x0f#\xe5h\xc7\x8e\x1d?\xfd\xe9Om\xd3nnn\x1f}\xf4\xd1\x94)Sz\xba\xa2\xbd#00PM;\xde[\xac\x8e\xd3\xda\xe8\xdf\x08\xe4\xee\xe
+e\xae\xceJ8^B\x1c\x1a\x1a\xaa\xf6\xf8kjj\x1c\xaf\xa0\xd6\xd2^kmw\xf1\xb6Qu\x8c-\xe5:777\xed\x9f\\G\xf7\xe5{zz\xbe\xf5\xd6[\xd9\xd9\xd9\xbf\xf8\xc5/
+bcc\x03\x03\x03\xdd\xdd\xdd\xaf\xb9\xe6\x9a\x193f\xac_\xbf>\'\'\xe7\x96[n)))Q\'\x8co\xb9\xe5\x16\xbb\n\x03\xb0\xa3\xfa\xa5\xc31\x04\x11\xe1C\xc8\xa
+4I\x93\xd4p\xa7*\xc2kjj\xd4\x85\xb2]\x1d\xd1\xe5\xc8\x91#\xb6\x87j\xdb~|\xeb\xad\xb7\x1ex\xe0\x01c\xd6\xb5\xcf\xf9\xfa\xfaj3\xbe\xa1\xa1A\xa7qKK\x8
+b\xba4\xc9\xf1\xd2\x01777\xedq\x08\xedaRG\xda\xd1\xb8\xec\xfe\x7f2\xaa\x8e\xb1\xa5\xbad\xc2\x84\tj\xfa\xc2\x85\x0b:-\xa3\xa2\xa2\xd6\xad[w\xf4\xe8\
+xd1K\x97.Y\xadV\xb3\xd9|\xf0\xe0\xc1\x15+V\xd8\xba777W\xb5t\x8c\xf0\x01\xd8Q\xfd\xd5\xe1\x18j\x88\xf0\xa1E\x1d\'OOO\xb7\xed\x19|\xfe\xf9\xe7*\x83\x
+bbt\x14\xbd\xa8\xa8\xe8\x81\x07\x1ePQ\xb7f\xcd\x9a%K\x96\x18\xba\xb2\x06\xd3\x0e\x01\xe6\xf4\xb9\x1a\xda#\xed\xda\x1d#G\xda!\xb4\x1c\xc7\x1d\xb3+u\
+xfc\xf8q\x9dR\x19\x19\x19N_el\x1dcK\xb9N\r\xf2c2\x99\xacVk\xb7\xeb\xa8\xf1\xfe\xdc\xdd\xdd\xe3\xe2\xe2\x1c\x1b\x0c\xc0\x8e\xea\x97\x0e\xc7PC\x84\x0
+f-j?\xbb\xb1\xb1\xd1v\xc5\x8d:\x8a\xee\xe3\xe3\xd3\xe9\x85EJUU\xd5\xdc\xb9sU(>\xfd\xf4\xd3\xabW\xaf6ze\x8d\xd4\xdc\xdc\xac\xbd+\xd7\xe9\xe1\xca;\xe
+e\xb8CM\xeb\x7f\xe7jw\n\xa3\xa2\xa2\x1c\x1bh\x9f\xf3\xe6\xf4^)\x1b\xab\xd5\xaa\xee\x05\xf0\xf0\xf0p\xbc\x8d\xcd\xa8:\xc6\x96r]II\x89\x9a\xd6\x1e\xe
+4\xe8\x12\xab\xd5\xaa\xae\xdb\x9a={\xb6\xd3\x07\xf0\x0c\xc0\x8e\xea\x97\x0e\xc7\x90\xd3\xdf\xd7\xd3\xa1O\xd5\xd7\xd7\xab;V_|\xf1\xc5\xf6\xf6\xf6\xf
+0\xf0p\xdb\x8f\xf3\xe7\xcfw\xbd\x88vO\xe8\xfb\xdf\xff\xbe\xf6\xfa\xf6\x1e\xea\xa5\x8bl7n\xdc\xa8\xcaN\x980\xc1i\x9b\xcc\xccL\xd5f\xc6\x8c\x19:\xd5\
+x92\x93\x93U\xcb_\xff\xfa\xd7\x8e\rl\xc3\x8e\xda\x1a\xf8\xfa\xfa6448\xad\xb3k\xd7.UG\r\x00\xd2\x1bu\x8c-\xe5\xa2\xd6\xd6V\xed\xc1\xe4\xff\xfc\xe7?\
+xdd\xab\xa3.\x964\x99L\xef\xbf\xff\xbe\xd36\x03\xb0\xa3\xfa\xa0\xc3\xb9"\x1dD\xf8\x90\xa3v\x0e\xa6N\x9dz\xee\xdc9\xf5\x15\xb0a\xc3\x06W^\xde\xd2\xd
+2\xa2=e>{\xf6l\x8b\xc5b\xe0\xea\xf5\xc6\xb7Rmm\xad\xf6\xa4\xac\xed\xf9%Ni\xcf\xb3\xee\xdf\xbf\xbf\xa3j\xda\x1d\xc1\xdc\xdc\\\xa7\xcd\x16.\\\xa8\xda
+\xbc\xf2\xca+\x8e\r\xda\xda\xda\xa6N\x9d\xaa\xdal\xd9\xb2\xa5W\xeb\x18[\xca\x15\x7f\xfd\xeb_U)//\xaf\xfa\xfa\xfan\x149s\xe6\x8c:U\x11\x11\x11\xd1\x
+dc\xdc\xdcQ\xcb\x01\xd8Q\xbd\xdd\xe1D8\x88\xf0!\'%%\xc5\xf6\x99wss[\xbf~\xbd\xfa\n(--u\xe5\xe5O>\xf9\xa4zIll\xec\x95+W\x8c]\xbd.}+\x9d={v\xfe\xfc\x
+f9\x87\x0f\x1f\xd6iS^^>m\xda4Us\xcc\x981uuu\x1d5\xde\xb4i\x93j9n\xdc\xb8\x92\x92\x12\xbb\x06---\xda\xef\xe5\xc4\xc4\xc4\x8eJi\xf7\xe9G\x8d\x1a\x95\
+x91\x91a\xd7`\xed\xda\xb5\xaaATTTGG2\x8c\xaacT\xa9\xf4\xf4\xf4\xa4\xa4\xa4\xf4\xf4\xf4\x8e\x96b\xb3i\xd3&\x0f\x0f\x0fUm\xd5\xaaUN\x9b}\xfe\xf9\xe7k
+\xd6\xac\xe9\xe8\xbf\xc0\x8c\x8c\x0c\xed\xf3\xe6?\xfd\xf4S\x9d%\x0e\xb4\x8e2v\x95\x9c"\xc2A\x84\x0f9\xc5\xc5\xc5\xeac\xafnB\x9d<y\xb2+\xaf\xfd\xe5/
+\x7f\xa9^\x1b\x11\x11\xe1t\xb0\xf1\x1e\xea\xd2\xb7Raa\xa1\xadedd\xe4\x8b/\xbe\xb8s\xe7\xce\xe2\xe2b\xb3\xd9l\xb5Z\xab\xaa\xaa\xd2\xd2\xd2\x9e\x7f\x
+fey\xf5,\r\x93\xc9\xe4\xee\xee\xbew\xef^\x9d\x82mmm\xdak\xfaF\x8f\x1e\xbd~\xfd\xfa\xe2\xe2b\x8b\xc5RUU\xb5}\xfb\xf6\xd8\xd8X\xed\x97rQQ\x91N5\xed\x
+887~~~\xaf\xbf\xfe\xfa\xf9\xf3\xe7\xeb\xeb\xeb\xb3\xb2\xb2\xb4C\xb4\xba\xbb\xbb\x1f8p\xa0\x0f\xea\x18RJ\x9d\xd6\x1d?~\xfc\xf2\xe5\xcb7o\xde\x9c\x93
+\x93S]]m\xb5Z\xaf\\\xb9\x92\x9f\x9f\xff\xfe\xfb\xef\xcf\x9c9\xd3\xa4\x11\x1d\x1d}\xf9\xf2e\xa7\xd5l\x83\xa7\x06\x07\x07\xbf\xf4\xd2K\x87\x0e\x1d\xf
+a\xf6\xdbo-\x16KYY\xd9g\x9f}\xf6\xf8\xe3\x8fko\x16\x7f\xee\xb9\xe7\xf47m\xa0u\x94\xe1\xab\xe4\x88\x08\x07\x11>\x14EFF\x9a\xfe/\x9d\x87Lhuo\xf4G\xc7
+\x9d\x0fE\x8d\xaf\xe9\xa2\xc0\xc0@\xed\xcbU\x84\xbb\xc2\xc7\xc7\xe7_\xff\xfaW\xa7\xdbh6\x9b\x1do[r\xe4\xe9\xe9\xb9s\xe7N\xfdRV\xab5!!\xa1\xd3R\x7f\
+xf9\xcb_\xfa\xa6\x8e!\xa5t\xae\xccr*::\xfa\xe2\xc5\x8b\x1dU\xb3\x1b\xff\xbc#\xcb\x96-\xebt\xd3\x06ZG\x19\xbeJ=\xfc\xb0`P"\xc2\x87\xa2\x95+W\xda}\xd
+a\x0f\x1e<\xe8\xca\x0b\xe5F\xf8=\xf7\xdc\x93\x97\x97\xe7b\xff\\\xbe|y\xe9\xd2\xa5:\xd5\xa2\xa3\xa3\x0f\x1d:\xe4J)\x8b\xc5\xa2\x86\xbeq\x14\x10\x10\
+xb0c\xc7\x8e\xbe\xac\xd3\xf3R\xaeG\xb8\x8f\x8f\xcf\xaaU\xab\x1a\x1b\x1bu\xaau\x1a\xe1!!!\xdb\xb6msq\xd3\x06TG\x19^\x87\x08\x87\xa3a\xed\xff{Z\x0e\x
+86\x8e/\xbe\xf8b\xd6\xacY\xea\xc7\x80\x80\x80\xca\xca\xca\x8eF\xb8\xd4\x1a5jT7\x9eg\x9c\x91\x91q\xfb\xed\xb7;\x9d\xf5\xe3\x1f\xffx\xc3\x86\r\xae\x9
+7\n\x0c\x0c\xd4\x8eFi2\x99rss\xd3\xd2\xd2N\x9e<\x99\x9f\x9f_^^^]]\xdd\xd8\xd8\xd8\xdc\xdc\xec\xed\xed\x1d\x10\x100q\xe2\xc4\xf8\xf8\xf8\x05\x0b\x16
+\xdcz\xeb\xad]]\xed\xbc\xbc\xbc\x8f>\xfah\xef\xde\xbd\xdf|\xf3Mee\xa5\xb7\xb7\xf7\xd8\xb1c\xa7N\x9dz\xff\xfd\xf7\'%%\r\x1f\xde\x85\x1b2O\x9f>\xfd\x
+ee\xbb\xef\xee\xdf\xbf\xbf\xac\xac\xccl6\x07\x05\x05\x85\x87\x87?\xf2\xc8#\x8b\x16-\xf2\xf7\xf7\xef\xfb:=)\xd5\xde\xde^\\\\|\xea\xd4\xa9\xec\xec\xe
+cS\xa7N\x95\x96\x96\xd6\xd5\xd5\x99\xcdf\xb3\xd9\xdc\xd2\xd2\xe2\xe7\xe77v\xec\xd8\x98\x98\x98\xf8\xf8\xf8G\x1f}T{\x16\xc3\xa9\xb6\xb6\xb6\xe3\xc7\
+x8f\xef\xdf\xbf\xff\xc0\x81\x03\xa5\xa5\xa5\x95\x95\x95uuu\xa3G\x8f\x0e\n\n\x9a<yrRRRbb\xa2\xf6\xa9_\xbd\xbdu\xbdW\xaa\xe7uz\xfea\xc1\xe0C\x84\x03\
+x00 \x12C\xbb\x00\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x
+03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11
+\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8
+\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\x
+e1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \xd2\xff\x035\xee;\x1eF\xda\x1e\x1d\x00\x00\x00\x00IE
+ND\xaeB`\x82'                       
+>>> bytes = image_file.read()                                            
+KeyboardInterrupt                   
+>>> image_file.seek(0)              
+0                                   
+>>> bytes = image_file.read().decode('utf-8')                            
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    bytes = image_file.read().decode('utf-8')                            
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte                                                         
+>>> image_file = open('somefile.png')                                    
+KeyboardInterrupt                   
+>>> image_file = open('somefile.png', encoding='utf8', errors='ignore')  
+>>> image_file                                                           
+<_io.TextIOWrapper name='somefile.png' mode='r' encoding='utf8'>         
+>>> bytes = image_file.read()                                            
+>>> bytes = image_file.read()       
+Traceback (most recent call last):  
+  File "/home/cole/forms/venv/bin/bpython", line 8, in <module>          
+    sys.exit(main())                
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsies.py", line 248, in main                                                 
+    repl.mainloop(True, paste)      
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsies.py", line 181, in mainloop                                             
+    self.process_event_and_paint(e) 
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsies.py", line 151, in process_event_and_paint                              
+    array, cursor_pos = self.paint()                                     
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsiesfrontend/repl.py", line 1610, in paint                                  
+    current_line = paint.paint_current_line(                             
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsiesfrontend/replpainter.py", line 50, in paint_current_line                
+    return fsarray(lines, width=columns)                                 
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/curtsies/formatstringarray.py", line 268, in fsarray                                    
+    raise ValueError(f"Those strings won't fit for width {width}")       
+ValueError: Those strings won't fit for width 147                        
+(venv) [~/forms]$ bpython                                                                                                                  *[main] 
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> import base64                   
+>>> image_file =                                                         
+  File "<input>", line 1                                                 
+    image_file =                                                         
+                ^                                                        
+SyntaxError: incomplete input                                            
+>>> image_file = open('somefile.png', encoding='utf8', errors='ignore')  
+>>> bytes = image_file.read().decode('utf-8')                            
+Traceback (most recent call last):                                       
+  File "<input>", line 1, in <module>                                    
+    bytes = image_file.read().decode('utf-8')                            
+AttributeError: 'str' object has no attribute 'decode'                   
+>>> bytes = image_file.read()                                            
+>>> bytes                                                                
+''                                                                                                                                                                                                                                                                                                    
+>>> image_file.seek(0)                                                   
+0                                                                        
+>>> data = image_file.read()                                             
+>>> data = image_file.read()                                             
+Traceback (most recent call last):                                       
+  File "/home/cole/forms/venv/bin/bpython", line 8, in <module>          
+    sys.exit(main())                                                     
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsies.py", line 248, in main                                                 
+    repl.mainloop(True, paste)                                           
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsies.py", line 181, in mainloop                                             
+    self.process_event_and_paint(e)                                      
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsies.py", line 151, in process_event_and_paint                              
+    array, cursor_pos = self.paint()                                     
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsiesfrontend/repl.py", line 1610, in paint                                  
+    current_line = paint.paint_current_line(                             
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/bpython/curtsiesfrontend/replpainter.py", line 50, in paint_current_line                
+    return fsarray(lines, width=columns)                                 
+  File "/home/cole/forms/venv/lib/python3.10/site-packages/curtsies/formatstringarray.py", line 268, in fsarray                                    
+    raise ValueError(f"Those strings won't fit for width {width}")       
+ValueError: Those strings won't fit for width 295                        
+(venv) [~/forms]$ bpython                                                                                                                                                                                                                                                                      *[main]
+bpython version 0.24 on top of Python 3.10.12 /home/cole/forms/venv/bin/python3                                                                    
+>>> import base64                                                        
+>>> image_file = open('somefile.png', 'rb')                                                                                                                                                                                                                                                                                               
+>>> barcode_data = image_file.read()                                     
+>>> barcode_data                                                         
+b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x02\x96\x00\x00\x01\x18\x08\x02\x00\x00\x00i\xc2!h\x00\x00\x19\x9bIDATx\x9c\xed\xdd{TUu\xfe\xff\xf1\xa3\x80r\x91@,\xb9d\x920\x06\x81\xe54\x84x\x89\x12\xb3\xd0\xacL\xa9\xc9i\x8dSk\xa59kj\xd9\xa0\x953\x93\xd3\\\xd4\xa6\x9al.\xacirf\xba\xab\xd3\x8c\x9a                                   
+\xa3V\xa8\xa3\x85a\xa6\xa2\xa0\x08(\x17A\x85D.\x01G\xe5r8\\~\x7f\x9c5\x9f\xdf\xfe\x9es\xd8\x1c`sy\xc3\xf3\xf1\xd7\x86\xfd9\xef\xbd\xf7\xe7p\xce\x8b}\xfb\xeca\xed\xed\xed&\x00\x00 \xcd\xf0\xfe^\x01\x00\x00\xd0\x1dD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\x                                   
+e1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\xb9\xf7^\xe9a\xc3\x86\x99L&\xa7\x03\xb8\xda\xcd\xb2\xfdh\xc76Wg\x96]\x1d\xd5Rg\x89\xfa\x8b\xd0\xfe\xe8\xfa\xba\xb9\xd2\xd2\xe9\xca\xe8o\x85\xfe\xaav\xba\x15=\\b76\xdf\xe9\x12]y\xa1\xce\x9b\xd8\xd5.\xd5\xdf\n\xd7\x97\xe8\xfa"\\YUW\xfe\                                   
+xc0\xba\xbdQ:Kte\xf3]_\xa2+\x9b\xdf\xf3O\xb4\xd3\x95\xe9\x83?\x9b\x1e~\xdb\xf0g\xd3\xa5\r\xd4_\xa2+-\x9d\xae@W\xff\x18\xba\xf1\x9d\xe9\xfa6\xba\xd2o\x86`/\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\                                   
+x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\                                   
+x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\                                   
+x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\                                   
+x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\                                   
+x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\                                   
+xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00                                   
+@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x0                                   
+0D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07                                   
+\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x0                                   
+0\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x86\xb5\xb7\xb7\xf7\xf7:\x00\x00\x80.c/\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$                                   
+"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\x88p\x00\x00D"\xc2\x01\x00\x10\x89\x08\x07\x00@$"\x1c\x00\x00\x91\xdc\xfb{\x05 O[[\xdb\x91#GRSS\x8f\x1d;\x96\x97\x97WSS\xd3\xd4\xd4\x14\x10\x100n\xdc\xb8\x193f<\xf8\xe0\x83w\xdf}w\x7f\xaf\xa31\xce\x9d;\xb7m\xdb\                                   
+xb6\xd4\xd4\xd4\x0b\x17.\x94\x97\x97[,\x16??\xbf\xd0\xd0\xd0\x98\x98\x98\x84\x84\x84\x84\x84\x84\xc0\xc0@W\xea\x9c9s\xe6\xbd\xf7\xde\xdb\xb7o_YY\x99\xd9l\x0e\n\n\n\x0f\x0f\x7f\xe4\x91G\x16-Z\xe4\xe7\xe7\xe7\xfa\xfa\x18U\xa7\x87\xa5Z[[\x0b\n\n\xb2\xb2\xb2rrr\xf2\xf3\xf3KJJ.^\xbch6\x9b[ZZ\xfc\xfd                                   
+\xfd\x83\x83\x83\xa7L\x992g\xce\x9c\x87\x1ez\xc8\xdd\xdd\xd5o\x98\x0b\x17.l\xda\xb4i\xef\xde\xbdEEEUUU^^^AAA7\xdf|\xf3\xc3\x0f?\xfc\xe0\x83\x0f\x8e\x1a5\xaa\xcf\xb6\xae\x97J\x19\xb8J\xc0\xff\xd7\x8e\xc1k\xce\x9c9\xea\x8d~\xed\xb5\xd7\\|\xd5\xb4i\xd3\xd4\xab6l\xd8\xa0\x9dUVV\xb6z\xf5\xea\xa0\xa0                                   
+ \xfd?\xaa\xdbn\xbb-##\xc3\x95eUVV\x1e<x\xf0\x9dw\xdeY\xb5j\xd5\x82\x05\x0b\xa2\xa3\xa3===U\x9dy\xf3\xe6\xb9R$<<\xdc\xf5?\xf8\xd4\xd4TWj\xd6\xd6\xd6>\xf5\xd4S\xc3\x86\r\xd3)\x15\x11\x11\xd1i\x1d\x8b\xc5\xb2b\xc5\x8a\x8e\xea\x8c\x193f\xe7\xce\x9d\xae\xac\x8fQu\x0c)\xf5\xe1\x87\x1f\xba\xd2\xd5\xd                                   
+7_\x7f\xfd\xd6\xad[;]\x1f\xab\xd5\xfa\xc2\x0b/\x8c\x1c9\xb2\xa3:\xc1\xc1\xc1\x9f|\xf2I\x9fm\x9d\xe1\xa5\x8c\xaac\xc8\x87\x05\x83\x0c\x11>\x98\xa5\xa4\xa4\xa8Oxbb\xa2+/1\x9b\xcd\xda=\xa7\xd2\xd2R\xed\xdc\xc4\xc4D\xfdom\xc5\xc3\xc3\xe3\xddw\xdf\xd5_VUU\x95~\x91\xfe\x8a\xf0\xfc\xfc\xfc\x90\x90\x90                                   
+NKu\x1a\xe1V\xabu\xd6\xacY\x9d\xd6y\xf3\xcd7\xfb\xa6\x8eQ\xa5\\\x8cp\x9b\xe4\xe4d\x9dRMMM\xf7\xddw\x9f+uRRR\xfaf\xeb\x8c-eT\x1d\xa3>,\x18d\x88\xf0\xc1\xac\xb8\xb8X}\xc2\xbd\xbd\xbd-\x16K\xa7/\xd9\xb1c\x87z\xc9\xe4\xc9\x93\xed\xe6j#<..\xee\xe5\x97_>z\xf4hEE\x85\xc5b)--\xdd\xb8q\xe3\xe4\xc9\x93U\                                   
+x03777\xfd\x9d\xa7\x81\x19\xe1\x17.\\\xb8\xe1\x86\x1bT\xfb\x1bo\xbcq\xdd\xbau\'N\x9c\xf8\xf6\xdbo\x9b\x9a\x9a\xce\x9f?\xff\xcf\x7f\xfe3))i\xf8\xf0\xe1\x9dF\xf8\xf2\xe5\xcbU\x1d??\xbf\xd7^{\xed\xdc\xb9s\xf5\xf5\xf5\x99\x99\x99?\xfa\xd1\x8f\xd4,\x0f\x0f\x8f/\xbf\xfc\xb2\x0f\xea\x18UJExxx\xf8\xca\                                   
+x95+\xb7n\xddZXXXWW\xd7\xdc\xdc|\xe9\xd2\xa5]\xbbv\xdd\x7f\xff\xfd\xda>\x7f\xf5\xd5W;*\xf5\xec\xb3\xcf\xaaf\xee\xee\xee\xc9\xc9\xc9\x99\x99\x99W\xaf^\xad\xab\xabKKK[\xb0`\x81\x9a\xeb\xe6\xe6\xb6g\xcf\x9e\xbe\xe9p\x03K\x19U\x87\x08\x87SD\xf8 \x17\x19\x19\xa9>\xe4iii\x9d\xb6\xd7~\xe3\xfc\xfc\xe7?                                   
+\xb7\x9bk\x8b\xf0\x05\x0b\x16\x1c>|\xd8\xe9\xcb\x9b\x9b\x9b\x1f}\xf4QU\xe1\xfa\xeb\xaf\xaf\xaf\xaf\xefhY\xd5\xd5\xd5\xd7^{\xed\xf4\xe9\xd3\x9fx\xe2\x89\x97_~y\xeb\xd6\xad\xd9\xd9\xd9\x9b7o\xee\xea\xb7\x92\x8a\xf0\xe8\xe8hW\xda\xebKHHP+\xb0d\xc9\x92\x8e\xd6\xff\xf4\xe9\xd3O>\xf9\xa4N\x9d\xac\xac                                   
+,Ug\xd4\xa8QG\x8f\x1e\xb5k\xb0v\xedZ\xd5 **\xaa\xad\xad\xadW\xeb\x18Xj\xcb\x96-\x8b\x17/v|\xb9\xd6\x9f\xff\xfcgU\xca\xcb\xcb\xeb\xfc\xf9\xf3\x8em233\xd5\xe1eww\xf7\xcf>\xfb\xcc\xb1\xcd\xbau\xebT\x9d\xd0\xd0\xd0\xa6\xa6\xa6\xde\xde:\x03K\x19\xb8JF}X0\xc8\x10\xe1\x83\xdc\xca\x95+\xd5\x87|\xf5\xea                                   
+\xd5\x9d\xb6\x8f\x8a\x8aR\xed\x0f\x1e<h7\xf7\xd9g\x9f\xdd\xb7o\x9f~\x85\x86\x86\x86\x1bo\xbcQ\x15q\xe5\xa0\xa5\xd6\xf6\xed\xdb\xbb\xfa\xadd`\x84o\xdb\xb6M-\xfd\xb1\xc7\x1e\xd3\xf9J\xed\xd4\xc2\x85\x0bU\xa9W^y\xc5\xb1A[[[\\\\\x9cj\xb3e\xcb\x96^\xadcl)W\xcc\x9f?_\x95Z\xbbv\xadc\x83\'\x9exB5\xd09\                                   
+xde\xae=\xf6\xf3\xde{\xefu\xd4l\x00vTowx7>,\x18d\x88\xf0An\xff\xfe\xfd\xeaC>m\xda4\xfd\xc6\x17/^T\x8d\x03\x02\x02ZZZ\xba\xb7\xd0\xdf\xfd\xeew\xaa\xce\xdc\xb9s\xbb\xf4\xda\xfe\x8d\xf0[o\xbd\xd5V\xea\xdak\xaf\xad\xab\xab\xebv\x9d\x8a\x8a\n\xb5\x7f\xe9\xeb\xeb\xdb\xd0\xd0\xe0\xb4\xd9\xae]\xbb\xd4\                                   
+xc6\xce\x9a5\xab\xf7\xea\x18[\xcaE\x1f\x7f\xfc\xb1*5s\xe6L\xbb\xb9\xad\xad\xad\xda+\xb1\x9d\xee\xa6\xdb|\xf5\xd5W}\xb9u\x03\xf0\xbd\xeb\x08\x11\x0e\xee\x0b\x1f\xe4\xe2\xe3\xe3\xaf\xb9\xe6\x1a\xdbtFF\xc6\x95+Wt\x1a\xef\xdb\xb7OM\'&&\xba\xb9\xb9uo\xa1\xd3\xa7OW\xd3999\xdd+\xd2\xf7N\x9f>\x9d\x9d\x                                   
+9dm\x9b^\xb1bEOn\xf5\xd9\xbd{w{{\xbbm\xfa\xa1\x87\x1e\xf2\xf2\xf2r\xda,11q\xf4\xe8\xd1\xb6\xe9\xf4\xf4t\xc7w\xc7\xa8:\xc6\x96r\xd1\xcd7\xdf\xac\xa6\xbf\xf9\xe6\x1b\xbb\xb9yyyf\xb3\xd96\x1d\x15\x155~\xfc\xf8\x8e\xeaL\x9f>=88\xd86}\xe0\xc0\x81\xde\xde\xba\x01\xf8\xde\x01\x1d!\xc2\x079\x0f\x0f\x8f                                   
+{\xee\xb9\xc76\xdd\xd2\xd2\x92\x96\x96\xa6\xd3X\xbb\xcb>o\xde\xbcn/\xf4\xba\xeb\xaeS\xd3\x95\x95\x95\xdd\xae\xd3\xc7\xfe\xfd\xef\x7f\xabi\xed\x19\xfdn\xd8\xbd{\xb7\x9a\xd6\x9e\\\xb7\xe3\xe1\xe11c\xc6\x0c\xdb\xb4\xd5j\xd5\xfe\x0bel\x1dcK\xb9H\xfb/`KK\x8b\xdd\xdc3g\xce\xa8\xe9I\x93&\xe9\x97\xfa\x                                   
+de\xf7\xbeg\x9bhmm=t\xe8\x90c\x83\x01\xd8Q}\xdf\xe1\x18\x82\x88\xf0\xc1O{\xd3\x8e6\xa4\x1d\xa9\xb9\xc3\x87\x0f\xd7\xdeS\xdeU555jZ\x1d\x03\x18\xf8\xd2\xd3\xd3m\x137\xddtSXXXOJi\xafc\x8a\x89\x89\xd1i\x19\x1b\x1b\xab\xa6O\x9c8\xd1Ku\x8c-\xe5\xa2\xd3\xa7O\xab\xe9\xd0\xd0P\xbb\xb9\xb5\xb5\xb5jZ\xfb?                                   
+\x9fSj/\xdcd2\xa9#%Z\x03\xb0\xa3\xfa\xbe\xc31\x04\x11\xe1\x83\xdf}\xf7\xdd\xa7\xce\xc9\xe9\xfc\x8f\x7f\xe6\xcc\x99\xb2\xb22\xdbt\\\\\xdc\x981c\xba\xbdD\xed\x0e\x96\xce\x01\xd2\x81\xe6\xd4\xa9S\xb6\t\xb5S\x98\x95\x95\xb5t\xe9\xd2\x89\x13\'zzz\xfa\xfa\xfa\x86\x85\x85-\\\xb8\xf0\xed\xb7\xdfnjj\xd2                                   
+\xa9\xd3\xd6\xd6\xa6\xbd\x9d\xef\xa6\x9bn\xd2i\xac\x9d[XX\xd8\x1bu\x8c-\xe5\xba\xbf\xfd\xedojz\xee\xdc\xb9vs\xeb\xeb\xeb\xd5\xb4\xb7\xb7\xb7~)\x1f\x1f\x1f5]PP`7w\x00vT\xbft8\x86 "|\xf0\x0b\n\nR\xc7!sss/]\xba\xe4\xb4\x99QG\xd1M&\x93\xf6*\x9b{\xef\xbd\xb7\'\xa5\xba\xa4\xba\xbaz\xc9\x92%\x93&M\n\x                                   
+08\x08\x181b\x84m\xc3\x97/_\xae=+\xd9\x91\xaa\xaa*u\xcc?""\xc2d2\xadY\xb3&&&\xe6\x1f\xff\xf8GQQ\x91\xc5b\xb9z\xf5jII\xc9\xf6\xed\xdb\x97,Y\x12\x11\x11\xf1\xe9\xa7\x9fvT\xea\xfc\xf9\xf3\xcd\xcd\xcd\xb6\xe9\x80\x80\x00\xed\x10Z\x8e\xb4\xfb\x97v\xe1dT\x1dcK\xb9\xa2\xbd\xbd\xfd\xb7\xbf\xfd\xad\xea\                                   
+xa2\xa0\xa0\xa0\xa5K\x97\xda\xb5\xd1\x8e\x99\xda\xd8\xd8\xa8_P\x9b\xf7\xa5\xa5\xa5vs\x07`G\xf5q\x87c\xc8"\xc2\x87\x04W\x8e\xa5kw\xd0{\x12\xe1\x85\x85\x85\xda\xb3\x80\x8b\x16-\xeav\xa9\xae\xaa\xa8\xa8x\xfb\xed\xb7ssskkk\xadVkEEEVVVJJ\xca\xdc\xb9so\xbb\xed\xb6/\xbf\xfcR\xe7\xb5\xea\x08\x84\xc9d\x                                   
+f2\xf7\xf7ONN~\xe9\xa5\x97:\n\xfe\x0b\x17.\xcc\x9f?\xff\x83\x0f>p:W{\xfa_\xfb\xed\xec\x94\xb6\x81\xddu\x03F\xd51\xb6\x94\x0e\x8b\xc5r\xee\xdc\xb9\x8d\x1b7\xdeq\xc7\x1d\xbf\xfa\xd5\xafl\xbf\xf4\xf5\xf5\xdd\xbau\xab\xbabK\xd1\xfe\xa6\xd3qK\xca\xcb\xcb\xd5tuu\xb5\xdd\xdc\x01\xd8Q}\xd3\xe1\x00\x11>                                   
+$h#\xd9i\x84\xb7\xb6\xb6\xaa+\xddBBB\xbe\xfb\xdd\xefv{Y\xc9\xc9\xc9\xad\xad\xad\xb6\xe99s\xe6\xa8\xdb\xb4\xfa\xd7\xc9\x93\'\xef\xbe\xfb\xee7\xdf|\xb3\xa3\x06\xda+\x81322\xfe\xf4\xa7?\x99L&\x7f\x7f\xff\xdf\xff\xfe\xf7g\xcf\x9emjj\xaa\xa8\xa8\xf8\xf8\xe3\x8fo\xbf\xfdv[\x9b\xd6\xd6\xd6\xa5K\x97:=/                                   
+\xdb\xa5C\xc4\xda\x06\xda\x17\x1aX\xc7\xd8Rv.]\xba4\xec\x7f<==\'L\x98\xb0x\xf1bu\xc5\xd9\xbd\xf7\xde{\xfc\xf8qu\xb9\x96\x96\xf6z\xf5\xbc\xbc<\xfd\xa5h\xcf+\xab\xeb\xd8\x9d\xae\xe4\x00\xe9\xa8\xde\xebp@\x8b\x08\x1f\x12bcc\xd5\x15CN#\xfc\xd8\xb1cuuu\xb6i\x17\xc7\xacv\xea\x83\x0f>P\x87OG\x8c\x18\x                                   
+f1\xc6\x1bot\xbb\x94\xeb\x82\x83\x83\x17-Z\xb4a\xc3\x86\xc3\x87\x0f\x17\x16\x16\xd6\xd6\xd6Z,\x96\xf2\xf2\xf2\xd4\xd4\xd4\xa7\x9ezJ=?\xa3\xa5\xa5\xe5\x99g\x9e\xd1\x0e\xde\xa2\xa5\x8dp\xdb\xc39BBB233\x9f{\xee\xb9\xb0\xb0\xb0\x91#G\x8e\x1d;\xd66,\x9d\x1a\xf5\xb3\xb9\xb9\xf9\'?\xf9\x89c)\xed\xb7\x                                   
+b0\xf6\xe9\x1d\xef\xbc\xf3Nxx\xb8\x8f\x8fOBB\x82:\xef\xae=\xc4\xaa\x13\x03=\xa9cl)\x17\x05\x04\x04l\xde\xbcy\xcf\x9e=\x13\'Nt\xda 22R]\xea\x98\x93\x93\xe3x\xd7\x99\xf2\xf5\xd7_kG,\xb0X,v\r\x06`G\xf5}\x87c\x88\xea\xaf\x1b\xd2\xd1\xc7\x16/^\xac\xde\xf4\x82\x82\x02\xbb\xb9\xdaa,\xb7o\xdf\xde\xbdE\                                   
+x14\x14\x14\xf8\xfa\xfa\xaa::#c\xeb0|\xb4\x8a\x82\x82\x82\xe8\xe8hU\xd3\xd7\xd7\xb7\xaa\xaa\xca\xb1\x99\xf6\x8e2\x9b\xff\xfe\xf7\xbfN\x0b\xd6\xd6\xd6j\xaf\xf5\xcb\xcc\xcc\xd4)\xa5\x06\xeb\xb0\xbb\xd28,,\xcc\xf6{\xbb}J\xedxpF\xd51\xb6\x94\x1d\xed!nG3g\xce<q\xe2DG\xaf}\xfc\xf1\xc7UK\xc7\xd1|\x15\                                   
+xbbK\xe1BBBz\xa9\xc3\r,\xd5{\x1d\xae\xc5\xd0.`/|\xa8\xd0?\x96\xaeN\x84\x8f\x181b\xf6\xec\xd9\xdd\xa8\x7f\xf5\xea\xd5\xa4\xa4$\xb5/;o\xde\xbc\xe7\x9f\x7f\xbe[kj\xb0\x89\x13\'\xee\xdd\xbbW= \xf5\xca\x95+\xaf\xbf\xfe\xbac3\xbbgAN\x9f>\xbd\xa3~\xf0\xf7\xf7\xd7f\x8fv\x0c2\x1b\xedN\x95\xba\xa6\xc9\xe                                   
+e\xc6\xe8\xf6\xff\x9deW\rL&\xd3\xc8\x91#\xb5\xabaT\x1dcK\xd9\t\n\nR\xdf&\xf5\xf5\xf5g\xcf\x9e\xfd\xf0\xc3\x0f\xef\xbc\xf3N\xdb\xdc\xb4\xb4\xb4\xa9S\xa7vt\xe4\xe3\xe9\xa7\x9fV\xd3o\xbc\xf1\xc6\x17_|\xe1\xd8\xe6\xd5W_MMM\xd5\xfeF{u\xba\xe1[7\x00\xdf;@\x07\x11>T$&&\xaa\xa7\x88\xda\xddZ\xd6\xd8\xd8                                   
+\xa8N^\xdey\xe7\x9d\xdaK\x85]\xd4\xd6\xd6\xf6\xd8c\x8f\xa9\x03\x83\x91\x91\x91\x9b6m\x1a8\xdfD!!!\xbf\xf9\xcdo\xd4\x8f\xda\x87C(v\xcf\xabNJJ\xd2)\xa8\xdd/<r\xe4\x88\xdd\\\xed\xa9Mu\xd47&&&%%e\xfc\xf8\xf1^^^\xf1\xf1\xf1j\xffI{\x7f\x9a]8\x19U\xc7\xd8R:\xbc\xbd\xbd\xc3\xc2\xc2~\xf8\xc3\x1f\x1e8p\x                                   
+e0\xef\x7f\xff\xbbmh\x97\xa6\xa6\xa6\x1f\xfc\xe0\x07\xc7\x8e\x1dsl\x1f\x1b\x1b\xbbl\xd92\xb5Vs\xe6\xccy\xe1\x85\x17\xb2\xb3\xb3\x1b\x1a\x1a._\xbe\x9c\x9e\x9e\xfe\xf0\xc3\x0f\xff\xecg?3\x99LS\xa6LQ\x8f\x8f\xd3\x1e\xe91|\xeb\x06\xe0{\x07\xe8\xe9\x97}\x7f\xf4\x8b\xf8\xf8x\xdb\x9b\x1e\x10\x10\xd0\x                                   
+da\xda\xaa~\xbfg\xcf\x1e\xf5\xf7\xf0\x87?\xfc\xa1\x1b\x95\xb5\xcf7\xbb\xee\xba\xeb\xce\x9e=\xdb\xed\x95\xec\xa5c\x83\r\r\r#F\x8cP\x95\x1dO%\xd8\x8d[\xa7\xffT7\xed\x89\xdbq\xe3\xc6\xd9\xcd\xfd\xfa\xeb\xaf\xd5\xdcN\x87m\xcf\xcf\xcfW\x8do\xb8\xe1\x86\xde\xa8cl)\xd7\xfd\xf1\x8f\x7fTu\xe2\xe2\xe2\x9                                   
+c\xb6\xb9z\xf5\xea]w\xdd\xa5\xff\x1d\xe5\xeb\xeb\x9b\x93\x93\xa3N^\xdcu\xd7]\xbd\xb7u\x03\xf0\xbd\xd3\xc1\x81t\xb0\x17>\x84\xa8c\xe9555\xdaK|\xb5\xc7\xd5\xbbq-[JJ\x8az\xb2\xa4\xb7\xb7\xf7\'\x9f|\xd2\xc3\xa1\xcdz\x83\x97\x97\x97\xf62\xfb\xa2\xa2"\xbb\x06v\x03\x84\x85\x84\x84\xe8T\x1b;v\xac\x9aV\                                   
+x97\x01:\x9d\xab\x7f\xaa\xd8d2io\xd3\xd7\xbe\xd0\xc0:\xc6\x96r\xdd3\xcf<\xa3\xfe\x12\x8e\x1c9r\xf2\xe4I\xc76>>>\xbbw\xef^\xb6lYG\x03\xf2\x87\x86\x86~\xf5\xd5WQQQ\xea\x1c\xcd\xb8q\xe3\xec\xda\x0c\xc0\x8e\xea\x97\x0e\xc7\x10D\x84\x0f!\x1d\x9d\x0eW\xc7\xd5\xbf\xf3\x9d\xef\xe8\x0f#\xe5h\xc7\x8e\x1d                                   
+?\xfd\xe9Om\xd3nnn\x1f}\xf4\xd1\x94)Sz\xba\xa2\xbd#00PM;\xde[\xac\x8e\xd3\xda\xe8\xdf\x08\xe4\xee\xee\xae\xceJ8^B\x1c\x1a\x1a\xaa\xf6\xf8kjj\x1c\xaf\xa0\xd6\xd2^kmw\xf1\xb6Qu\x8c-\xe5:777\xed\x9f\\G\xf7\xe5{zz\xbe\xf5\xd6[\xd9\xd9\xd9\xbf\xf8\xc5/bcc\x03\x03\x03\xdd\xdd\xdd\xaf\xb9\xe6\x9a\x193                                   
+f\xac_\xbf>\'\'\xe7\x96[n)))Q\'\x8co\xb9\xe5\x16\xbb\n\x03\xb0\xa3\xfa\xa5\xc31\x04\x11\xe1C\xc8\xa4I\x93\xd4p\xa7*\xc2kjj\xd4\x85\xb2]\x1d\xd1\xe5\xc8\x91#\xb6\x87j\xdb~|\xeb\xad\xb7\x1ex\xe0\x01c\xd6\xb5\xcf\xf9\xfa\xfaj3\xbe\xa1\xa1A\xa7qKK\x8b\xba4\xc9\xf1\xd2\x01777\xedq\x08\xedaRG\xda\xd1                                   
+\xb8\xec\xfe\x7f2\xaa\x8e\xb1\xa5\xbad\xc2\x84\tj\xfa\xc2\x85\x0b:-\xa3\xa2\xa2\xd6\xad[w\xf4\xe8\xd1K\x97.Y\xadV\xb3\xd9|\xf0\xe0\xc1\x15+V\xd8\xba777W\xb5t\x8c\xf0\x01\xd8Q\xfd\xd5\xe1\x18j\x88\xf0\xa1E\x1d\'OOO\xb7\xed\x19|\xfe\xf9\xe7*\x83\xbbt\x14\xbd\xa8\xa8\xe8\x81\x07\x1ePQ\xb7f\xcd\x9a                                   
+%K\x96\x18\xba\xb2\x06\xd3\x0e\x01\xe6\xf4\xb9\x1a\xda#\xed\xda\x1d#G\xda!\xb4\x1c\xc7\x1d\xb3+u\xfc\xf8q\x9dR\x19\x19\x19N_el\x1dcK\xb9N\r\xf2c2\x99\xacVk\xb7\xeb\xa8\xf1\xfe\xdc\xdd\xdd\xe3\xe2\xe2\x1c\x1b\x0c\xc0\x8e\xea\x97\x0e\xc7PC\x84\x0f-j?\xbb\xb1\xb1\xd1v\xc5\x8d:\x8a\xee\xe3\xe3\xd3\                                   
+xe9\x85EJUU\xd5\xdc\xb9sU(>\xfd\xf4\xd3\xabW\xaf6ze\x8d\xd4\xdc\xdc\xac\xbd+\xd7\xe9\xe1\xca;\xee\xb8CM\xeb\x7f\xe7jw\n\xa3\xa2\xa2\x1c\x1bh\x9f\xf3\xe6\xf4^)\x1b\xab\xd5\xaa\xee\x05\xf0\xf0\xf0p\xbc\x8d\xcd\xa8:\xc6\x96r]II\x89\x9a\xd6\x1e\xe4\xe8\x12\xab\xd5\xaa\xae\xdb\x9a={\xb6\xd3\x07\xf0\                                   
+x0c\xc0\x8e\xea\x97\x0e\xc7\x90\xd3\xdf\xd7\xd3\xa1O\xd5\xd7\xd7\xab;V_|\xf1\xc5\xf6\xf6\xf6\xf0\xf0p\xdb\x8f\xf3\xe7\xcfw\xbd\x88vO\xe8\xfb\xdf\xff\xbe\xf6\xfa\xf6\x1e\xea\xa5\x8bl7n\xdc\xa8\xcaN\x980\xc1i\x9b\xcc\xccL\xd5f\xc6\x8c\x19:\xd5\x92\x93\x93U\xcb_\xff\xfa\xd7\x8e\rl\xc3\x8e\xda\x1a\                                   
+xf8\xfa\xfa6448\xad\xb3k\xd7.UG\r\x00\xd2\x1bu\x8c-\xe5\xa2\xd6\xd6V\xed\xc1\xe4\xff\xfc\xe7?\xdd\xab\xa3.\x964\x99L\xef\xbf\xff\xbe\xd36\x03\xb0\xa3\xfa\xa0\xc3\xb9"\x1dD\xf8\x90\xa3v\x0e\xa6N\x9dz\xee\xdc9\xf5\x15\xb0a\xc3\x06W^\xde\xd2\xd2\xa2=e>{\xf6l\x8b\xc5b\xe0\xea\xf5\xc6\xb7Rmm\xad\xf6                                   
+\xa4\xac\xed\xf9%Ni\xcf\xb3\xee\xdf\xbf\xbf\xa3j\xda\x1d\xc1\xdc\xdc\\\xa7\xcd\x16.\\\xa8\xda\xbc\xf2\xca+\x8e\r\xda\xda\xda\xa6N\x9d\xaa\xdal\xd9\xb2\xa5W\xeb\x18[\xca\x15\x7f\xfd\xeb_U)//\xaf\xfa\xfa\xfan\x149s\xe6\x8c:U\x11\x11\x11\xd1\xdc\xdc\xdcQ\xcb\x01\xd8Q\xbd\xdd\xe1D8\x88\xf0!\'%%\xc5                                   
+\xf6\x99wss[\xbf~\xbd\xfa\n(--u\xe5\xe5O>\xf9\xa4zIll\xec\x95+W\x8c]\xbd.}+\x9d={v\xfe\xfc\xf9\x87\x0f\x1f\xd6iS^^>m\xda4Us\xcc\x981uuu\x1d5\xde\xb4i\x93j9n\xdc\xb8\x92\x92\x12\xbb\x06---\xda\xef\xe5\xc4\xc4\xc4\x8eJi\xf7\xe9G\x8d\x1a\x95\x91\x91a\xd7`\xed\xda\xb5\xaaATTTGG2\x8c\xaacT\xa9\xf4\x                                   
+f4\xf4\xa4\xa4\xa4\xf4\xf4\xf4\x8e\x96b\xb3i\xd3&\x0f\x0f\x0fUm\xd5\xaaUN\x9b}\xfe\xf9\xe7k\xd6\xac\xe9\xe8\xbf\xc0\x8c\x8c\x0c\xed\xf3\xe6?\xfd\xf4S\x9d%\x0e\xb4\x8e2v\x95\x9c"\xc2A\x84\x0f9\xc5\xc5\xc5\xeac\xafnB\x9d<y\xb2+\xaf\xfd\xe5/\x7f\xa9^\x1b\x11\x11\xe1t\xb0\xf1\x1e\xea\xd2\xb7Raa\xa1                                   
+\xadedd\xe4\x8b/\xbe\xb8s\xe7\xce\xe2\xe2b\xb3\xd9l\xb5Z\xab\xaa\xaa\xd2\xd2\xd2\x9e\x7f\xfey\xf5,\r\x93\xc9\xe4\xee\xee\xbew\xef^\x9d\x82mmm\xdak\xfaF\x8f\x1e\xbd~\xfd\xfa\xe2\xe2b\x8b\xc5RUU\xb5}\xfb\xf6\xd8\xd8X\xed\x97rQQ\x91N5\xed\x887~~~\xaf\xbf\xfe\xfa\xf9\xf3\xe7\xeb\xeb\xeb\xb3\xb2\xb2                                   
+\xb4C\xb4\xba\xbb\xbb\x1f8p\xa0\x0f\xea\x18RJ\x9d\xd6\x1d?~\xfc\xf2\xe5\xcb7o\xde\x9c\x93\x93S]]m\xb5Z\xaf\\\xb9\x92\x9f\x9f\xff\xfe\xfb\xef\xcf\x9c9\xd3\xa4\x11\x1d\x1d}\xf9\xf2e\xa7\xd5l\x83\xa7\x06\x07\x07\xbf\xf4\xd2K\x87\x0e\x1d\xfa\xf6\xdbo-\x16KYY\xd9g\x9f}\xf6\xf8\xe3\x8fko\x16\x7f\xee\                                   
+xb9\xe7\xf47m\xa0u\x94\xe1\xab\xe4\x88\x08\x07\x11>\x14EFF\x9a\xfe/\x9d\x87Lhuo\xf4G\xc7\x9d\x0fE\x8d\xaf\xe9\xa2\xc0\xc0@\xed\xcbU\x84\xbb\xc2\xc7\xc7\xe7_\xff\xfaW\xa7\xdbh6\x9b\x1do[r\xe4\xe9\xe9\xb9s\xe7N\xfdRV\xab5!!\xa1\xd3R\x7f\xf9\xcb_\xfa\xa6\x8e!\xa5t\xae\xccr*::\xfa\xe2\xc5\x8b\x1dU\                                   
+xb3\x1b\xff\xbc#\xcb\x96-\xebt\xd3\x06ZG\x19\xbeJ=\xfc\xb0`P"\xc2\x87\xa2\x95+W\xda}\xda\x0f\x1e<\xe8\xca\x0b\xe5F\xf8=\xf7\xdc\x93\x97\x97\xe7b\xff\\\xbe|y\xe9\xd2\xa5:\xd5\xa2\xa3\xa3\x0f\x1d:\xe4J)\x8b\xc5\xa2\x86\xbeq\x14\x10\x10\xb0c\xc7\x8e\xbe\xac\xd3\xf3R\xaeG\xb8\x8f\x8f\xcf\xaaU\xab\x                                   
+1a\x1b\x1bu\xaau\x1a\xe1!!!\xdb\xb6msq\xd3\x06TG\x19^\x87\x08\x87\xa3a\xed\xff{Z\x0e\x86\x8e/\xbe\xf8b\xd6\xacY\xea\xc7\x80\x80\x80\xca\xca\xca\x8eF\xb8\xd4\x1a5jT7\x9eg\x9c\x91\x91q\xfb\xed\xb7;\x9d\xf5\xe3\x1f\xffx\xc3\x86\r\xae\x97\n\x0c\x0c\xd4\x8eFi2\x99rss\xd3\xd2\xd2N\x9e<\x99\x9f\x9f_^^                                   
+^]]\xdd\xd8\xd8\xd8\xdc\xdc\xec\xed\xed\x1d\x10\x100q\xe2\xc4\xf8\xf8\xf8\x05\x0b\x16\xdcz\xeb\xad]]\xed\xbc\xbc\xbc\x8f>\xfah\xef\xde\xbd\xdf|\xf3Mee\xa5\xb7\xb7\xf7\xd8\xb1c\xa7N\x9dz\xff\xfd\xf7\'%%\r\x1f\xde\x85\x1b2O\x9f>\xfd\xee\xbb\xef\xee\xdf\xbf\xbf\xac\xac\xccl6\x07\x05\x05\x85\x87\x8                                   
+7?\xf2\xc8#\x8b\x16-\xf2\xf7\xf7\xef\xfb:=)\xd5\xde\xde^\\\\|\xea\xd4\xa9\xec\xec\xecS\xa7N\x95\x96\x96\xd6\xd5\xd5\x99\xcdf\xb3\xd9\xdc\xd2\xd2\xe2\xe7\xe77v\xec\xd8\x98\x98\x98\xf8\xf8\xf8G\x1f}T{\x16\xc3\xa9\xb6\xb6\xb6\xe3\xc7\x8f\xef\xdf\xbf\xff\xc0\x81\x03\xa5\xa5\xa5\x95\x95\x95uuu\xa3G\                                   
+x8f\x0e\n\n\x9a<yrRRRbb\xa2\xf6\xa9_\xbd\xbdu\xbdW\xaa\xe7uz\xfea\xc1\xe0C\x84\x03\x00 \x12C\xbb\x00\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\                                   
+x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8                                   
+\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \x12\x11\x0e\x00\x80HD8\x00\x00"\x11\xe1\x00\x00\x88D\x84\x03\x00 \xd2\xff\x035\xee;\x1eF\xda\x1e\x1d\x00\x00\x00\x00IEND\xaeB`\x82'                                                     
+>>> base64.b64encode(barcode_data)                                       
+b'iVBORw0KGgoAAAANSUhEUgAAApYAAAEYCAIAAABpwiFoAAAZm0lEQVR4nO3de1RVdf7/8aOAcpFALLlkkjAGgeU0hHiJErPQrEypyWmNU2ulOWtq2aCVM5PTXNSmmmwurGlyZrqr04yao1aoo4VhpqKgCCgXQYVELgFH5XI4XH5/nDWf3/6ec9gcYHN5w/Px14b9Oe+99+dwzot9++xh7e3tJgAAIM3w/l4BAADQHUQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4A                                   
+AAiufde6WHDhplMJqcDuNrNsv1oxzZXZ5ZdHdVSZ4n6i9D+6Pq6udLS6crob4X+qna6FT1cYjc23+kSXXmhzpvY1S7V3wrXl+j6IlxZVVf+wLq9UTpLdGXzXV+iK5vf80+005Xpgz+bHn7b8GfTpQ3UX6IrLZ2uQFf/GLrxnen6NrrSb4ZgLxwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwA                                   
+AJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQA                                   
+QiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJ                                   
+GIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQi                                   
+QgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGGtbe39/c6AACALmMvHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkYhwAABE                                   
+IsIBABCJCAcAQCQiHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkdz7ewUgT1tb25EjR1JTU48dO5aXl1dTU9PU1BQQEDBu3LgZM2Y8+OCDd999d3+vozHOnTu3bdu21NTUCxculJeXWywWPz+/0NDQmJiYhISEhISEwMBAV+qcOXPmvffe27dvX1lZmdlsDgoKCg8Pf+SRRxYtWuTn5+f6+hhVp4elWltbCwoKsrKycnJy8vPzS0pKLl68aDabW1pa/P39g4ODp0y                                   
+ZMmfOnIceesjd3dVvmAsXLmzatGnv3r1FRUVVVVVeXl5BQUE333zzww8//OCDD44aNarPtq6XShm4SsD/147Ba86cOeqNfu2111x81bRp09SrNmzYoJ1VVla2evXqoKAg/T+q2267LSMjw5VlVVZWHjx48J133lm1atWCBQuio6M9PT1VnXnz5rlSJDw83PU/+NTUVFdq1tbWPvXUU8OGDdMpFRER0Wkdi8WyYsWKjuqMGTNm586drqyPUXUMKfXhhx+60tXXX3/91q1bO10fq9X6wgsvjBw5sqM6wc                                   
+HBn3zySZ9tneGljKpjyIcFgwwRPpilpKSoT3hiYqIrLzGbzdo9p9LSUu3cxMRE/W9txcPD491339VfVlVVlX6R/orw/Pz8kJCQTkt1GuFWq3XWrFmd1nnzzTf7po5RpVyMcJvk5GSdUk1NTffdd58rdVJSUvpm64wtZVQdoz4sGGSI8MGsuLhYfcK9vb0tFkunL9mxY4d6yeTJk+3maiM8Li7u5ZdfPnr0aEVFhcViKS0t3bhx4+TJk1UDNzc3/Z2ngRnhFy5cuOGGG1T7G2+8cd26dSdOnPj222+bm                                   
+prOnz//z3/+Mykpafjw4Z1G+PLly1UdPz+/11577dy5c/X19ZmZmT/60Y/ULA8Pjy+//LIP6hhVSkV4eHj4ypUrt27dWlhYWFdX19zcfOnSpV27dt1///3aPn/11Vc7KvXss8+qZu7u7snJyZmZmVevXq2rq0tLS1uwYIGa6+bmtmfPnr7pcANLGVWHCIdTRPggFxkZqT7kaWlpnbbXfuP8/Oc/t5tri/AFCxYcPnzY6cubm5sfffRRVeH666+vr6/vaFnV1dXXXnvt9OnTn3jiiZdffnnr1q3Z2dmb                                   
+N2/u6reSivDo6GhX2utLSEhQK7BkyZKO1v/06dNPPvmkTp2srCxVZ9SoUUePHrVrsHbtWtUgKiqqra2tV+sYWGrLli2LFy92fLnWn//8Z1XKy8vr/Pnzjm0yMzPV4WV3d/fPPvvMsc26detUndDQ0Kampt7eOgNLGbhKRn1YMMgQ4YPcypUr1Yd89erVnbaPiopS7Q8ePGg399lnn923b59+hYaGhhtvvFEVceWgpdb27du7+q1kYIRv27ZNLf2xxx7T+Urt1MKFC1WpV155xbFBW1tbXFycarNly5Z                                   
+erWNsKVfMnz9flVq7dq1jgyeeeEI10Dnerj32895773XUbAB2VG93eDc+LBhkiPBBbv/+/epDPm3aNP3GFy9eVI0DAgJaWlq6t9Df/e53qs7cuXO79Nr+jfBbb73VVuraa6+tq6vrdp2Kigq1f+nr69vQ0OC02a5du9TGzpo1q/fqGFvKRR9//LEqNXPmTLu5ra2t2iuxne6m23z11Vd9uXUD8L3rCBEO7gsf5OLj46+55hrbdEZGxpUrV3Qa79u3T00nJia6ubl1b6HTp09X0zk5Od0r0vdOnz6dnZ                                   
+1tm16xYkVPbvXZvXt3e3u7bfqhhx7y8vJy2iwxMXH06NG26fT0dMd3x6g6xpZy0c0336ymv/nmG7u5eXl5ZrPZNh0VFTV+/PiO6kyfPj04ONg2feDAgd7eugH43gEdIcIHOQ8Pj3vuucc23dLSkpaWptNYu8s+b968bi/0uuuuU9OVlZXdrtPH/v3vf6tp7Rn9bti9e7ea1p5ct+Ph4TFjxgzbtNVq1f4LZWwdY0u5SPsvYEtLi93cM2fOqOlJkybpl/re975nm2htbT106JBjgwHYUX3f4RiCiPDBT                                   
+3vTjjakHam5w4cP195T3lU1NTVqWh0DGPjS09NtEzfddFNYWFhPSmmvY4qJidFpGRsbq6ZPnDjRS3WMLeWi06dPq+nQ0FC7ubW1tWpa+z+fU2ov3GQyqSMlWgOwo/q+wzEEEeGD33333afOyen8j3/mzJmysjLbdFxc3JgxY7q9RO0Ols4B0oHm1KlTtgm1U5iVlbV06dKJEyd6enr6+vqGhYUtXLjw7bffbmpq0qnT1tamvZ3vpptu0mmsnVtYWNgbdYwt5bq//e1vanru3Ll2c+vr69W0t7e3fikf                                   
+Hx81XVBQYDd3AHZUv3Q4hiAifPALCgpSxyFzc3MvXbrktJlRR9FNJpP2Kpt77723J6W6pLq6esmSJZMmTQoICBgxYoRtw5cvX649K9mRqqoqdcw/IiLCZDKtWbMmJibmH//4R1FRkcViuXr1aklJyfbt25csWRIREfHpp592VOr8+fPNzc226YCAAO0QWo60+5d24WRUHWNLuaK9vf23v/2t6qKgoKClS5fatdGOmdrY2KhfUJv3paWldnMHYEf1cYdjyCLChwRXjqVrd9B7EuGFhYXas4CLFi3qdqm                                   
+uqqioePvtt3Nzc2tra61Wa0VFRVZWVkpKyty5c2+77bYvv/xS57XqCITJZPL3909OTn7ppZc6Cv4LFy7Mnz//gw8+cDpXe/pf++3slLaB3XUDRtUxtpQOi8Vy7ty5jRs33nHHHb/61a9sv/T19d26dau6YkvR/qbTcUvKy8vVdHV1td3cAdhRfdPhABE+JGgj2WmEt7a2qivdQkJCvvvd73Z7WcnJya2trbbpOXPmqNu0+tfJkyfvvvvuN998s6MG2iuBMzIy/vSnP5lMJn9//9///vdnz55tamqqqK                                   
+j4+OOPb7/9dlub1tbWpUuXOj0v26VDxNoG2hcaWMfYUnYuXbo07H88PT0nTJiwePFidcXZvffee/z4cXW5lpb2evW8vDz9pWjPK6vr2J2u5ADpqN7rcECLCB8SYmNj1RVDTiP82LFjdXV1tmkXx6x26oMPPlCHT0eMGPHGG290u5TrgoODFy1atGHDhsOHDxcWFtbW1loslvLy8tTU1Keeeko9P6OlpeWZZ57RDt6ipY1w28M5QkJCMjMzn3vuubCwsJEjR44dO9Y2LJ0a9bO5ufknP/mJYyntt7D26                                   
+R3vvPNOeHi4j49PQkKCOu+uPcSqEwM9qWNsKRcFBARs3rx5z549EydOdNogMjJSXeqYk5PjeNeZ8vXXX2tHLLBYLHYNBmBH9X2HY4jqrxvS0ccWL16s3vSCggK7udphLLdv3969RRQUFPj6+qo6OiNj6zB8tIqCgoLo6GhV09fXt6qqyrGZ9o4ym//+979OC9bW1mqv9cvMzNQppQbrsLvSOCwszPZ7u31K7XhwRtUxtpQd7SFuRzNnzjxx4kRHr3388cdVS8fRfBW7S+FCQkJ6qcMNLNV7Ha7F0C5g                                   
+L3yo0D+Wrk6EjxgxYvbs2d2of/Xq1aSkJLUvO2/evOeff75ba2qwiRMn7t27Vz0g9cqVK6+//rpjM7tnQU6fPr2jfvD399dmj3YMMhvtTpW6psnuxuj2/51lVw1MJtPIkSO1q2FUHWNL2QkKClLfJvX19WfPnv3www/vvPNO29y0tLSpU6d2dOTj6aefVtNvvPHGF1984djm1VdfTU1N1f5Ge3W64Vs3AN87QAcRPlQkJiaqp4ja3VrW2NioTl7eeeed2kuFXdTW1vbYY4+pA4ORkZGbNm0aON9EISE                                   
+hv/nNb9SP2odDKHbPq05KStIpqN0vPHLkiN1c7alNddQ3JiYmJSVl/PjxXl5e8fHxav9Je3+aXTgZVcfYUjq8vb3DwsJ++MMfHjhw4O9//7ttaJempqYf/OAHx44dc2wfGxu7bNkytVZz5sx54YUXsrOzGxoaLl++nJ6e/vDDD//sZz8zmUxTpkxRj4/THukxfOsG4HsH6OmXfX/0i/j4eNubHhAQ0Nraqn6/Z88e9ffwhz/8oRuVtc83u+66686ePdvtleylY4MNDQ0jRoxQlR1PJdiNW6f/VDftid                                   
+tx48bZzf3666/V3E6Hbc/Pz1eNb7jhht6oY2wp1/3xj39UdeLi4py2uXr16l133aX/HeXr65uTk6NOXtx11129t3UD8L3TwYF0sBc+hKhj6TU1NdpLfLXH1btxLVtKSop6sqS3t/cnn3zSw6HNeoOXl5f2MvuioiK7BnYDhIWEhOhUGzt2rJpWlwE6nat/qthkMmlv09e+0MA6xpZy3TPPPKP+Eo4cOXLy5EnHNj4+Prt37162bFlHA/KHhoZ+9dVXUVFR6hzNuHHj7NoMwI7qlw7HEESEDyEdnQ5Xx                                   
+9W/853v6A8j5WjHjh0//elPbdNubm4fffTRlClTerqivSMwMFBNO95brI7T2ujfCOTu7q7OSjheQhwaGqr2+GtqahyvoNbSXmttd/G2UXWMLeU6Nzc37Z9cR/fle3p6vvXWW9nZ2b/4xS9iY2MDAwPd3d2vueaaGTNmrF+/Picn55ZbbikpKVEnjG+55Ra7CgOwo/qlwzEEEeFDyKRJk9RwpyrCa2pq1IWyXR3R5ciRI7aHatt+fOuttx544AFj1rXP+fr6ajO+oaFBp3FLS4u6NMnx0gE3NzftcQjt                                   
+YVJH2tG47P5/MqqOsaW6ZMKECWr6woULOi2joqLWrVt39OjRS5cuWa1Ws9l88ODBFStW2Lo3NzdXtXSM8AHYUf3V4RhqiPChRR0nT09Pt+0ZfP755yqDu3QUvaio6IEHHlBRt2bNmiVLlhi6sgbTDgHm9Lka2iPt2h0jR9ohtBzHHbMrdfz4cZ1SGRkZTl9lbB1jS7lODfJjMpmsVmu366jx/tzd3ePi4hwbDMCO6pcOx1BDhA8taj+7sbHRdsWNOoru4+PT6YVFSlVV1dy5c1UoPv3006tXrzZ6ZY3                                   
+U3NysvSvX6eHKO+64Q03rf+dqdwqjoqIcG2if8+b0Xikbq9Wq7gXw8PBwvI3NqDrGlnJdSUmJmtYe5OgSq9WqrtuaPXu20wfwDMCO6pcOx5DT39fToU/V19erO1ZffPHF9vb28PBw24/z5893vYh2T+j73/++9vr2Huqli2w3btyoyk6YMMFpm8zMTNVmxowZOtWSk5NVy1//+teODWzDjtoa+Pr6NjQ0OK2za9cuVUcNANIbdYwt5aLW1lbtweT//Oc/3aujLpY0mUzvv/++0zYDsKP6oMO5Ih1E+J                                   
+Cjdg6mTp167tw59RWwYcMGV17e0tKiPWU+e/Zsi8Vi4Or1xrdSbW2t9qSs7fklTmnPs+7fv7+jatodwdzcXKfNFi5cqNq88sorjg3a2tqmTp2q2mzZsqVX6xhbyhV//etfVSkvL6/6+vpuFDlz5ow6VREREdHc3NxRywHYUb3d4UQ4iPAhJyUlxfaZd3NzW79+vfoKKC0tdeXlTz75pHpJbGzslStXjF29Ln0rnT17dv78+YcPH9ZpU15ePm3aNFVzzJgxdXV1HTXetGmTajlu3LiSkhK7Bi0tLdrv5                                   
+cTExI5KaffpR40alZGRYddg7dq1qkFUVFRHRzKMqmNUqfT09KSkpPT09I6WYrNp0yYPDw9VbdWqVU6bff7552vWrOnov8CMjAzt8+Y//fRTnSUOtI4ydpWcIsJBhA85xcXF6mOvbkKdPHmyK6/95S9/qV4bERHhdLDxHurSt1JhYaGtZWRk5Isvvrhz587i4mKz2Wy1WquqqtLS0p5//nn1LA2TyeTu7r53716dgm1tbdpr+kaPHr1+/fri4mKLxVJVVbV9+/bY2Fjtl3JRUZFONe2IN35+fq+//vr5                                   
+8+fr6+uzsrK0Q7S6u7sfOHCgD+oYUkqd1h0/fvzy5cs3b96ck5NTXV1ttVqvXLmSn5///vvvz5w506QRHR19+fJlp9Vsg6cGBwe/9NJLhw4d+vbbby0WS1lZ2Wefffb4449rbxZ/7rnn9DdtoHWU4avkiAgHET4URUZGmv4vnYdMaHVv9EfHnQ9Fja/posDAQO3LVYS7wsfH51//+len22g2mx1vW3Lk6em5c+dO/VJWqzUhIaHTUn/5y1/6po4hpXSuzHIqOjr64sWLHVWzG/+8I8uWLet00wZaRxm                                   
++Sj38sGBQIsKHopUrV9p92g8ePOjKC+VG+D333JOXl+di/1y+fHnp0qU61aKjow8dOuRKKYvFooa+cRQQELBjx46+rNPzUq5HuI+Pz6pVqxobG3WqdRrhISEh27Ztc3HTBlRHGV6HCIejYe3/e1oOho4vvvhi1qxZ6seAgIDKysqORrjUGjVqVDeeZ5yRkXH77bc7nfXjH/94w4YNrpcKDAzUjkZpMplyc3PT0tJOnjyZn59fXl5eXV3d2NjY3Nzs7e0dEBAwceLE+Pj4BQsW3HrrrV1d7by8vI8++m                                   
+jv3r3ffPNNZWWlt7f32LFjp06dev/99yclJQ0f3oUbMk+fPv3uu+/u37+/rKzMbDYHBQWFh4c/8sgjixYt8vf37/s6PSnV3t5eXFx86tSp7OzsU6dOlZaW1tXVmc1ms9nc0tLi5+c3duzYmJiY+Pj4Rx99VHsWw6m2trbjx4/v37//wIEDpaWllZWVdXV1o0ePDgoKmjx5clJSUmJiovapX729db1Xqud1ev5hweBDhAMAIBJDuwAAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAA                                   
+IhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAINL/AzXuOx5G2h4dAAAAAElFTkSuQmCC'                              
+>>> base64.b64encode(barcode_data).decode('utf-8')                       
+'iVBORw0KGgoAAAANSUhEUgAAApYAAAEYCAIAAABpwiFoAAAZm0lEQVR4nO3de1RVdf7/8aOAcpFALLlkkjAGgeU0hHiJErPQrEypyWmNU2ulOWtq2aCVM5PTXNSmmmwurGlyZrqr04yao1aoo4VhpqKgCCgXQYVELgFH5XI4XH5/nDWf3/6ec9gcYHN5w/Px14b9Oe+99+dwzot9++xh7e3tJgAAIM3w/l4BAADQHUQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AA                                   
+Aiufde6WHDhplMJqcDuNrNsv1oxzZXZ5ZdHdVSZ4n6i9D+6Pq6udLS6crob4X+qna6FT1cYjc23+kSXXmhzpvY1S7V3wrXl+j6IlxZVVf+wLq9UTpLdGXzXV+iK5vf80+005Xpgz+bHn7b8GfTpQ3UX6IrLZ2uQFf/GLrxnen6NrrSb4ZgLxwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAA                                   
+JGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQ                                   
+iQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJG                                   
+IcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQ                                   
+gHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGGtbe39/c6AACALmMvHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkYhwAABEI                                   
+sIBABCJCAcAQCQiHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkdz7ewUgT1tb25EjR1JTU48dO5aXl1dTU9PU1BQQEDBu3LgZM2Y8+OCDd999d3+vozHOnTu3bdu21NTUCxculJeXWywWPz+/0NDQmJiYhISEhISEwMBAV+qcOXPmvffe27dvX1lZmdlsDgoKCg8Pf+SRRxYtWuTn5+f6+hhVp4elWltbCwoKsrKycnJy8vPzS0pKLl68aDabW1pa/P39g4ODp0yZ                                   
+MmfOnIceesjd3dVvmAsXLmzatGnv3r1FRUVVVVVeXl5BQUE333zzww8//OCDD44aNarPtq6XShm4SsD/147Ba86cOeqNfu2111x81bRp09SrNmzYoJ1VVla2evXqoKAg/T+q2267LSMjw5VlVVZWHjx48J133lm1atWCBQuio6M9PT1VnXnz5rlSJDw83PU/+NTUVFdq1tbWPvXUU8OGDdMpFRER0Wkdi8WyYsWKjuqMGTNm586drqyPUXUMKfXhhx+60tXXX3/91q1bO10fq9X6wgsvjBw5sqM6wcH                                   
+Bn3zySZ9tneGljKpjyIcFgwwRPpilpKSoT3hiYqIrLzGbzdo9p9LSUu3cxMRE/W9txcPD491339VfVlVVlX6R/orw/Pz8kJCQTkt1GuFWq3XWrFmd1nnzzTf7po5RpVyMcJvk5GSdUk1NTffdd58rdVJSUvpm64wtZVQdoz4sGGSI8MGsuLhYfcK9vb0tFkunL9mxY4d6yeTJk+3maiM8Li7u5ZdfPnr0aEVFhcViKS0t3bhx4+TJk1UDNzc3/Z2ngRnhFy5cuOGGG1T7G2+8cd26dSdOnPj222+bmp                                   
+rOnz//z3/+Mykpafjw4Z1G+PLly1UdPz+/11577dy5c/X19ZmZmT/60Y/ULA8Pjy+//LIP6hhVSkV4eHj4ypUrt27dWlhYWFdX19zcfOnSpV27dt1///3aPn/11Vc7KvXss8+qZu7u7snJyZmZmVevXq2rq0tLS1uwYIGa6+bmtmfPnr7pcANLGVWHCIdTRPggFxkZqT7kaWlpnbbXfuP8/Oc/t5tri/AFCxYcPnzY6cubm5sfffRRVeH666+vr6/vaFnV1dXXXnvt9OnTn3jiiZdffnnr1q3Z2dmbN                                   
+2/u6reSivDo6GhX2utLSEhQK7BkyZKO1v/06dNPPvmkTp2srCxVZ9SoUUePHrVrsHbtWtUgKiqqra2tV+sYWGrLli2LFy92fLnWn//8Z1XKy8vr/Pnzjm0yMzPV4WV3d/fPPvvMsc26detUndDQ0Kampt7eOgNLGbhKRn1YMMgQ4YPcypUr1Yd89erVnbaPiopS7Q8ePGg399lnn923b59+hYaGhhtvvFEVceWgpdb27du7+q1kYIRv27ZNLf2xxx7T+Urt1MKFC1WpV155xbFBW1tbXFycarNly5Ze                                   
+rWNsKVfMnz9flVq7dq1jgyeeeEI10Dnerj32895773XUbAB2VG93eDc+LBhkiPBBbv/+/epDPm3aNP3GFy9eVI0DAgJaWlq6t9Df/e53qs7cuXO79Nr+jfBbb73VVuraa6+tq6vrdp2Kigq1f+nr69vQ0OC02a5du9TGzpo1q/fqGFvKRR9//LEqNXPmTLu5ra2t2iuxne6m23z11Vd9uXUD8L3rCBEO7gsf5OLj46+55hrbdEZGxpUrV3Qa79u3T00nJia6ubl1b6HTp09X0zk5Od0r0vdOnz6dnZ1                                   
+tm16xYkVPbvXZvXt3e3u7bfqhhx7y8vJy2iwxMXH06NG26fT0dMd3x6g6xpZy0c0336ymv/nmG7u5eXl5ZrPZNh0VFTV+/PiO6kyfPj04ONg2feDAgd7eugH43gEdIcIHOQ8Pj3vuucc23dLSkpaWptNYu8s+b968bi/0uuuuU9OVlZXdrtPH/v3vf6tp7Rn9bti9e7ea1p5ct+Ph4TFjxgzbtNVq1f4LZWwdY0u5SPsvYEtLi93cM2fOqOlJkybpl/re975nm2htbT106JBjgwHYUX3f4RiCiPDBT3                                   
+vTjjakHam5w4cP195T3lU1NTVqWh0DGPjS09NtEzfddFNYWFhPSmmvY4qJidFpGRsbq6ZPnDjRS3WMLeWi06dPq+nQ0FC7ubW1tWpa+z+fU2ov3GQyqSMlWgOwo/q+wzEEEeGD33333afOyen8j3/mzJmysjLbdFxc3JgxY7q9RO0Ols4B0oHm1KlTtgm1U5iVlbV06dKJEyd6enr6+vqGhYUtXLjw7bffbmpq0qnT1tamvZ3vpptu0mmsnVtYWNgbdYwt5bq//e1vanru3Ll2c+vr69W0t7e3fikfH                                   
+x81XVBQYDd3AHZUv3Q4hiAifPALCgpSxyFzc3MvXbrktJlRR9FNJpP2Kpt77723J6W6pLq6esmSJZMmTQoICBgxYoRtw5cvX649K9mRqqoqdcw/IiLCZDKtWbMmJibmH//4R1FRkcViuXr1aklJyfbt25csWRIREfHpp592VOr8+fPNzc226YCAAO0QWo60+5d24WRUHWNLuaK9vf23v/2t6qKgoKClS5fatdGOmdrY2KhfUJv3paWldnMHYEf1cYdjyCLChwRXjqVrd9B7EuGFhYXas4CLFi3qdqmu                                   
+qqioePvtt3Nzc2tra61Wa0VFRVZWVkpKyty5c2+77bYvv/xS57XqCITJZPL3909OTn7ppZc6Cv4LFy7Mnz//gw8+cDpXe/pf++3slLaB3XUDRtUxtpQOi8Vy7ty5jRs33nHHHb/61a9sv/T19d26dau6YkvR/qbTcUvKy8vVdHV1td3cAdhRfdPhABE+JGgj2WmEt7a2qivdQkJCvvvd73Z7WcnJya2trbbpOXPmqNu0+tfJkyfvvvvuN998s6MG2iuBMzIy/vSnP5lMJn9//9///vdnz55tamqqqKj                                   
+4+OOPb7/9dlub1tbWpUuXOj0v26VDxNoG2hcaWMfYUnYuXbo07H88PT0nTJiwePFidcXZvffee/z4cXW5lpb2evW8vDz9pWjPK6vr2J2u5ADpqN7rcECLCB8SYmNj1RVDTiP82LFjdXV1tmkXx6x26oMPPlCHT0eMGPHGG290u5TrgoODFy1atGHDhsOHDxcWFtbW1loslvLy8tTU1Keeeko9P6OlpeWZZ57RDt6ipY1w28M5QkJCMjMzn3vuubCwsJEjR44dO9Y2LJ0a9bO5ufknP/mJYyntt7D26R                                   
+3vvPNOeHi4j49PQkKCOu+uPcSqEwM9qWNsKRcFBARs3rx5z549EydOdNogMjJSXeqYk5PjeNeZ8vXXX2tHLLBYLHYNBmBH9X2HY4jqrxvS0ccWL16s3vSCggK7udphLLdv3969RRQUFPj6+qo6OiNj6zB8tIqCgoLo6GhV09fXt6qqyrGZ9o4ym//+979OC9bW1mqv9cvMzNQppQbrsLvSOCwszPZ7u31K7XhwRtUxtpQd7SFuRzNnzjxx4kRHr3388cdVS8fRfBW7S+FCQkJ6qcMNLNV7Ha7F0C5gL                                   
+3yo0D+Wrk6EjxgxYvbs2d2of/Xq1aSkJLUvO2/evOeff75ba2qwiRMn7t27Vz0g9cqVK6+//rpjM7tnQU6fPr2jfvD399dmj3YMMhvtTpW6psnuxuj2/51lVw1MJtPIkSO1q2FUHWNL2QkKClLfJvX19WfPnv3www/vvPNO29y0tLSpU6d2dOTj6aefVtNvvPHGF1984djm1VdfTU1N1f5Ge3W64Vs3AN87QAcRPlQkJiaqp4ja3VrW2NioTl7eeeed2kuFXdTW1vbYY4+pA4ORkZGbNm0aON9EISEh                                   
+v/nNb9SP2odDKHbPq05KStIpqN0vPHLkiN1c7alNddQ3JiYmJSVl/PjxXl5e8fHxav9Je3+aXTgZVcfYUjq8vb3DwsJ++MMfHjhw4O9//7ttaJempqYf/OAHx44dc2wfGxu7bNkytVZz5sx54YUXsrOzGxoaLl++nJ6e/vDDD//sZz8zmUxTpkxRj4/THukxfOsG4HsH6OmXfX/0i/j4eNubHhAQ0Nraqn6/Z88e9ffwhz/8oRuVtc83u+66686ePdvtleylY4MNDQ0jRoxQlR1PJdiNW6f/VDftidt                                   
+x48bZzf3666/V3E6Hbc/Pz1eNb7jhht6oY2wp1/3xj39UdeLi4py2uXr16l133aX/HeXr65uTk6NOXtx11129t3UD8L3TwYF0sBc+hKhj6TU1NdpLfLXH1btxLVtKSop6sqS3t/cnn3zSw6HNeoOXl5f2MvuioiK7BnYDhIWEhOhUGzt2rJpWlwE6nat/qthkMmlv09e+0MA6xpZy3TPPPKP+Eo4cOXLy5EnHNj4+Prt37162bFlHA/KHhoZ+9dVXUVFR6hzNuHHj7NoMwI7qlw7HEESEDyEdnQ5Xx9                                   
+W/853v6A8j5WjHjh0//elPbdNubm4fffTRlClTerqivSMwMFBNO95brI7T2ujfCOTu7q7OSjheQhwaGqr2+GtqahyvoNbSXmttd/G2UXWMLeU6Nzc37Z9cR/fle3p6vvXWW9nZ2b/4xS9iY2MDAwPd3d2vueaaGTNmrF+/Picn55ZbbikpKVEnjG+55Ra7CgOwo/qlwzEEEeFDyKRJk9RwpyrCa2pq1IWyXR3R5ciRI7aHatt+fOuttx544AFj1rXP+fr6ajO+oaFBp3FLS4u6NMnx0gE3NzftcQjtY                                   
+VJH2tG47P5/MqqOsaW6ZMKECWr6woULOi2joqLWrVt39OjRS5cuWa1Ws9l88ODBFStW2Lo3NzdXtXSM8AHYUf3V4RhqiPChRR0nT09Pt+0ZfP755yqDu3QUvaio6IEHHlBRt2bNmiVLlhi6sgbTDgHm9Lka2iPt2h0jR9ohtBzHHbMrdfz4cZ1SGRkZTl9lbB1jS7lODfJjMpmsVmu366jx/tzd3ePi4hwbDMCO6pcOx1BDhA8taj+7sbHRdsWNOoru4+PT6YVFSlVV1dy5c1UoPv3006tXrzZ6ZY3U                                   
+3NysvSvX6eHKO+64Q03rf+dqdwqjoqIcG2if8+b0Xikbq9Wq7gXw8PBwvI3NqDrGlnJdSUmJmtYe5OgSq9WqrtuaPXu20wfwDMCO6pcOx5DT39fToU/V19erO1ZffPHF9vb28PBw24/z5893vYh2T+j73/++9vr2Huqli2w3btyoyk6YMMFpm8zMTNVmxowZOtWSk5NVy1//+teODWzDjtoa+Pr6NjQ0OK2za9cuVUcNANIbdYwt5aLW1lbtweT//Oc/3aujLpY0mUzvv/++0zYDsKP6oMO5Ih1E+JC                                   
+jdg6mTp167tw59RWwYcMGV17e0tKiPWU+e/Zsi8Vi4Or1xrdSbW2t9qSs7fklTmnPs+7fv7+jatodwdzcXKfNFi5cqNq88sorjg3a2tqmTp2q2mzZsqVX6xhbyhV//etfVSkvL6/6+vpuFDlz5ow6VREREdHc3NxRywHYUb3d4UQ4iPAhJyUlxfaZd3NzW79+vfoKKC0tdeXlTz75pHpJbGzslStXjF29Ln0rnT17dv78+YcPH9ZpU15ePm3aNFVzzJgxdXV1HTXetGmTajlu3LiSkhK7Bi0tLdrv5c                                   
+TExI5KaffpR40alZGRYddg7dq1qkFUVFRHRzKMqmNUqfT09KSkpPT09I6WYrNp0yYPDw9VbdWqVU6bff7552vWrOnov8CMjAzt8+Y//fRTnSUOtI4ydpWcIsJBhA85xcXF6mOvbkKdPHmyK6/95S9/qV4bERHhdLDxHurSt1JhYaGtZWRk5Isvvrhz587i4mKz2Wy1WquqqtLS0p5//nn1LA2TyeTu7r53716dgm1tbdpr+kaPHr1+/fri4mKLxVJVVbV9+/bY2Fjtl3JRUZFONe2IN35+fq+//vr58                                   
++fr6+uzsrK0Q7S6u7sfOHCgD+oYUkqd1h0/fvzy5cs3b96ck5NTXV1ttVqvXLmSn5///vvvz5w506QRHR19+fJlp9Vsg6cGBwe/9NJLhw4d+vbbby0WS1lZ2Wefffb4449rbxZ/7rnn9DdtoHWU4avkiAgHET4URUZGmv4vnYdMaHVv9EfHnQ9Fja/posDAQO3LVYS7wsfH51//+len22g2mx1vW3Lk6em5c+dO/VJWqzUhIaHTUn/5y1/6po4hpXSuzHIqOjr64sWLHVWzG/+8I8uWLet00wZaRxm+                                   
+Sj38sGBQIsKHopUrV9p92g8ePOjKC+VG+D333JOXl+di/1y+fHnp0qU61aKjow8dOuRKKYvFooa+cRQQELBjx46+rNPzUq5HuI+Pz6pVqxobG3WqdRrhISEh27Ztc3HTBlRHGV6HCIejYe3/e1oOho4vvvhi1qxZ6seAgIDKysqORrjUGjVqVDeeZ5yRkXH77bc7nfXjH/94w4YNrpcKDAzUjkZpMplyc3PT0tJOnjyZn59fXl5eXV3d2NjY3Nzs7e0dEBAwceLE+Pj4BQsW3HrrrV1d7by8vI8++mj                                   
+v3r3ffPNNZWWlt7f32LFjp06dev/99yclJQ0f3oUbMk+fPv3uu+/u37+/rKzMbDYHBQWFh4c/8sgjixYt8vf37/s6PSnV3t5eXFx86tSp7OzsU6dOlZaW1tXVmc1ms9nc0tLi5+c3duzYmJiY+Pj4Rx99VHsWw6m2trbjx4/v37//wIEDpaWllZWVdXV1o0ePDgoKmjx5clJSUmJiovapX729db1Xqud1ev5hweBDhAMAIBJDuwAAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAI                                   
+hEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAINL/AzXuOx5G2h4dAAAAAElFTkSuQmCC'                               
+>>> barcode_base64 = base64.b64encode(barcode_data).decode('utf-8')      
+>>> barcode_base64                                                       
+'iVBORw0KGgoAAAANSUhEUgAAApYAAAEYCAIAAABpwiFoAAAZm0lEQVR4nO3de1RVdf7/8aOAcpFALLlkkjAGgeU0hHiJErPQrEypyWmNU2ulOWtq2aCVM5PTXNSmmmwurGlyZrqr04yao1aoo4VhpqKgCCgXQYVELgFH5XI4XH5/nDWf3/6ec9gcYHN5w/Px14b9Oe+99+dwzot9++xh7e3tJgAAIM3w/l4BAADQHUQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AA                                   
+Aiufde6WHDhplMJqcDuNrNsv1oxzZXZ5ZdHdVSZ4n6i9D+6Pq6udLS6crob4X+qna6FT1cYjc23+kSXXmhzpvY1S7V3wrXl+j6IlxZVVf+wLq9UTpLdGXzXV+iK5vf80+005Xpgz+bHn7b8GfTpQ3UX6IrLZ2uQFf/GLrxnen6NrrSb4ZgLxwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAA                                   
+JGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQ                                   
+iQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJG                                   
+IcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQ                                   
+gHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGGtbe39/c6AACALmMvHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkYhwAABEI                                   
+sIBABCJCAcAQCQiHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkYhwAABEIsIBABCJCAcAQCQiHAAAkdz7ewUgT1tb25EjR1JTU48dO5aXl1dTU9PU1BQQEDBu3LgZM2Y8+OCDd999d3+vozHOnTu3bdu21NTUCxculJeXWywWPz+/0NDQmJiYhISEhISEwMBAV+qcOXPmvffe27dvX1lZmdlsDgoKCg8Pf+SRRxYtWuTn5+f6+hhVp4elWltbCwoKsrKycnJy8vPzS0pKLl68aDabW1pa/P39g4ODp0yZ                                   
+MmfOnIceesjd3dVvmAsXLmzatGnv3r1FRUVVVVVeXl5BQUE333zzww8//OCDD44aNarPtq6XShm4SsD/147Ba86cOeqNfu2111x81bRp09SrNmzYoJ1VVla2evXqoKAg/T+q2267LSMjw5VlVVZWHjx48J133lm1atWCBQuio6M9PT1VnXnz5rlSJDw83PU/+NTUVFdq1tbWPvXUU8OGDdMpFRER0Wkdi8WyYsWKjuqMGTNm586drqyPUXUMKfXhhx+60tXXX3/91q1bO10fq9X6wgsvjBw5sqM6wcH                                   
+Bn3zySZ9tneGljKpjyIcFgwwRPpilpKSoT3hiYqIrLzGbzdo9p9LSUu3cxMRE/W9txcPD491339VfVlVVlX6R/orw/Pz8kJCQTkt1GuFWq3XWrFmd1nnzzTf7po5RpVyMcJvk5GSdUk1NTffdd58rdVJSUvpm64wtZVQdoz4sGGSI8MGsuLhYfcK9vb0tFkunL9mxY4d6yeTJk+3maiM8Li7u5ZdfPnr0aEVFhcViKS0t3bhx4+TJk1UDNzc3/Z2ngRnhFy5cuOGGG1T7G2+8cd26dSdOnPj222+bmp                                   
+rOnz//z3/+Mykpafjw4Z1G+PLly1UdPz+/11577dy5c/X19ZmZmT/60Y/ULA8Pjy+//LIP6hhVSkV4eHj4ypUrt27dWlhYWFdX19zcfOnSpV27dt1///3aPn/11Vc7KvXss8+qZu7u7snJyZmZmVevXq2rq0tLS1uwYIGa6+bmtmfPnr7pcANLGVWHCIdTRPggFxkZqT7kaWlpnbbXfuP8/Oc/t5tri/AFCxYcPnzY6cubm5sfffRRVeH666+vr6/vaFnV1dXXXnvt9OnTn3jiiZdffnnr1q3Z2dmbN                                   
+2/u6reSivDo6GhX2utLSEhQK7BkyZKO1v/06dNPPvmkTp2srCxVZ9SoUUePHrVrsHbtWtUgKiqqra2tV+sYWGrLli2LFy92fLnWn//8Z1XKy8vr/Pnzjm0yMzPV4WV3d/fPPvvMsc26detUndDQ0Kampt7eOgNLGbhKRn1YMMgQ4YPcypUr1Yd89erVnbaPiopS7Q8ePGg399lnn923b59+hYaGhhtvvFEVceWgpdb27du7+q1kYIRv27ZNLf2xxx7T+Urt1MKFC1WpV155xbFBW1tbXFycarNly5Ze                                   
+rWNsKVfMnz9flVq7dq1jgyeeeEI10Dnerj32895773XUbAB2VG93eDc+LBhkiPBBbv/+/epDPm3aNP3GFy9eVI0DAgJaWlq6t9Df/e53qs7cuXO79Nr+jfBbb73VVuraa6+tq6vrdp2Kigq1f+nr69vQ0OC02a5du9TGzpo1q/fqGFvKRR9//LEqNXPmTLu5ra2t2iuxne6m23z11Vd9uXUD8L3rCBEO7gsf5OLj46+55hrbdEZGxpUrV3Qa79u3T00nJia6ubl1b6HTp09X0zk5Od0r0vdOnz6dnZ1                                   
+tm16xYkVPbvXZvXt3e3u7bfqhhx7y8vJy2iwxMXH06NG26fT0dMd3x6g6xpZy0c0336ymv/nmG7u5eXl5ZrPZNh0VFTV+/PiO6kyfPj04ONg2feDAgd7eugH43gEdIcIHOQ8Pj3vuucc23dLSkpaWptNYu8s+b968bi/0uuuuU9OVlZXdrtPH/v3vf6tp7Rn9bti9e7ea1p5ct+Ph4TFjxgzbtNVq1f4LZWwdY0u5SPsvYEtLi93cM2fOqOlJkybpl/re975nm2htbT106JBjgwHYUX3f4RiCiPDBT3                                   
+vTjjakHam5w4cP195T3lU1NTVqWh0DGPjS09NtEzfddFNYWFhPSmmvY4qJidFpGRsbq6ZPnDjRS3WMLeWi06dPq+nQ0FC7ubW1tWpa+z+fU2ov3GQyqSMlWgOwo/q+wzEEEeGD33333afOyen8j3/mzJmysjLbdFxc3JgxY7q9RO0Ols4B0oHm1KlTtgm1U5iVlbV06dKJEyd6enr6+vqGhYUtXLjw7bffbmpq0qnT1tamvZ3vpptu0mmsnVtYWNgbdYwt5bq//e1vanru3Ll2c+vr69W0t7e3fikfH                                   
+x81XVBQYDd3AHZUv3Q4hiAifPALCgpSxyFzc3MvXbrktJlRR9FNJpP2Kpt77723J6W6pLq6esmSJZMmTQoICBgxYoRtw5cvX649K9mRqqoqdcw/IiLCZDKtWbMmJibmH//4R1FRkcViuXr1aklJyfbt25csWRIREfHpp592VOr8+fPNzc226YCAAO0QWo60+5d24WRUHWNLuaK9vf23v/2t6qKgoKClS5fatdGOmdrY2KhfUJv3paWldnMHYEf1cYdjyCLChwRXjqVrd9B7EuGFhYXas4CLFi3qdqmu                                   
+qqioePvtt3Nzc2tra61Wa0VFRVZWVkpKyty5c2+77bYvv/xS57XqCITJZPL3909OTn7ppZc6Cv4LFy7Mnz//gw8+cDpXe/pf++3slLaB3XUDRtUxtpQOi8Vy7ty5jRs33nHHHb/61a9sv/T19d26dau6YkvR/qbTcUvKy8vVdHV1td3cAdhRfdPhABE+JGgj2WmEt7a2qivdQkJCvvvd73Z7WcnJya2trbbpOXPmqNu0+tfJkyfvvvvuN998s6MG2iuBMzIy/vSnP5lMJn9//9///vdnz55tamqqqKj                                   
+4+OOPb7/9dlub1tbWpUuXOj0v26VDxNoG2hcaWMfYUnYuXbo07H88PT0nTJiwePFidcXZvffee/z4cXW5lpb2evW8vDz9pWjPK6vr2J2u5ADpqN7rcECLCB8SYmNj1RVDTiP82LFjdXV1tmkXx6x26oMPPlCHT0eMGPHGG290u5TrgoODFy1atGHDhsOHDxcWFtbW1loslvLy8tTU1Keeeko9P6OlpeWZZ57RDt6ipY1w28M5QkJCMjMzn3vuubCwsJEjR44dO9Y2LJ0a9bO5ufknP/mJYyntt7D26R                                   
+3vvPNOeHi4j49PQkKCOu+uPcSqEwM9qWNsKRcFBARs3rx5z549EydOdNogMjJSXeqYk5PjeNeZ8vXXX2tHLLBYLHYNBmBH9X2HY4jqrxvS0ccWL16s3vSCggK7udphLLdv3969RRQUFPj6+qo6OiNj6zB8tIqCgoLo6GhV09fXt6qqyrGZ9o4ym//+979OC9bW1mqv9cvMzNQppQbrsLvSOCwszPZ7u31K7XhwRtUxtpQd7SFuRzNnzjxx4kRHr3388cdVS8fRfBW7S+FCQkJ6qcMNLNV7Ha7F0C5gL                                   
+Sj38sGBQIsKHopUrV9p92g8ePOjKC+VG+D333JOXl+di/1y+fHnp0qU61aKjow8dOuRKKYvFooa+cRQQELBjx46+rNPzUq5HuI+Pz6pVqxobG3WqdRrhISEh27Ztc3HTBlRHGV6HCIejYe3/e1ov3r3ffPNNZWWlt7f32LFjp06dev/99yclJQ0f3oUbMk+fPv3uu+/u37+/rKzMbDYHBQWFh4c/8sgjixYt8vf37/s6PSnV3t5eXFx86tSp7OzsU6dOlZaW1tXVmc1ms9nc0tLi5+c3duzYmJiY+PhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAI
+>>> barcode_base64 = base64.b64encode(barcode_data).decode('utf-8')                                                                                >>> barcode_base64                                                                                                                                 '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
+#<---History inconsistent with output shown--->                          
+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' 
+>>> base64.b64encode(barcode_data).decode('utf-8')                       
+'iVBORw0KGgoAAAANSUhEUgAAApYAAAEYCAIAAABpwiFoAAAZm0lEQVR4nO3de1RVdf7/8aOAcpFALLlkkjAGgeU0hHiJErPQrEypyWmNU2ulOWtq2aCVM5PTXNSmmmwurGlyZrqr04yao1aoo4
+VhpqKgCCgXQYVELgFH5XI4XH5/nDWf3/6ec9gcYHN5w/Px14b9Oe+99+dwzot9++xh7e3tJgAAIM3w/l4BAADQHUQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4A
+AAiufde6WHDhplMJqcDuNrNsv1oxzZXZ5ZdHdVSZ4n6i9D+6Pq6udLS6crob4X+qna6FT1cYjc23+kSXXmhzpvY1S7V3wrXl+j6IlxZVVf+wLq9UTpLdGXzXV+iK5vf80+005Xpgz+bHn7b8GfT
+pQ3UX6IrLZ2uQFf/GLrxnen6NrrSb4ZgLxwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhw
+AAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcA
+AARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCA
+QAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgH
+AEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhw
+AAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcA
+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
+sWLHVWzG/+8I8uWLet00wZaRxm+Sj38sGBQIsKHopUrV9p92g8ePOjKC+VG+D333JOXl+di/1y+fHnp0qU61aKjow8dOuRKKYvFooa+cRQQELBjx46+rNPzUq5HuI+Pz6pVqxobG3WqdRrhISEh
+27Ztc3HTBlRHGV6HCIejYe3/e1oOho4vvvhi1qxZ6seAgIDKysqORrjUGjVqVDeeZ5yRkXH77bc7nfXjH/94w4YNrpcKDAzUjkZpMplyc3PT0tJOnjyZn59fXl5eXV3d2NjY3Nzs7e0dEBAwceL
+E+Pj4BQsW3HrrrV1d7by8vI8++mjv3r3ffPNNZWWlt7f32LFjp06dev/99yclJQ0f3oUbMk+fPv3uu+/u37+/rKzMbDYHBQWFh4c/8sgjixYt8vf37/s6PSnV3t5eXFx86tSp7OzsU6dOlZaW1t
+XVmc1ms9nc0tLi5+c3duzYmJiY+Pj4Rx99VHsWw6m2trbjx4/v37//wIEDpaWllZWVdXV1o0ePDgoKmjx5clJSUmJiovapX729db1Xqud1ev5hweBDhAMAIBJDuwAAIBIRDgCASEQ4AAAiEeEAA
+IhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMA
+IBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAINL/AzXuOx5G2h4dAAAAAElFTkSuQmCC'  
+>>> barcode_base64 = base64.b64encode(barcode_data).decode('utf-8')      
+>>> barcode_base64                  
+'iVBORw0KGgoAAAANSUhEUgAAApYAAAEYCAIAAABpwiFoAAAZm0lEQVR4nO3de1RVdf7/8aOAcpFALLlkkjAGgeU0hHiJErPQrEypyWmNU2ulOWtq2aCVM5PTXNSmmmwurGlyZrqr04yao1aoo4
+VhpqKgCCgXQYVELgFH5XI4XH5/nDWf3/6ec9gcYHN5w/Px14b9Oe+99+dwzot9++xh7e3tJgAAIM3w/l4BAADQHUQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4A
+AAiufde6WHDhplMJqcDuNrNsv1oxzZXZ5ZdHdVSZ4n6i9D+6Pq6udLS6crob4X+qna6FT1cYjc23+kSXXmhzpvY1S7V3wrXl+j6IlxZVVf+wLq9UTpLdGXzXV+iK5vf80+005Xpgz+bHn7b8GfT
+pQ3UX6IrLZ2uQFf/GLrxnen6NrrSb4ZgLxwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhw
+AAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcA
+AARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCA
+QAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgH
+AEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhw
+AAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcAAARCLCAQAQiQgHAEAkIhwAAJGIcA
+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
+sWLHVWzG/+8I8uWLet00wZaRxm+Sj38sGBQIsKHopUrV9p92g8ePOjKC+VG+D333JOXl+di/1y+fHnp0qU61aKjow8dOuRKKYvFooa+cRQQELBjx46+rNPzUq5HuI+Pz6pVqxobG3WqdRrhISEh
+27Ztc3HTBlRHGV6HCIejYe3/e1oOho4vvvhi1qxZ6seAgIDKysqORrjUGjVqVDeeZ5yRkXH77bc7nfXjH/94w4YNrpcKDAzUjkZpMplyc3PT0tJOnjyZn59fXl5eXV3d2NjY3Nzs7e0dEBAwceL
+E+Pj4BQsW3HrrrV1d7by8vI8++mjv3r3ffPNNZWWlt7f32LFjp06dev/99yclJQ0f3oUbMk+fPv3uu+/u37+/rKzMbDYHBQWFh4c/8sgjixYt8vf37/s6PSnV3t5eXFx86tSp7OzsU6dOlZaW1t
+XVmc1ms9nc0tLi5+c3duzYmJiY+Pj4Rx99VHsWw6m2trbjx4/v37//wIEDpaWllZWVdXV1o0ePDgoKmjx5clJSUmJiovapX729db1Xqud1ev5hweBDhAMAIBJDuwAAIBIRDgCASEQ4AAAiEeEAA
+IhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMA
+IBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAIBIRDgCASEQ4AAAiEeEAAIhEhAMAINL/AzXuOx5G2h4dAAAAAElFTkSuQmCC'  
+>>> data = 'V2156000390001'         
+>>> import datetime                                                      
+>>> from datetime import datetime   
+>>> day = datetime.now()            
+>>> day                             
+datetime.datetime(2023, 8, 14, 17, 17, 15, 350088)                       
+>>> day.timetuple()                 
+time.struct_time(tm_year=2023, tm_mon=8, tm_mday=14, tm_hour=17, tm_min=17, tm_sec=15, tm_wday=0, tm_yday=226, tm_isdst=-1)                        
+>>> day.timetuple().tm_yday         
+226                                 
+>>> day = datetime.today()          
+>>> day.timetuple().tm_yday         
+226                                 
+>>> day.timetuple().tm_year[:3]     
+Traceback (most recent call last):  
+  File "<input>", line 1, in <module>                                    
+    day.timetuple().tm_year[:3]     
+TypeError: 'int' object is not subscriptable                             
+>>> day.timetuple().tm_year         
+2023                                
+>>> str(day.timetuple().tm_year)    
+'2023'                              
+>>> str(day.timetuple().tm_year)[:3]
+'202'                               
+>>> str(day.timetuple().tm_year)[3:]
+'3'                                 
+>>> day_of_year = day.timetuple().tm_yday                                
+>>> day_of_year = str(day.timetuple().tm_yday)                           
+>>> day_of_year                     
+'226'                                                                    
+>>> julian_year = str(day.timetuple().tm_year)[3:]                       
+>>> julian_year + day_of_year       
+'3226'                                                                   
+>>> dodaac_from = 'N00060'                                               
+>>> julian_date = julian_year + day_of_year                                                                                                        
+>>> id = 1                          
+>>> f'{id:0>{4}}'                                                        
+'0001'                              
+>>> while id < 10:                  
+...     docno = dodaac_from + julian_date + f'{id++:0>{4}}'              
+  File "<input>", line 2                                                 
+    docno = dodaac_from + julian_date + f'{id++:0>{4}}'                  
+                                                      ^                  
+SyntaxError: incomplete input                                            
+>>> while id < 10:                                                       
+...     docno = dodaac_from + julian_date + f'{id:0>{4}}'                
+...     print(f'docno: {docno}')                                         
+...     id += 1                     
+...                                 
+...                                 
+docno: N0006032260001               
+docno: N0006032260002               
+docno: N0006032260003               
+docno: N0006032260004               
+docno: N0006032260005               
+docno: N0006032260006               
+docno: N0006032260007               
+docno: N0006032260008               
+docno: N0006032260009               
+>>> while id < 10000:                                                    
+...     docno = dodaac_from + julian_date + f'{id:0>{4}}'                
+...     print(f'docno: {docno}')                                         
+...     id += 150                                                        
+...                                 
+...                                 
+docno: N0006032260010               
+docno: N0006032260160               
+docno: N0006032260310               
+docno: N0006032260460               
+docno: N0006032260610               
+docno: N0006032260760               
+docno: N0006032260910               
+docno: N0006032261060               
+docno: N0006032261210               
+docno: N0006032261360               
+docno: N0006032261510               
+docno: N0006032261660               
+docno: N0006032261810               
+docno: N0006032261960               
+docno: N0006032262110               
+docno: N0006032262260               
+docno: N0006032262410               
+docno: N0006032262560               
+docno: N0006032262710               
+docno: N0006032262860               
+docno: N0006032263010               
+docno: N0006032263160               
+docno: N0006032263310               
+docno: N0006032263460               
+docno: N0006032263610               
+docno: N0006032263760               
+docno: N0006032263910               
+docno: N0006032264060               
+docno: N0006032264210               
+docno: N0006032264360               
+docno: N0006032264510               
+docno: N0006032264660               
+docno: N0006032264810               
+docno: N0006032264960               
+docno: N0006032265110               
+docno: N0006032265260               
+docno: N0006032265410               
+docno: N0006032265560               
+docno: N0006032265710               
+docno: N0006032265860               
+docno: N0006032266010               
+docno: N0006032266160               
+docno: N0006032266310               
+docno: N0006032266460               
+docno: N0006032266610               
+docno: N0006032266760               
+docno: N0006032266910               
+docno: N0006032267060               
+docno: N0006032267210               
+docno: N0006032267360               
+docno: N0006032267510               
+docno: N0006032267660               
+docno: N0006032267810               
+docno: N0006032267960               
+docno: N0006032268110               
+docno: N0006032268260               
+docno: N0006032268410               
+docno: N0006032268560               
+docno: N0006032268710               
+docno: N0006032268860               
+docno: N0006032269010               
+docno: N0006032269160               
+docno: N0006032269310               
+docno: N0006032269460               
+docno: N0006032269610               
+docno: N0006032269760               
+docno: N0006032269910               
+>>>                                 
