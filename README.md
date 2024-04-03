@@ -24,6 +24,16 @@ produces filled-in copies of the form complete with scannable barcodes.
 
 # Things I learned
 
+This was a custom-tailored script designed to do a single specific task, and
+would take more effort than I feel it's worth to generalize into a broader
+solution. It would require accounting for so many unknowns as to be
+impractical.
+
+However, this was a very rewarding project because it solved a problem with
+100% accuracy that I knew from firsthand experience to be a PITA[^pita].
+
+[^pita]: I'm sure you know what this means.
+
 ## Barcodes
 
 Using a simple smartphone barcode scanner app, I determined that the style of
@@ -42,7 +52,8 @@ stores the content of the forms in plaintext.  The general form is `<< /T (key)
 /V (value) >>`. 
 
 Once I learned how the file internals needed to be organized, writing the
-script was very straightforward.
+script was very straightforward. The conversion to PDF was accomplished via a
+system call to the [PDFtk tookit](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/).
 
 ## Document number format
 
