@@ -16,7 +16,7 @@ errors.
 # Python to the rescue!
 
 The script [fdftest.py](fdftest.py) solved this problem. It accepts CSV input,
-mapping the columns to the DoD Form 1348-1A which were required by the
+mapping the columns to the fields in DoD Form 1348-1A which were required by the
 DLA[^dla] Disposition Services Office we were turning this equipment into, and
 produces filled-in copies of the form complete with scannable barcodes.
 
