@@ -36,7 +36,7 @@ However, this was a very rewarding project because it solved a problem with
 
 ## Barcodes
 
-Using a simple smartphone barcode scanner app, I determined that the style of
+Using a simple smartphone barcode scanner app, I determined the style of
 barcode used on the sample form sent to us by the DLA office.  As it turns out,
 many barcodes can be reproduced in PDFs by simply setting the field font to one
 of the many standard barcode fonts. All that's required after that is to supply
