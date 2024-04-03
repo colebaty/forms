@@ -57,7 +57,7 @@ concatenation of the following items:
   the document was generated
 - ID number: a four-digit arbitrary but unique positive integer. The only
   requirement is that no two documents can have the same ID number for a given
-  Julian date.  Must begin from the number `0001`.
+  Julian date.  Cannot be `0000`.
 
 I wrote the following function to generate Document Numbers:
 
@@ -65,13 +65,7 @@ I wrote the following function to generate Document Numbers:
 # "constants" for PDF form
 fdf_static_content = {
     'DODAAC_FROM': 'N00060',
-    'DODAAC_TO': 'SX1493',
-    'COND_CODE': 'D',
-    'UNITS': 'EA',
-    'DOCID': 'A5J',
-    'POC_INFO': 'POC:  KARL HUNDER  EMAIL:  KHUNDER@FTI-NET.COM  TEL. NO: (757) 230-2216',
-    'PART_NO': '',
-    #'MARK_FOR': '>'
+    ...
 }
 
 # DOCNO stuff
