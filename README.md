@@ -1,7 +1,7 @@
 # Forms
 
-This was a one-off, quick-and-dirty Python project I wrote during a week at an
-internship.  The company had a few dozen items it had received from the U.S.
+This was a one-off, quick-and-dirty Python project I wrote during a week at a
+summer internship.  The company had a few dozen items it had received from the U.S.
 Navy over a decade prior which it was getting rid of, and for which there was
 no documentation for the original issue.  Because the equipment had been
 issued by the Navy, it had to be returned to the Navy, which meant a whole lot
